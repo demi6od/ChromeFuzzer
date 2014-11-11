@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --js-flags="--expose-gc" --no-sandbox --disable-seccomp-filter-sandbox --disable-seccomp-sandbox --allow-file-access-from-files

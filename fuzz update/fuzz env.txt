@@ -1,0 +1,14 @@
+update fuzz materials
+update C:\windows\system32\grinder_logger.dll
+
+#############
+#chrome
+#############
+设置 -> 内容设置 -> 1.允许弹窗。2.询问->允许。
+global var put into blacklist
+
+#############
+#ie
+#############
+internet选项 -> 安全 -> 自定义级别 -> 1.提示->启用。2.加载程序和文件->禁用。3.IRRAME中加载程序和文件->禁用。4.下载->禁用。
+internet选项 -> 高级 -> 关闭自动崩溃恢复。

@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache"/>
+        <title>Target page</title>
+
+        <style>body { background-color: #F0FFFF; }</style>
+
+        <script>
+            function preFunc() {
+                setTimeout('window.close();', 5000);
+                document.designMode = 'on';
+                document.documentElement.contentEditable = 'true';
+                document.body.contentEditable = 'true';
+                document.head.contentEditable = 'true';
+				document.getElementById('editable').contentEditable = 'true';
+                setTimeout('selfMan();', 1);
+				window.opener.demiFront();
+            }
+
+            function selfMan() {
+                for (var i = 6; i < document.all.length; i++) {
+                    for (var p in document.all[i]) {
+                        try {
+                            if (typeof document.all[i][p] == 'function') {
+                                if (p != 'submit') {
+                                    document.all[i][p]();
+                                }
+                            } else {
+                                if (p != 'sandbox') {
+                                    document.all[i][p] = 'demi';
+                                }
+                            }
+                        } catch (e) {}
+                    }
+                }
+
+                try {
+                    document.body.innerHTML = '';
+                    document.write('');
+                } catch (e) {}
+
+                setTimeout('parentMan();', 100);
+            }
+
+            function parentMan() {
+                try {
+                    window.opener.document.body.innerHTML = '';
+                    window.opener.document.write('');
+                } catch (e) {}
+                window.close();
+            }
+        </script>
+
+    </head>
+    <body onload="document.body.onload = null; preFunc();">
+
+        <iframe src='demicmFuzz.html'></iframe>
+
+        <frameset cols="25%,50%,25%">
+            <frame src="demicmFuzz.html" />
+            <frame src="demicmBlank.html" />
+            <frame src="demicmBlank.html" />
+        </frameset>
+
+        <table>
+            <caption>Monthly savings</caption>
+
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+
+
+        <form >
+            <label for="male">Male</label>
+            <input type="text" name="fname"><br>
+            <input type="password" name="pwd">
+            <input type="button" value="Hello world!">
+            <input type="radio" name="sex" id="male" value="male"><br>
+            <input type="radio" name="sex" id="female" value="female"><br>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car 
+            <input type="submit" value="Submit">
+            <keygen name="security">
+
+            <fieldset>
+                <legend>Personalia:</legend>
+                <input type="text" name="fname"><br>
+                <input type="text" name="fname"><br>
+            </fieldset>
+
+            <input list="browsers">
+
+            <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            </datalist>
+
+            <input type="range" id="a" value="50">
+            <input type="number" id="b" value="50">
+            <output name="x" for="a b"></output>
+        </form>
+
+        <form >
+            Firstname:<input type="text" name="fname">
+            <input type="submit">
+        </form>
+
+        <select name="carlist" form="carform">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+
+            <option value="mercedes">Mercedes</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <textarea name="comment" form="usrform">Enter text here...</textarea>
+
+        <audio controls>
+        <source src="demicmAudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+        <source src="demicmVideo.mp4" type="video/mp4">
+        <track src="demicmTrack.vtt" kind="subtitles" srclang="en" label="English">
+        <object data="demicmVideo.mp4" width="320" height="240">
+            <embed src="demicmData.swf" width="320" height="240">
+        </object> 
+
+        </video>
+
+        <embed src="demicmSvg.svg" width="500" height="320" type="image/svg+xml" />
+        <embed src="demicmXml.xml" width="500" height="320" type="text/xml" />
+
+
+        <object></object>
+
+        <embed src="demicmData.swf"
+        type="application/x-shockwave-flash" 
+        allowscriptaccess="always" 
+        width="240" 
+        height="190">
+        </embed>
+
+        <p>
+
+        <img src="demicmImg.gif">
+
+        <form>
+            <input type=file>
+            <input type=password>
+        </form>
+
+        <canvas></canvas>
+
+        <iframe></iframe>
+
+        <a href="#">Link</a>
+        <table><tr><td>X</td></tr></table>
+
+        <link href="#" rel="foo">
+
+        <isindex></isindex>
+        <map></map>
+        <ol><li>X</ol>
+        <div id=editable></div>
+        <xmp>X</xmp>
+        <div></div>
+        <textarea></textarea>
+
+    </body>
+</html>

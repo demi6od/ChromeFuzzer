@@ -1,0 +1,1042 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DOMMan	.\demichrome1.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichrome2.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichrome3.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichromeLog3new.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichromelog1.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichromelog2.js	/^function DOMMan()$/;"	f
+DOMMan	.\demichromelog3.js	/^function DOMMan()$/;"	f
+DOMMan	.\logging_grinder v1.js	/^function DOMMan()$/;"	f
+DOMMan	.\logging_grinder v2 evt.js	/^function DOMMan()$/;"	f
+DOMMan	.\logging_grinder v2.js	/^function DOMMan()$/;"	f
+ET	.\grindLogCheck.py	/^    import xml.etree.ElementTree as ET$/;"	i
+ET	.\grindLogCheck.py	/^    import xml.etree.cElementTree as ET$/;"	i
+LOGGER.count_id	.\logging.js	/^	this.count_id = function( type )$/;"	m
+LOGGER.count_id	.\logging_grinder v1.js	/^	this.count_id = function( type )$/;"	m
+LOGGER.count_id	.\logging_grinder v2 evt.js	/^	this.count_id = function( type )$/;"	m
+LOGGER.count_id	.\logging_grinder v2.js	/^	this.count_id = function( type )$/;"	m
+LOGGER.gc	.\logging.js	/^	this.gc = function()$/;"	m
+LOGGER.gc	.\logging_grinder v1.js	/^	this.gc = function()$/;"	m
+LOGGER.gc	.\logging_grinder v2 evt.js	/^	this.gc = function()$/;"	m
+LOGGER.gc	.\logging_grinder v2.js	/^	this.gc = function()$/;"	m
+LOGGER.get_browser	.\logging.js	/^	this.get_browser = function()$/;"	m
+LOGGER.get_browser	.\logging_grinder v1.js	/^	this.get_browser = function()$/;"	m
+LOGGER.get_browser	.\logging_grinder v2 evt.js	/^	this.get_browser = function()$/;"	m
+LOGGER.get_browser	.\logging_grinder v2.js	/^	this.get_browser = function()$/;"	m
+LOGGER.log	.\logging.js	/^	this.log = function( message, location, count )$/;"	m
+LOGGER.log	.\logging_grinder v1.js	/^	this.log = function( message, location, count )$/;"	m
+LOGGER.log	.\logging_grinder v2 evt.js	/^	this.log = function( message, location, count )$/;"	m
+LOGGER.log	.\logging_grinder v2.js	/^	this.log = function( message, location, count )$/;"	m
+LOGGER.rand_id	.\logging.js	/^	this.rand_id = function( type )$/;"	m
+LOGGER.rand_id	.\logging_grinder v1.js	/^	this.rand_id = function( type )$/;"	m
+LOGGER.rand_id	.\logging_grinder v2 evt.js	/^	this.rand_id = function( type )$/;"	m
+LOGGER.rand_id	.\logging_grinder v2.js	/^	this.rand_id = function( type )$/;"	m
+LOGGER.unique_id	.\logging.js	/^	this.unique_id = function( type )$/;"	m
+LOGGER.unique_id	.\logging_grinder v1.js	/^	this.unique_id = function( type )$/;"	m
+LOGGER.unique_id	.\logging_grinder v2 evt.js	/^	this.unique_id = function( type )$/;"	m
+LOGGER.unique_id	.\logging_grinder v2.js	/^	this.unique_id = function( type )$/;"	m
+LOGGER.xml_escape	.\logging.js	/^	var xml_escape = function( message )$/;"	m
+LOGGER.xml_escape	.\logging_grinder v1.js	/^	var xml_escape = function( message )$/;"	m
+LOGGER.xml_escape	.\logging_grinder v2 evt.js	/^	var xml_escape = function( message )$/;"	m
+LOGGER.xml_escape	.\logging_grinder v2.js	/^	var xml_escape = function( message )$/;"	m
+addCSS	.\demichrome1.js	/^function addCSS() {$/;"	f
+addCSS	.\demichrome2.js	/^function addCSS() {$/;"	f
+addCSS	.\demichrome3.js	/^function addCSS() {$/;"	f
+addCSS	.\demichromeLog3new.js	/^function addCSS() {$/;"	f
+addCSS	.\demichromelog1.js	/^function addCSS() {$/;"	f
+addCSS	.\demichromelog2.js	/^function addCSS() {$/;"	f
+addCSS	.\demichromelog3.js	/^function addCSS() {$/;"	f
+addCSS	.\logging_grinder v1.js	/^function addCSS() {$/;"	f
+addCSS	.\logging_grinder v2 evt.js	/^function addCSS() {$/;"	f
+addCSS	.\logging_grinder v2.js	/^function addCSS() {$/;"	f
+addTextNode	.\demichrome1.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichrome2.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichrome3.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichromeLog3new.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichromelog1.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichromelog2.js	/^function addTextNode() {$/;"	f
+addTextNode	.\demichromelog3.js	/^function addTextNode() {$/;"	f
+addTextNode	.\logging_grinder v1.js	/^function addTextNode() {$/;"	f
+addTextNode	.\logging_grinder v2 evt.js	/^function addTextNode() {$/;"	f
+addTextNode	.\logging_grinder v2.js	/^function addTextNode() {$/;"	f
+alterElemRange	.\demichrome2.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\demichrome3.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\demichromeLog3new.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\demichromelog2.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\demichromelog3.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\logging_grinder v2 evt.js	/^function alterElemRange() {$/;"	f
+alterElemRange	.\logging_grinder v2.js	/^function alterElemRange() {$/;"	f
+alterSelection	.\demichrome2.js	/^function alterSelection() {$/;"	f
+alterSelection	.\demichrome3.js	/^function alterSelection() {$/;"	f
+alterSelection	.\demichromeLog3new.js	/^function alterSelection() {$/;"	f
+alterSelection	.\demichromelog2.js	/^function alterSelection() {$/;"	f
+alterSelection	.\demichromelog3.js	/^function alterSelection() {$/;"	f
+alterSelection	.\logging_grinder v2 evt.js	/^function alterSelection() {$/;"	f
+alterSelection	.\logging_grinder v2.js	/^function alterSelection() {$/;"	f
+argparse	.\sourceEdit.py	/^import argparse$/;"	i
+clear	.\demichrome1.js	/^function clear() {$/;"	f
+clear	.\demichrome2.js	/^function clear() {$/;"	f
+clear	.\demichrome3.js	/^function clear() {$/;"	f
+clear	.\demichromeLog3new.js	/^function clear() {$/;"	f
+clear	.\demichromelog1.js	/^function clear() {$/;"	f
+clear	.\demichromelog2.js	/^function clear() {$/;"	f
+clear	.\demichromelog3.js	/^function clear() {$/;"	f
+clear	.\logging_grinder v1.js	/^function clear() {$/;"	f
+clear	.\logging_grinder v2 evt.js	/^function clear() {$/;"	f
+clear	.\logging_grinder v2.js	/^function clear() {$/;"	f
+clearAll	.\demichrome1.js	/^function clearAll() {$/;"	f
+clearAll	.\demichrome2.js	/^function clearAll() {$/;"	f
+clearAll	.\demichrome3.js	/^function clearAll() {$/;"	f
+clearAll	.\demichromeLog3new.js	/^function clearAll() {$/;"	f
+clearAll	.\demichromelog1.js	/^function clearAll() {$/;"	f
+clearAll	.\demichromelog2.js	/^function clearAll() {$/;"	f
+clearAll	.\demichromelog3.js	/^function clearAll() {$/;"	f
+clearAll	.\logging_grinder v1.js	/^function clearAll() {$/;"	f
+clearAll	.\logging_grinder v2 evt.js	/^function clearAll() {$/;"	f
+clearAll	.\logging_grinder v2.js	/^function clearAll() {$/;"	f
+clearChildrenId	.\help.js	/^function clearChildrenId(elem) {$/;"	f
+clearChildrenId	.\helplog.js	/^function clearChildrenId(elem) {$/;"	f
+clearChildrenId	.\logging_grinder v1.js	/^function clearChildrenId(elem) {$/;"	f
+clearChildrenId	.\logging_grinder v2 evt.js	/^function clearChildrenId(elem) {$/;"	f
+clearChildrenId	.\logging_grinder v2.js	/^function clearChildrenId(elem) {$/;"	f
+clearElem	.\demichrome3.js	/^function clearElem() {$/;"	f
+clearElem	.\demichromeLog3new.js	/^function clearElem() {$/;"	f
+clearElem	.\demichromelog3.js	/^function clearElem() {$/;"	f
+clearThisId	.\help.js	/^function clearThisId(elem) {$/;"	f
+clearThisId	.\helplog.js	/^function clearThisId(elem) {$/;"	f
+clearThisId	.\logging_grinder v1.js	/^function clearThisId(elem) {$/;"	f
+clearThisId	.\logging_grinder v2 evt.js	/^function clearThisId(elem) {$/;"	f
+clearThisId	.\logging_grinder v2.js	/^function clearThisId(elem) {$/;"	f
+cloneObj	.\help.js	/^function cloneObj(obj) {$/;"	f
+cloneObj	.\helplog.js	/^function cloneObj(obj) {$/;"	f
+cloneObj	.\logging_grinder v1.js	/^function cloneObj(obj) {$/;"	f
+cloneObj	.\logging_grinder v2 evt.js	/^function cloneObj(obj) {$/;"	f
+cloneObj	.\logging_grinder v2.js	/^function cloneObj(obj) {$/;"	f
+codecs	.\sourceEdit.py	/^import codecs$/;"	i
+constructDOMTree	.\demichrome1.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichrome2.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichrome3.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichromeLog3new.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichromelog1.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichromelog2.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\demichromelog3.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\logging_grinder v1.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\logging_grinder v2 evt.js	/^function constructDOMTree() {$/;"	f
+constructDOMTree	.\logging_grinder v2.js	/^function constructDOMTree() {$/;"	f
+constructElemRange	.\demichrome2.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\demichrome3.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\demichromeLog3new.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\demichromelog2.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\demichromelog3.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\logging_grinder v2 evt.js	/^function constructElemRange() {$/;"	f
+constructElemRange	.\logging_grinder v2.js	/^function constructElemRange() {$/;"	f
+constructNodeIterator	.\demichrome2.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\demichrome3.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\demichromeLog3new.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\demichromelog2.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\demichromelog3.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\logging_grinder v2 evt.js	/^function constructNodeIterator() {$/;"	f
+constructNodeIterator	.\logging_grinder v2.js	/^function constructNodeIterator() {$/;"	f
+constructRange	.\demichrome2.js	/^function constructRange() {$/;"	f
+constructRange	.\demichrome3.js	/^function constructRange() {$/;"	f
+constructRange	.\demichromeLog3new.js	/^function constructRange() {$/;"	f
+constructRange	.\demichromelog2.js	/^function constructRange() {$/;"	f
+constructRange	.\demichromelog3.js	/^function constructRange() {$/;"	f
+constructRange	.\logging_grinder v2 evt.js	/^function constructRange() {$/;"	f
+constructRange	.\logging_grinder v2.js	/^function constructRange() {$/;"	f
+constructSelection	.\demichrome2.js	/^function constructSelection() {$/;"	f
+constructSelection	.\demichrome3.js	/^function constructSelection() {$/;"	f
+constructSelection	.\demichromeLog3new.js	/^function constructSelection() {$/;"	f
+constructSelection	.\demichromelog2.js	/^function constructSelection() {$/;"	f
+constructSelection	.\demichromelog3.js	/^function constructSelection() {$/;"	f
+constructSelection	.\logging_grinder v2 evt.js	/^function constructSelection() {$/;"	f
+constructSelection	.\logging_grinder v2.js	/^function constructSelection() {$/;"	f
+constructTree	.\demichrome1.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichrome2.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichrome3.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichromeLog3new.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichromelog1.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichromelog2.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\demichromelog3.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\logging_grinder v1.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\logging_grinder v2 evt.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTree	.\logging_grinder v2.js	/^function constructTree(rootType, startId, len, branchNum) {$/;"	f
+constructTreeWalker	.\demichrome2.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\demichrome3.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\demichromeLog3new.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\demichromelog2.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\demichromelog3.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\logging_grinder v2 evt.js	/^function constructTreeWalker() {$/;"	f
+constructTreeWalker	.\logging_grinder v2.js	/^function constructTreeWalker() {$/;"	f
+convoluteArr	.\help.js	/^function convoluteArr(firstArr, secondArr, splitStr, primary) {$/;"	f
+convoluteArr	.\helplog.js	/^function convoluteArr(firstArr, secondArr, splitStr, primary) {$/;"	f
+convoluteArr	.\logging_grinder v1.js	/^function convoluteArr(firstArr, secondArr, splitStr, primary) {$/;"	f
+convoluteArr	.\logging_grinder v2 evt.js	/^function convoluteArr(firstArr, secondArr, splitStr, primary) {$/;"	f
+convoluteArr	.\logging_grinder v2.js	/^function convoluteArr(firstArr, secondArr, splitStr, primary) {$/;"	f
+demiBack	.\demichrome1.js	/^function demiBack() {$/;"	f
+demiBack	.\demichrome2.js	/^function demiBack() {$/;"	f
+demiBack	.\demichrome3.js	/^function demiBack() {$/;"	f
+demiBack	.\demichromeLog3new.js	/^function demiBack() {$/;"	f
+demiBack	.\demichromelog1.js	/^function demiBack() {$/;"	f
+demiBack	.\demichromelog2.js	/^function demiBack() {$/;"	f
+demiBack	.\demichromelog3.js	/^function demiBack() {$/;"	f
+demiBack	.\logging_grinder v1.js	/^function demiBack() {$/;"	f
+demiBack	.\logging_grinder v2 evt.js	/^function demiBack() {$/;"	f
+demiBack	.\logging_grinder v2.js	/^function demiBack() {$/;"	f
+demiFront	.\demichrome1.js	/^function demiFront() {$/;"	f
+demiFront	.\demichrome2.js	/^function demiFront() {$/;"	f
+demiFront	.\demichrome3.js	/^function demiFront() {$/;"	f
+demiFront	.\demichromeLog3new.js	/^function demiFront() {$/;"	f
+demiFront	.\demichromelog1.js	/^function demiFront() {$/;"	f
+demiFront	.\demichromelog2.js	/^function demiFront() {$/;"	f
+demiFront	.\demichromelog3.js	/^function demiFront() {$/;"	f
+demiFront	.\logging_grinder v1.js	/^function demiFront() {$/;"	f
+demiFront	.\logging_grinder v2 evt.js	/^function demiFront() {$/;"	f
+demiFront	.\logging_grinder v2.js	/^function demiFront() {$/;"	f
+demicm.elemDic.a	.\dict.js	/^    a            : 'HTMLAnchorElement',$/;"	p
+demicm.elemDic.a	.\logging_grinder v1.js	/^    a          : 'HTMLAnchorElement',$/;"	p
+demicm.elemDic.a	.\logging_grinder v2 evt.js	/^    a          : 'HTMLAnchorElement',$/;"	p
+demicm.elemDic.a	.\logging_grinder v2.js	/^    a          : 'HTMLAnchorElement',$/;"	p
+demicm.elemDic.abbr	.\dict.js	/^    abbr         : 'HTMLElement',$/;"	p
+demicm.elemDic.abbr	.\logging_grinder v1.js	/^    abbr       : 'HTMLElement',$/;"	p
+demicm.elemDic.abbr	.\logging_grinder v2 evt.js	/^    abbr       : 'HTMLElement',$/;"	p
+demicm.elemDic.abbr	.\logging_grinder v2.js	/^    abbr       : 'HTMLElement',$/;"	p
+demicm.elemDic.address	.\dict.js	/^    address      : 'HTMLElement',$/;"	p
+demicm.elemDic.address	.\logging_grinder v1.js	/^    address    : 'HTMLElement',$/;"	p
+demicm.elemDic.address	.\logging_grinder v2 evt.js	/^    address    : 'HTMLElement',$/;"	p
+demicm.elemDic.address	.\logging_grinder v2.js	/^    address    : 'HTMLElement',$/;"	p
+demicm.elemDic.applet	.\dict.js	/^    applet       : 'HTMLAppletElement',$/;"	p
+demicm.elemDic.applet	.\logging_grinder v1.js	/^    applet     : 'HTMLAppletElement',$/;"	p
+demicm.elemDic.applet	.\logging_grinder v2 evt.js	/^    applet     : 'HTMLAppletElement',$/;"	p
+demicm.elemDic.applet	.\logging_grinder v2.js	/^    applet     : 'HTMLAppletElement',$/;"	p
+demicm.elemDic.area	.\dict.js	/^    area         : 'HTMLAreaElement',$/;"	p
+demicm.elemDic.area	.\logging_grinder v1.js	/^    area       : 'HTMLAreaElement',$/;"	p
+demicm.elemDic.area	.\logging_grinder v2 evt.js	/^    area       : 'HTMLAreaElement',$/;"	p
+demicm.elemDic.area	.\logging_grinder v2.js	/^    area       : 'HTMLAreaElement',$/;"	p
+demicm.elemDic.article	.\dict.js	/^    article      : 'HTMLElement',$/;"	p
+demicm.elemDic.article	.\logging_grinder v1.js	/^    article    : 'HTMLElement',$/;"	p
+demicm.elemDic.article	.\logging_grinder v2 evt.js	/^    article    : 'HTMLElement',$/;"	p
+demicm.elemDic.article	.\logging_grinder v2.js	/^    article    : 'HTMLElement',$/;"	p
+demicm.elemDic.aside	.\dict.js	/^    aside        : 'HTMLElement',$/;"	p
+demicm.elemDic.aside	.\logging_grinder v1.js	/^    aside      : 'HTMLElement',$/;"	p
+demicm.elemDic.aside	.\logging_grinder v2 evt.js	/^    aside      : 'HTMLElement',$/;"	p
+demicm.elemDic.aside	.\logging_grinder v2.js	/^    aside      : 'HTMLElement',$/;"	p
+demicm.elemDic.audio	.\dict.js	/^    audio        : 'HTMLAudioElement',$/;"	p
+demicm.elemDic.audio	.\logging_grinder v1.js	/^    audio      : 'HTMLAudioElement',$/;"	p
+demicm.elemDic.audio	.\logging_grinder v2 evt.js	/^    audio      : 'HTMLAudioElement',$/;"	p
+demicm.elemDic.audio	.\logging_grinder v2.js	/^    audio      : 'HTMLAudioElement',$/;"	p
+demicm.elemDic.b	.\dict.js	/^    b            : 'HTMLElement',$/;"	p
+demicm.elemDic.b	.\logging_grinder v1.js	/^    b          : 'HTMLElement',$/;"	p
+demicm.elemDic.b	.\logging_grinder v2 evt.js	/^    b          : 'HTMLElement',$/;"	p
+demicm.elemDic.b	.\logging_grinder v2.js	/^    b          : 'HTMLElement',$/;"	p
+demicm.elemDic.base	.\dict.js	/^    base         : 'HTMLBaseElement',$/;"	p
+demicm.elemDic.base	.\logging_grinder v1.js	/^    base       : 'HTMLBaseElement',$/;"	p
+demicm.elemDic.base	.\logging_grinder v2 evt.js	/^    base       : 'HTMLBaseElement',$/;"	p
+demicm.elemDic.base	.\logging_grinder v2.js	/^    base       : 'HTMLBaseElement',$/;"	p
+demicm.elemDic.basefont	.\dict.js	/^    basefont     : 'HTMLElement',$/;"	p
+demicm.elemDic.basefont	.\logging_grinder v1.js	/^    basefont   : 'HTMLElement',$/;"	p
+demicm.elemDic.basefont	.\logging_grinder v2 evt.js	/^    basefont   : 'HTMLElement',$/;"	p
+demicm.elemDic.basefont	.\logging_grinder v2.js	/^    basefont   : 'HTMLElement',$/;"	p
+demicm.elemDic.bdi	.\dict.js	/^    bdi          : 'HTMLElement',$/;"	p
+demicm.elemDic.bdi	.\logging_grinder v1.js	/^    bdi        : 'HTMLElement',$/;"	p
+demicm.elemDic.bdi	.\logging_grinder v2 evt.js	/^    bdi        : 'HTMLElement',$/;"	p
+demicm.elemDic.bdi	.\logging_grinder v2.js	/^    bdi        : 'HTMLElement',$/;"	p
+demicm.elemDic.bdo	.\dict.js	/^    bdo          : 'HTMLElement',$/;"	p
+demicm.elemDic.bdo	.\logging_grinder v1.js	/^    bdo        : 'HTMLElement',$/;"	p
+demicm.elemDic.bdo	.\logging_grinder v2 evt.js	/^    bdo        : 'HTMLElement',$/;"	p
+demicm.elemDic.bdo	.\logging_grinder v2.js	/^    bdo        : 'HTMLElement',$/;"	p
+demicm.elemDic.bgsound	.\dict.js	/^    bgsound      : 'HTMLElement',$/;"	p
+demicm.elemDic.bgsound	.\logging_grinder v1.js	/^    bgsound    : 'HTMLElement',$/;"	p
+demicm.elemDic.bgsound	.\logging_grinder v2 evt.js	/^    bgsound    : 'HTMLElement',$/;"	p
+demicm.elemDic.bgsound	.\logging_grinder v2.js	/^    bgsound    : 'HTMLElement',$/;"	p
+demicm.elemDic.blockquote	.\dict.js	/^    blockquote   : 'HTMLQuoteElement',$/;"	p
+demicm.elemDic.blockquote	.\logging_grinder v1.js	/^    blockquote : 'HTMLQuoteElement',$/;"	p
+demicm.elemDic.blockquote	.\logging_grinder v2 evt.js	/^    blockquote : 'HTMLQuoteElement',$/;"	p
+demicm.elemDic.blockquote	.\logging_grinder v2.js	/^    blockquote : 'HTMLQuoteElement',$/;"	p
+demicm.elemDic.body	.\dict.js	/^    body         : 'HTMLBodyElement',$/;"	p
+demicm.elemDic.body	.\logging_grinder v1.js	/^    body       : 'HTMLBodyElement',$/;"	p
+demicm.elemDic.body	.\logging_grinder v2 evt.js	/^    body       : 'HTMLBodyElement',$/;"	p
+demicm.elemDic.body	.\logging_grinder v2.js	/^    body       : 'HTMLBodyElement',$/;"	p
+demicm.elemDic.br	.\dict.js	/^    br           : 'HTMLBRElement',$/;"	p
+demicm.elemDic.br	.\logging_grinder v1.js	/^    br         : 'HTMLBRElement',$/;"	p
+demicm.elemDic.br	.\logging_grinder v2 evt.js	/^    br         : 'HTMLBRElement',$/;"	p
+demicm.elemDic.br	.\logging_grinder v2.js	/^    br         : 'HTMLBRElement',$/;"	p
+demicm.elemDic.button	.\dict.js	/^    button       : 'HTMLButtonElement',$/;"	p
+demicm.elemDic.button	.\logging_grinder v1.js	/^    button     : 'HTMLButtonElement',$/;"	p
+demicm.elemDic.button	.\logging_grinder v2 evt.js	/^    button     : 'HTMLButtonElement',$/;"	p
+demicm.elemDic.button	.\logging_grinder v2.js	/^    button     : 'HTMLButtonElement',$/;"	p
+demicm.elemDic.canvas	.\dict.js	/^    canvas       : 'HTMLCanvasElement',$/;"	p
+demicm.elemDic.canvas	.\logging_grinder v1.js	/^    canvas     : 'HTMLCanvasElement',$/;"	p
+demicm.elemDic.canvas	.\logging_grinder v2 evt.js	/^    canvas     : 'HTMLCanvasElement',$/;"	p
+demicm.elemDic.canvas	.\logging_grinder v2.js	/^    canvas     : 'HTMLCanvasElement',$/;"	p
+demicm.elemDic.caption	.\dict.js	/^    caption      : 'HTMLTableCaptionElement',$/;"	p
+demicm.elemDic.caption	.\logging_grinder v1.js	/^    caption    : 'HTMLTableCaptionElement',$/;"	p
+demicm.elemDic.caption	.\logging_grinder v2 evt.js	/^    caption    : 'HTMLTableCaptionElement',$/;"	p
+demicm.elemDic.caption	.\logging_grinder v2.js	/^    caption    : 'HTMLTableCaptionElement',$/;"	p
+demicm.elemDic.cite	.\dict.js	/^    cite         : 'HTMLElement',$/;"	p
+demicm.elemDic.cite	.\logging_grinder v1.js	/^    cite       : 'HTMLElement',$/;"	p
+demicm.elemDic.cite	.\logging_grinder v2 evt.js	/^    cite       : 'HTMLElement',$/;"	p
+demicm.elemDic.cite	.\logging_grinder v2.js	/^    cite       : 'HTMLElement',$/;"	p
+demicm.elemDic.code	.\dict.js	/^    code         : 'HTMLElement',$/;"	p
+demicm.elemDic.code	.\logging_grinder v1.js	/^    code       : 'HTMLElement',$/;"	p
+demicm.elemDic.code	.\logging_grinder v2 evt.js	/^    code       : 'HTMLElement',$/;"	p
+demicm.elemDic.code	.\logging_grinder v2.js	/^    code       : 'HTMLElement',$/;"	p
+demicm.elemDic.col	.\dict.js	/^    col          : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.col	.\logging_grinder v1.js	/^    col        : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.col	.\logging_grinder v2 evt.js	/^    col        : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.col	.\logging_grinder v2.js	/^    col        : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.colgroup	.\dict.js	/^    colgroup     : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.colgroup	.\logging_grinder v1.js	/^    colgroup   : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.colgroup	.\logging_grinder v2 evt.js	/^    colgroup   : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.colgroup	.\logging_grinder v2.js	/^    colgroup   : 'HTMLTableColElement',$/;"	p
+demicm.elemDic.command	.\dict.js	/^    command      : 'HTMLCommandElement',$/;"	p
+demicm.elemDic.command	.\logging_grinder v1.js	/^    command    : 'HTMLCommandElement',$/;"	p
+demicm.elemDic.command	.\logging_grinder v2 evt.js	/^    command    : 'HTMLCommandElement',$/;"	p
+demicm.elemDic.command	.\logging_grinder v2.js	/^    command    : 'HTMLCommandElement',$/;"	p
+demicm.elemDic.data	.\dict.js	/^    data         : 'HTMLDataElement',$/;"	p
+demicm.elemDic.data	.\logging_grinder v1.js	/^    data       : 'HTMLDataElement',$/;"	p
+demicm.elemDic.data	.\logging_grinder v2 evt.js	/^    data       : 'HTMLDataElement',$/;"	p
+demicm.elemDic.data	.\logging_grinder v2.js	/^    data       : 'HTMLDataElement',$/;"	p
+demicm.elemDic.datalist	.\dict.js	/^    datalist     : 'HTMLDataListElement',$/;"	p
+demicm.elemDic.datalist	.\logging_grinder v1.js	/^    datalist   : 'HTMLDataListElement',$/;"	p
+demicm.elemDic.datalist	.\logging_grinder v2 evt.js	/^    datalist   : 'HTMLDataListElement',$/;"	p
+demicm.elemDic.datalist	.\logging_grinder v2.js	/^    datalist   : 'HTMLDataListElement',$/;"	p
+demicm.elemDic.dd	.\dict.js	/^    dd           : 'HTMLElement',$/;"	p
+demicm.elemDic.dd	.\logging_grinder v1.js	/^    dd         : 'HTMLElement',$/;"	p
+demicm.elemDic.dd	.\logging_grinder v2 evt.js	/^    dd         : 'HTMLElement',$/;"	p
+demicm.elemDic.dd	.\logging_grinder v2.js	/^    dd         : 'HTMLElement',$/;"	p
+demicm.elemDic.del	.\dict.js	/^    del          : 'HTMLModElement',$/;"	p
+demicm.elemDic.del	.\logging_grinder v1.js	/^    del        : 'HTMLModElement',$/;"	p
+demicm.elemDic.del	.\logging_grinder v2 evt.js	/^    del        : 'HTMLModElement',$/;"	p
+demicm.elemDic.del	.\logging_grinder v2.js	/^    del        : 'HTMLModElement',$/;"	p
+demicm.elemDic.details	.\dict.js	/^    details      : 'HTMLDetailsElement',$/;"	p
+demicm.elemDic.details	.\logging_grinder v1.js	/^    details    : 'HTMLDetailsElement',$/;"	p
+demicm.elemDic.details	.\logging_grinder v2 evt.js	/^    details    : 'HTMLDetailsElement',$/;"	p
+demicm.elemDic.details	.\logging_grinder v2.js	/^    details    : 'HTMLDetailsElement',$/;"	p
+demicm.elemDic.dfn	.\dict.js	/^    dfn          : 'HTMLElement',$/;"	p
+demicm.elemDic.dfn	.\logging_grinder v1.js	/^    dfn        : 'HTMLElement',$/;"	p
+demicm.elemDic.dfn	.\logging_grinder v2 evt.js	/^    dfn        : 'HTMLElement',$/;"	p
+demicm.elemDic.dfn	.\logging_grinder v2.js	/^    dfn        : 'HTMLElement',$/;"	p
+demicm.elemDic.dialog	.\dict.js	/^    dialog       : 'HTMLDialogElement',$/;"	p
+demicm.elemDic.dialog	.\logging_grinder v1.js	/^    dialog     : 'HTMLDialogElement',$/;"	p
+demicm.elemDic.dialog	.\logging_grinder v2 evt.js	/^    dialog     : 'HTMLDialogElement',$/;"	p
+demicm.elemDic.dialog	.\logging_grinder v2.js	/^    dialog     : 'HTMLDialogElement',$/;"	p
+demicm.elemDic.div	.\dict.js	/^    div          : 'HTMLDivElement',$/;"	p
+demicm.elemDic.div	.\logging_grinder v1.js	/^    div        : 'HTMLDivElement',$/;"	p
+demicm.elemDic.div	.\logging_grinder v2 evt.js	/^    div        : 'HTMLDivElement',$/;"	p
+demicm.elemDic.div	.\logging_grinder v2.js	/^    div        : 'HTMLDivElement',$/;"	p
+demicm.elemDic.dl	.\dict.js	/^    dl           : 'HTMLDListElement',$/;"	p
+demicm.elemDic.dl	.\logging_grinder v1.js	/^    dl         : 'HTMLDListElement',$/;"	p
+demicm.elemDic.dl	.\logging_grinder v2 evt.js	/^    dl         : 'HTMLDListElement',$/;"	p
+demicm.elemDic.dl	.\logging_grinder v2.js	/^    dl         : 'HTMLDListElement',$/;"	p
+demicm.elemDic.dt	.\dict.js	/^    dt           : 'HTMLElement',$/;"	p
+demicm.elemDic.dt	.\logging_grinder v1.js	/^    dt         : 'HTMLElement',$/;"	p
+demicm.elemDic.dt	.\logging_grinder v2 evt.js	/^    dt         : 'HTMLElement',$/;"	p
+demicm.elemDic.dt	.\logging_grinder v2.js	/^    dt         : 'HTMLElement',$/;"	p
+demicm.elemDic.em	.\dict.js	/^    em           : 'HTMLElement',$/;"	p
+demicm.elemDic.em	.\logging_grinder v1.js	/^    em         : 'HTMLElement',$/;"	p
+demicm.elemDic.em	.\logging_grinder v2 evt.js	/^    em         : 'HTMLElement',$/;"	p
+demicm.elemDic.em	.\logging_grinder v2.js	/^    em         : 'HTMLElement',$/;"	p
+demicm.elemDic.embed	.\dict.js	/^    embed        : 'HTMLEmbedElement',$/;"	p
+demicm.elemDic.embed	.\logging_grinder v1.js	/^    embed      : 'HTMLEmbedElement',$/;"	p
+demicm.elemDic.embed	.\logging_grinder v2 evt.js	/^    embed      : 'HTMLEmbedElement',$/;"	p
+demicm.elemDic.embed	.\logging_grinder v2.js	/^    embed      : 'HTMLEmbedElement',$/;"	p
+demicm.elemDic.fieldset	.\dict.js	/^    fieldset     : 'HTMLFieldSetElement',$/;"	p
+demicm.elemDic.fieldset	.\logging_grinder v1.js	/^    fieldset   : 'HTMLFieldSetElement',$/;"	p
+demicm.elemDic.fieldset	.\logging_grinder v2 evt.js	/^    fieldset   : 'HTMLFieldSetElement',$/;"	p
+demicm.elemDic.fieldset	.\logging_grinder v2.js	/^    fieldset   : 'HTMLFieldSetElement',$/;"	p
+demicm.elemDic.figcaption	.\dict.js	/^    figcaption   : 'HTMLElement',$/;"	p
+demicm.elemDic.figcaption	.\logging_grinder v1.js	/^    figcaption : 'HTMLElement',$/;"	p
+demicm.elemDic.figcaption	.\logging_grinder v2 evt.js	/^    figcaption : 'HTMLElement',$/;"	p
+demicm.elemDic.figcaption	.\logging_grinder v2.js	/^    figcaption : 'HTMLElement',$/;"	p
+demicm.elemDic.figure	.\dict.js	/^    figure       : 'HTMLElement',$/;"	p
+demicm.elemDic.figure	.\logging_grinder v1.js	/^    figure     : 'HTMLElement',$/;"	p
+demicm.elemDic.figure	.\logging_grinder v2 evt.js	/^    figure     : 'HTMLElement',$/;"	p
+demicm.elemDic.figure	.\logging_grinder v2.js	/^    figure     : 'HTMLElement',$/;"	p
+demicm.elemDic.footer	.\dict.js	/^    footer       : 'HTMLElement',$/;"	p
+demicm.elemDic.footer	.\logging_grinder v1.js	/^    footer     : 'HTMLElement',$/;"	p
+demicm.elemDic.footer	.\logging_grinder v2 evt.js	/^    footer     : 'HTMLElement',$/;"	p
+demicm.elemDic.footer	.\logging_grinder v2.js	/^    footer     : 'HTMLElement',$/;"	p
+demicm.elemDic.form	.\dict.js	/^    form         : 'HTMLFormElement',$/;"	p
+demicm.elemDic.form	.\logging_grinder v1.js	/^    form       : 'HTMLFormElement',$/;"	p
+demicm.elemDic.form	.\logging_grinder v2 evt.js	/^    form       : 'HTMLFormElement',$/;"	p
+demicm.elemDic.form	.\logging_grinder v2.js	/^    form       : 'HTMLFormElement',$/;"	p
+demicm.elemDic.h1	.\dict.js	/^    h1           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h1	.\logging_grinder v1.js	/^    h1         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h1	.\logging_grinder v2 evt.js	/^    h1         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h1	.\logging_grinder v2.js	/^    h1         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h2	.\dict.js	/^    h2           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h2	.\logging_grinder v1.js	/^    h2         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h2	.\logging_grinder v2 evt.js	/^    h2         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h2	.\logging_grinder v2.js	/^    h2         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h3	.\dict.js	/^    h3           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h3	.\logging_grinder v1.js	/^    h3         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h3	.\logging_grinder v2 evt.js	/^    h3         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h3	.\logging_grinder v2.js	/^    h3         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h4	.\dict.js	/^    h4           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h4	.\logging_grinder v1.js	/^    h4         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h4	.\logging_grinder v2 evt.js	/^    h4         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h4	.\logging_grinder v2.js	/^    h4         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h5	.\dict.js	/^    h5           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h5	.\logging_grinder v1.js	/^    h5         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h5	.\logging_grinder v2 evt.js	/^    h5         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h5	.\logging_grinder v2.js	/^    h5         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h6	.\dict.js	/^    h6           : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h6	.\logging_grinder v1.js	/^    h6         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h6	.\logging_grinder v2 evt.js	/^    h6         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.h6	.\logging_grinder v2.js	/^    h6         : 'HTMLHeadingElement',$/;"	p
+demicm.elemDic.head	.\dict.js	/^    head         : 'HTMLHeadElement',$/;"	p
+demicm.elemDic.head	.\logging_grinder v1.js	/^    head       : 'HTMLHeadElement',$/;"	p
+demicm.elemDic.head	.\logging_grinder v2 evt.js	/^    head       : 'HTMLHeadElement',$/;"	p
+demicm.elemDic.head	.\logging_grinder v2.js	/^    head       : 'HTMLHeadElement',$/;"	p
+demicm.elemDic.header	.\dict.js	/^    header       : 'HTMLElement',$/;"	p
+demicm.elemDic.header	.\logging_grinder v1.js	/^    header     : 'HTMLElement',$/;"	p
+demicm.elemDic.header	.\logging_grinder v2 evt.js	/^    header     : 'HTMLElement',$/;"	p
+demicm.elemDic.header	.\logging_grinder v2.js	/^    header     : 'HTMLElement',$/;"	p
+demicm.elemDic.hgroup	.\dict.js	/^    hgroup       : 'HTMLElement',$/;"	p
+demicm.elemDic.hgroup	.\logging_grinder v1.js	/^    hgroup     : 'HTMLElement',$/;"	p
+demicm.elemDic.hgroup	.\logging_grinder v2 evt.js	/^    hgroup     : 'HTMLElement',$/;"	p
+demicm.elemDic.hgroup	.\logging_grinder v2.js	/^    hgroup     : 'HTMLElement',$/;"	p
+demicm.elemDic.hr	.\dict.js	/^    hr           : 'HTMLHRElement',$/;"	p
+demicm.elemDic.hr	.\logging_grinder v1.js	/^    hr         : 'HTMLHRElement',$/;"	p
+demicm.elemDic.hr	.\logging_grinder v2 evt.js	/^    hr         : 'HTMLHRElement',$/;"	p
+demicm.elemDic.hr	.\logging_grinder v2.js	/^    hr         : 'HTMLHRElement',$/;"	p
+demicm.elemDic.html	.\dict.js	/^    html         : 'HTMLHtmlElement',$/;"	p
+demicm.elemDic.html	.\logging_grinder v1.js	/^    html       : 'HTMLHtmlElement',$/;"	p
+demicm.elemDic.html	.\logging_grinder v2 evt.js	/^    html       : 'HTMLHtmlElement',$/;"	p
+demicm.elemDic.html	.\logging_grinder v2.js	/^    html       : 'HTMLHtmlElement',$/;"	p
+demicm.elemDic.i	.\dict.js	/^    i            : 'HTMLElement',$/;"	p
+demicm.elemDic.i	.\logging_grinder v1.js	/^    i          : 'HTMLElement',$/;"	p
+demicm.elemDic.i	.\logging_grinder v2 evt.js	/^    i          : 'HTMLElement',$/;"	p
+demicm.elemDic.i	.\logging_grinder v2.js	/^    i          : 'HTMLElement',$/;"	p
+demicm.elemDic.iframe	.\dict.js	/^    iframe       : 'HTMLIFrameElement',$/;"	p
+demicm.elemDic.iframe	.\logging_grinder v1.js	/^    iframe     : 'HTMLIFrameElement',$/;"	p
+demicm.elemDic.iframe	.\logging_grinder v2 evt.js	/^    iframe     : 'HTMLIFrameElement',$/;"	p
+demicm.elemDic.iframe	.\logging_grinder v2.js	/^    iframe     : 'HTMLIFrameElement',$/;"	p
+demicm.elemDic.img	.\dict.js	/^    img          : 'HTMLImageElement',$/;"	p
+demicm.elemDic.img	.\logging_grinder v1.js	/^    img        : 'HTMLImageElement',$/;"	p
+demicm.elemDic.img	.\logging_grinder v2 evt.js	/^    img        : 'HTMLImageElement',$/;"	p
+demicm.elemDic.img	.\logging_grinder v2.js	/^    img        : 'HTMLImageElement',$/;"	p
+demicm.elemDic.input	.\dict.js	/^    input        : 'HTMLInputElement',$/;"	p
+demicm.elemDic.input	.\logging_grinder v1.js	/^    input      : 'HTMLInputElement',$/;"	p
+demicm.elemDic.input	.\logging_grinder v2 evt.js	/^    input      : 'HTMLInputElement',$/;"	p
+demicm.elemDic.input	.\logging_grinder v2.js	/^    input      : 'HTMLInputElement',$/;"	p
+demicm.elemDic.ins	.\dict.js	/^    ins          : 'HTMLModElement',$/;"	p
+demicm.elemDic.ins	.\logging_grinder v1.js	/^    ins        : 'HTMLModElement',$/;"	p
+demicm.elemDic.ins	.\logging_grinder v2 evt.js	/^    ins        : 'HTMLModElement',$/;"	p
+demicm.elemDic.ins	.\logging_grinder v2.js	/^    ins        : 'HTMLModElement',$/;"	p
+demicm.elemDic.isindex	.\dict.js	/^    isindex      : 'HTMLInputElement',$/;"	p
+demicm.elemDic.isindex	.\logging_grinder v1.js	/^    isindex    : 'HTMLInputElement',$/;"	p
+demicm.elemDic.isindex	.\logging_grinder v2 evt.js	/^    isindex    : 'HTMLInputElement',$/;"	p
+demicm.elemDic.isindex	.\logging_grinder v2.js	/^    isindex    : 'HTMLInputElement',$/;"	p
+demicm.elemDic.kbd	.\dict.js	/^    kbd          : 'HTMLElement',$/;"	p
+demicm.elemDic.kbd	.\logging_grinder v1.js	/^    kbd        : 'HTMLElement',$/;"	p
+demicm.elemDic.kbd	.\logging_grinder v2 evt.js	/^    kbd        : 'HTMLElement',$/;"	p
+demicm.elemDic.kbd	.\logging_grinder v2.js	/^    kbd        : 'HTMLElement',$/;"	p
+demicm.elemDic.keygen	.\dict.js	/^    keygen       : 'HTMLKeygenElement',$/;"	p
+demicm.elemDic.keygen	.\logging_grinder v1.js	/^    keygen     : 'HTMLKeygenElement',$/;"	p
+demicm.elemDic.keygen	.\logging_grinder v2 evt.js	/^    keygen     : 'HTMLKeygenElement',$/;"	p
+demicm.elemDic.keygen	.\logging_grinder v2.js	/^    keygen     : 'HTMLKeygenElement',$/;"	p
+demicm.elemDic.label	.\dict.js	/^    label        : 'HTMLLabelElement',$/;"	p
+demicm.elemDic.label	.\logging_grinder v1.js	/^    label      : 'HTMLLabelElement',$/;"	p
+demicm.elemDic.label	.\logging_grinder v2 evt.js	/^    label      : 'HTMLLabelElement',$/;"	p
+demicm.elemDic.label	.\logging_grinder v2.js	/^    label      : 'HTMLLabelElement',$/;"	p
+demicm.elemDic.layer	.\dict.js	/^    layer        : 'HTMLElement',$/;"	p
+demicm.elemDic.layer	.\logging_grinder v1.js	/^    layer      : 'HTMLElement',$/;"	p
+demicm.elemDic.layer	.\logging_grinder v2 evt.js	/^    layer      : 'HTMLElement',$/;"	p
+demicm.elemDic.layer	.\logging_grinder v2.js	/^    layer      : 'HTMLElement',$/;"	p
+demicm.elemDic.legend	.\dict.js	/^    legend       : 'HTMLLegendElement',$/;"	p
+demicm.elemDic.legend	.\logging_grinder v1.js	/^    legend     : 'HTMLLegendElement',$/;"	p
+demicm.elemDic.legend	.\logging_grinder v2 evt.js	/^    legend     : 'HTMLLegendElement',$/;"	p
+demicm.elemDic.legend	.\logging_grinder v2.js	/^    legend     : 'HTMLLegendElement',$/;"	p
+demicm.elemDic.li	.\dict.js	/^    li           : 'HTMLLIElement',$/;"	p
+demicm.elemDic.li	.\logging_grinder v1.js	/^    li         : 'HTMLLIElement',$/;"	p
+demicm.elemDic.li	.\logging_grinder v2 evt.js	/^    li         : 'HTMLLIElement',$/;"	p
+demicm.elemDic.li	.\logging_grinder v2.js	/^    li         : 'HTMLLIElement',$/;"	p
+demicm.elemDic.link	.\dict.js	/^    link         : 'HTMLLinkElement',$/;"	p
+demicm.elemDic.link	.\logging_grinder v1.js	/^    link       : 'HTMLLinkElement',$/;"	p
+demicm.elemDic.link	.\logging_grinder v2 evt.js	/^    link       : 'HTMLLinkElement',$/;"	p
+demicm.elemDic.link	.\logging_grinder v2.js	/^    link       : 'HTMLLinkElement',$/;"	p
+demicm.elemDic.map	.\dict.js	/^    map          : 'HTMLMapElement',$/;"	p
+demicm.elemDic.map	.\logging_grinder v1.js	/^    map        : 'HTMLMapElement',$/;"	p
+demicm.elemDic.map	.\logging_grinder v2 evt.js	/^    map        : 'HTMLMapElement',$/;"	p
+demicm.elemDic.map	.\logging_grinder v2.js	/^    map        : 'HTMLMapElement',$/;"	p
+demicm.elemDic.mark	.\dict.js	/^    mark         : 'HTMLElement',$/;"	p
+demicm.elemDic.mark	.\logging_grinder v1.js	/^    mark       : 'HTMLElement',$/;"	p
+demicm.elemDic.mark	.\logging_grinder v2 evt.js	/^    mark       : 'HTMLElement',$/;"	p
+demicm.elemDic.mark	.\logging_grinder v2.js	/^    mark       : 'HTMLElement',$/;"	p
+demicm.elemDic.marquee	.\dict.js	/^    marquee      : 'HTMLMarqueeElement',$/;"	p
+demicm.elemDic.marquee	.\logging_grinder v1.js	/^    marquee    : 'HTMLMarqueeElement',$/;"	p
+demicm.elemDic.marquee	.\logging_grinder v2 evt.js	/^    marquee    : 'HTMLMarqueeElement',$/;"	p
+demicm.elemDic.marquee	.\logging_grinder v2.js	/^    marquee    : 'HTMLMarqueeElement',$/;"	p
+demicm.elemDic.menu	.\dict.js	/^    menu         : 'HTMLMenuElement',$/;"	p
+demicm.elemDic.menu	.\logging_grinder v1.js	/^    menu       : 'HTMLMenuElement',$/;"	p
+demicm.elemDic.menu	.\logging_grinder v2 evt.js	/^    menu       : 'HTMLMenuElement',$/;"	p
+demicm.elemDic.menu	.\logging_grinder v2.js	/^    menu       : 'HTMLMenuElement',$/;"	p
+demicm.elemDic.meta	.\dict.js	/^    meta         : 'HTMLMetaElement',$/;"	p
+demicm.elemDic.meta	.\logging_grinder v1.js	/^    meta       : 'HTMLMetaElement',$/;"	p
+demicm.elemDic.meta	.\logging_grinder v2 evt.js	/^    meta       : 'HTMLMetaElement',$/;"	p
+demicm.elemDic.meta	.\logging_grinder v2.js	/^    meta       : 'HTMLMetaElement',$/;"	p
+demicm.elemDic.meter	.\dict.js	/^    meter        : 'HTMLMeterElement',$/;"	p
+demicm.elemDic.meter	.\logging_grinder v1.js	/^    meter      : 'HTMLMeterElement',$/;"	p
+demicm.elemDic.meter	.\logging_grinder v2 evt.js	/^    meter      : 'HTMLMeterElement',$/;"	p
+demicm.elemDic.meter	.\logging_grinder v2.js	/^    meter      : 'HTMLMeterElement',$/;"	p
+demicm.elemDic.nav	.\dict.js	/^    nav          : 'HTMLElement',$/;"	p
+demicm.elemDic.nav	.\logging_grinder v1.js	/^    nav        : 'HTMLElement',$/;"	p
+demicm.elemDic.nav	.\logging_grinder v2 evt.js	/^    nav        : 'HTMLElement',$/;"	p
+demicm.elemDic.nav	.\logging_grinder v2.js	/^    nav        : 'HTMLElement',$/;"	p
+demicm.elemDic.nobr	.\dict.js	/^    nobr         : 'HTMLElement',$/;"	p
+demicm.elemDic.nobr	.\logging_grinder v1.js	/^    nobr       : 'HTMLElement',$/;"	p
+demicm.elemDic.nobr	.\logging_grinder v2 evt.js	/^    nobr       : 'HTMLElement',$/;"	p
+demicm.elemDic.nobr	.\logging_grinder v2.js	/^    nobr       : 'HTMLElement',$/;"	p
+demicm.elemDic.noembed	.\dict.js	/^    noembed      : 'HTMLElement',$/;"	p
+demicm.elemDic.noembed	.\logging_grinder v1.js	/^    noembed    : 'HTMLElement',$/;"	p
+demicm.elemDic.noembed	.\logging_grinder v2 evt.js	/^    noembed    : 'HTMLElement',$/;"	p
+demicm.elemDic.noembed	.\logging_grinder v2.js	/^    noembed    : 'HTMLElement',$/;"	p
+demicm.elemDic.noframes	.\dict.js	/^    noframes     : 'HTMLElement',$/;"	p
+demicm.elemDic.noframes	.\logging_grinder v1.js	/^    noframes   : 'HTMLElement',$/;"	p
+demicm.elemDic.noframes	.\logging_grinder v2 evt.js	/^    noframes   : 'HTMLElement',$/;"	p
+demicm.elemDic.noframes	.\logging_grinder v2.js	/^    noframes   : 'HTMLElement',$/;"	p
+demicm.elemDic.noscript	.\dict.js	/^    noscript     : 'HTMLElement',$/;"	p
+demicm.elemDic.noscript	.\logging_grinder v1.js	/^    noscript   : 'HTMLElement',$/;"	p
+demicm.elemDic.noscript	.\logging_grinder v2 evt.js	/^    noscript   : 'HTMLElement',$/;"	p
+demicm.elemDic.noscript	.\logging_grinder v2.js	/^    noscript   : 'HTMLElement',$/;"	p
+demicm.funcValues.getElementById	.\funcvalue.js	/^    getElementById: [$/;"	p
+demicm.name.meta	.\propvalue.js	/^    meta: ['abstract', 'author', 'classification', 'copyright', 'description', 'distribution', 'web',$/;"	p
+demicm.propValues.wrap	.\propvalue.js	/^    wrap: {type: 'string', normalValue: ['off', 'virtual', 'physical'], dirtyValue: ['physical'], readOnly: false},$/;"	p
+demicm.src.frame	.\propvalue.js	/^demicm.src = {frame: 'demicmFrame.html', video: 'demicmVideo.avi'};$/;"	p
+demicm.src.video	.\propvalue.js	/^demicm.src = {frame: 'demicmFrame.html', video: 'demicmVideo.avi'};$/;"	p
+demicm.styleValues.backgroundAttachment	.\stylevalue.js	/^    backgroundAttachment: ['scroll', 'fixed', 'inherit'],$/;"	p
+demicm.type.source	.\propvalue.js	/^    source: demicm.MIMEType, object: demicm.MIMEType, anchor: demicm.MIMEType, $/;"	p
+etree	.\grindLogCheck.py	/^    import xml.etree.ElementTree as ET$/;"	i
+etree	.\grindLogCheck.py	/^    import xml.etree.cElementTree as ET$/;"	i
+eventHandler	.\demichrome1.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichrome2.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichrome3.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichromeLog3new.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichromelog1.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichromelog2.js	/^function eventHandler() {$/;"	f
+eventHandler	.\demichromelog3.js	/^function eventHandler() {$/;"	f
+eventHandler	.\logging_grinder v1.js	/^function eventHandler() {$/;"	f
+eventHandler	.\logging_grinder v2 evt.js	/^function eventHandler() {$/;"	f
+eventHandler	.\logging_grinder v2.js	/^function eventHandler() {$/;"	f
+extendObj	.\help.js	/^function extendObj(originObj, newObj, override){$/;"	f
+extendObj	.\helplog.js	/^function extendObj(originObj, newObj, override){$/;"	f
+extendObj	.\logging_grinder v1.js	/^function extendObj(originObj, newObj, override){$/;"	f
+extendObj	.\logging_grinder v2 evt.js	/^function extendObj(originObj, newObj, override){$/;"	f
+extendObj	.\logging_grinder v2.js	/^function extendObj(originObj, newObj, override){$/;"	f
+finale	.\demichrome1.js	/^function finale() {$/;"	f
+finale	.\demichrome2.js	/^function finale() {$/;"	f
+finale	.\demichrome3.js	/^function finale() {$/;"	f
+finale	.\demichromeLog3new.js	/^function finale() {$/;"	f
+finale	.\demichromelog1.js	/^function finale() {$/;"	f
+finale	.\demichromelog2.js	/^function finale() {$/;"	f
+finale	.\demichromelog3.js	/^function finale() {$/;"	f
+finale	.\logging_grinder v1.js	/^function finale() {$/;"	f
+finale	.\logging_grinder v2 evt.js	/^function finale() {$/;"	f
+finale	.\logging_grinder v2.js	/^function finale() {$/;"	f
+funcMan	.\demichrome1.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth) {$/;"	f
+funcMan	.\demichrome2.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+funcMan	.\demichrome3.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, rIdRs, retValDepth, objType) {$/;"	f
+funcMan	.\demichromeLog3new.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, rRetIds, retValDepth, objName) {$/;"	f
+funcMan	.\demichromelog1.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+funcMan	.\demichromelog2.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+funcMan	.\demichromelog3.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, rRetIds, retValDepth, objName) {$/;"	f
+funcMan	.\logging_grinder v1.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+funcMan	.\logging_grinder v2 evt.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+funcMan	.\logging_grinder v2.js	/^function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, retValDepth, objName) {$/;"	f
+getDistPropAndFunc	.\dict.js	/^function getDistPropAndFunc() {$/;"	f
+getDistPropAndFunc	.\logging_grinder v1.js	/^function getDistPropAndFunc() {$/;"	f
+getDistPropAndFunc	.\logging_grinder v2 evt.js	/^function getDistPropAndFunc() {$/;"	f
+getDistPropAndFunc	.\logging_grinder v2.js	/^function getDistPropAndFunc() {$/;"	f
+getElemName	.\dict.js	/^function getElemName(tag)$/;"	f
+getElemName	.\logging_grinder v1.js	/^function getElemName(tag)$/;"	f
+getElemName	.\logging_grinder v2 evt.js	/^function getElemName(tag)$/;"	f
+getElemName	.\logging_grinder v2.js	/^function getElemName(tag)$/;"	f
+getPropAndFunc	.\dict.js	/^function getPropAndFunc() {$/;"	f
+getPropAndFunc	.\logging_grinder v1.js	/^function getPropAndFunc() {$/;"	f
+getPropAndFunc	.\logging_grinder v2 evt.js	/^function getPropAndFunc() {$/;"	f
+getPropAndFunc	.\logging_grinder v2.js	/^function getPropAndFunc() {$/;"	f
+getPropAndFunc.propf.func	.\dict.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.func	.\logging_grinder v1.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.func	.\logging_grinder v2 evt.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.func	.\logging_grinder v2.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.prop	.\dict.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.prop	.\logging_grinder v1.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.prop	.\logging_grinder v2 evt.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.prop	.\logging_grinder v2.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.propType	.\dict.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.propType	.\logging_grinder v1.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.propType	.\logging_grinder v2 evt.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getPropAndFunc.propf.propType	.\logging_grinder v2.js	/^    var propf = {prop: '', propType: '', func: ''};$/;"	p
+getTagName	.\help.js	/^function getTagName(elem) {$/;"	f
+getTagName	.\helplog.js	/^function getTagName(elem) {$/;"	f
+getTagName	.\logging_grinder v1.js	/^function getTagName(elem) {$/;"	f
+getTagName	.\logging_grinder v2 evt.js	/^function getTagName(elem) {$/;"	f
+getTagName	.\logging_grinder v2.js	/^function getTagName(elem) {$/;"	f
+getTags	.\dict.js	/^function getTags() {$/;"	f
+getTags	.\logging_grinder v1.js	/^function getTags() {$/;"	f
+getTags	.\logging_grinder v2 evt.js	/^function getTags() {$/;"	f
+getTags	.\logging_grinder v2.js	/^function getTags() {$/;"	f
+id	.\demichrome1.js	/^var id = [];$/;"	v
+id	.\demichrome2.js	/^var id = [];$/;"	v
+id	.\demichrome3.js	/^var id = [];$/;"	v
+id	.\demichromeLog3new.js	/^var id = [];$/;"	v
+id	.\demichromelog1.js	/^var id = [];$/;"	v
+id	.\demichromelog2.js	/^var id = [];$/;"	v
+id	.\demichromelog3.js	/^var id = [];$/;"	v
+id	.\helpnew.js	/^id[setEvtId][rEvt] = new Function('console.log("\/\/id_' + setEvtId + '[\\'' + rEvt + '\\'] = function()");console.log("\/-{");eventHandler();');$/;"	f
+id	.\helpnew2.js	/^id[setEvtId][rEvt] = new Function('logger.log("\/\/id_' + setEvtId + '[\\'' + rEvt + '\\'] = function()", "grind", 1);logger.log("\/-{", "grind", 1);eventHandler();');$/;"	f
+id	.\logging_grinder v1.js	/^var id = [];$/;"	v
+id	.\logging_grinder v2 evt.js	/^var id = [];$/;"	v
+id	.\logging_grinder v2.js	/^var id = [];$/;"	v
+id	.\sourceEditTest.js	/^id[setEvtId][rEvt] = new Function('logger.log("\/\/id_' + setEvtId + '[\\'' + rEvt + '\\'] = function()", "grind", 1);logger.log("\/-{", "grind", 1);eventHandler();');$/;"	f
+idR	.\demichrome3.js	/^var idR = [];$/;"	v
+idR	.\demichromeLog3new.js	/^var idR = [];$/;"	v
+idR	.\demichromelog3.js	/^var idR = [];$/;"	v
+idS	.\demichrome3.js	/^var idS = [];$/;"	v
+idS	.\demichromeLog3new.js	/^var idS = [];$/;"	v
+idS	.\demichromelog3.js	/^var idS = [];$/;"	v
+inArr	.\help.js	/^function inArr(arr, searchItem) {$/;"	f
+inArr	.\helplog.js	/^function inArr(arr, searchItem) {$/;"	f
+inArr	.\logging_grinder v1.js	/^function inArr(arr, searchItem) {$/;"	f
+inArr	.\logging_grinder v2 evt.js	/^function inArr(arr, searchItem) {$/;"	f
+inArr	.\logging_grinder v2.js	/^function inArr(arr, searchItem) {$/;"	f
+isArr	.\help.js	/^function isArr(obj) {$/;"	f
+isArr	.\helplog.js	/^function isArr(obj) {$/;"	f
+isArr	.\logging_grinder v1.js	/^function isArr(obj) {$/;"	f
+isArr	.\logging_grinder v2 evt.js	/^function isArr(obj) {$/;"	f
+isArr	.\logging_grinder v2.js	/^function isArr(obj) {$/;"	f
+isPosInt	.\help.js	/^function isPosInt(str)$/;"	f
+isPosInt	.\helplog.js	/^function isPosInt(str)$/;"	f
+isPosInt	.\logging_grinder v1.js	/^function isPosInt(str)$/;"	f
+isPosInt	.\logging_grinder v2 evt.js	/^function isPosInt(str)$/;"	f
+isPosInt	.\logging_grinder v2.js	/^function isPosInt(str)$/;"	f
+layout	.\demichrome1.js	/^function layout() {$/;"	f
+layout	.\demichrome2.js	/^function layout() {$/;"	f
+layout	.\demichrome3.js	/^function layout() {$/;"	f
+layout	.\demichromeLog3new.js	/^function layout() {$/;"	f
+layout	.\demichromelog1.js	/^function layout() {$/;"	f
+layout	.\demichromelog2.js	/^function layout() {$/;"	f
+layout	.\demichromelog3.js	/^function layout() {$/;"	f
+layout	.\logging_grinder v1.js	/^function layout() {$/;"	f
+layout	.\logging_grinder v2 evt.js	/^function layout() {$/;"	f
+layout	.\logging_grinder v2.js	/^function layout() {$/;"	f
+logRevise	.\help.js	/^function logRevise(idIdx, idRIdx, type, value, objType) {$/;"	f
+logRevise	.\helplog.js	/^function logRevise(idIdx, objIdIdx, type, value, objType) {$/;"	f
+logRevise	.\logging_grinder v1.js	/^function logRevise(idIdx, type, value) {$/;"	f
+logRevise	.\logging_grinder v2 evt.js	/^function logRevise(idIdx, type, value) {$/;"	f
+logRevise	.\logging_grinder v2.js	/^function logRevise(idIdx, type, value) {$/;"	f
+log_xml	.\logging.js	/^		log_xml = function( xml )$/;"	f
+log_xml	.\logging_grinder v1.js	/^		log_xml = function( xml )$/;"	f
+log_xml	.\logging_grinder v2 evt.js	/^		log_xml = function( xml )$/;"	f
+log_xml	.\logging_grinder v2.js	/^		log_xml = function( xml )$/;"	f
+log_xml_idx	.\logging.js	/^		log_xml_idx = function( xml, _idx )$/;"	f
+log_xml_idx	.\logging_grinder v1.js	/^		log_xml_idx = function( xml, _idx )$/;"	f
+log_xml_idx	.\logging_grinder v2 evt.js	/^		log_xml_idx = function( xml, _idx )$/;"	f
+log_xml_idx	.\logging_grinder v2.js	/^		log_xml_idx = function( xml, _idx )$/;"	f
+main	.\fuzz materials\demicmAchive.java	/^	public static void main(String[] args)$/;"	m	class:test	access:public	signature:(String[] args)
+main	.\sourceEdit.py	/^def main():$/;"	f	access:public
+moveIterator	.\demichrome2.js	/^function moveIterator() {$/;"	f
+moveIterator	.\demichrome3.js	/^function moveIterator() {$/;"	f
+moveIterator	.\demichromeLog3new.js	/^function moveIterator() {$/;"	f
+moveIterator	.\demichromelog2.js	/^function moveIterator() {$/;"	f
+moveIterator	.\demichromelog3.js	/^function moveIterator() {$/;"	f
+moveIterator	.\logging_grinder v2 evt.js	/^function moveIterator() {$/;"	f
+moveIterator	.\logging_grinder v2.js	/^function moveIterator() {$/;"	f
+moveTreeWalker	.\demichrome2.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\demichrome3.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\demichromeLog3new.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\demichromelog2.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\demichromelog3.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\logging_grinder v2 evt.js	/^function moveTreeWalker() {$/;"	f
+moveTreeWalker	.\logging_grinder v2.js	/^function moveTreeWalker() {$/;"	f
+nodeIteration	.\demichrome2.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\demichrome3.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\demichromeLog3new.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\demichromelog2.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\demichromelog3.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\logging_grinder v2 evt.js	/^function nodeIteration() {$/;"	f
+nodeIteration	.\logging_grinder v2.js	/^function nodeIteration() {$/;"	f
+normalOperate	.\demichrome1.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichrome2.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichrome3.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichromeLog3new.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichromelog1.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichromelog2.js	/^function normalOperate() {$/;"	f
+normalOperate	.\demichromelog3.js	/^function normalOperate() {$/;"	f
+normalOperate	.\logging_grinder v1.js	/^function normalOperate() {$/;"	f
+normalOperate	.\logging_grinder v2 evt.js	/^function normalOperate() {$/;"	f
+normalOperate	.\logging_grinder v2.js	/^function normalOperate() {$/;"	f
+objMan	.\demichrome3.js	/^function objMan(type) {$/;"	f
+objMan	.\demichromeLog3new.js	/^function objMan(type) {$/;"	f
+objMan	.\demichromelog3.js	/^function objMan(type) {$/;"	f
+operate	.\demichrome1.js	/^function operate(count) {$/;"	f
+operate	.\demichrome2.js	/^function operate(count) {$/;"	f
+operate	.\demichrome3.js	/^function operate(count) {$/;"	f
+operate	.\demichromeLog3new.js	/^function operate(count) {$/;"	f
+operate	.\demichromelog1.js	/^function operate(count) {$/;"	f
+operate	.\demichromelog2.js	/^function operate(count) {$/;"	f
+operate	.\demichromelog3.js	/^function operate(count) {$/;"	f
+operate	.\logging_grinder v1.js	/^function operate(count) {$/;"	f
+operate	.\logging_grinder v2 evt.js	/^function operate(count) {$/;"	f
+operate	.\logging_grinder v2.js	/^function operate(count) {$/;"	f
+os	.\sourceEdit.py	/^import os$/;"	i
+percent	.\help.js	/^function percent(num) {$/;"	f
+percent	.\helplog.js	/^function percent(num) {$/;"	f
+percent	.\logging_grinder v1.js	/^function percent(num) {$/;"	f
+percent	.\logging_grinder v2 evt.js	/^function percent(num) {$/;"	f
+percent	.\logging_grinder v2.js	/^function percent(num) {$/;"	f
+prelude	.\demichrome1.js	/^function prelude() {$/;"	f
+prelude	.\demichrome2.js	/^function prelude() {$/;"	f
+prelude	.\demichrome3.js	/^function prelude() {$/;"	f
+prelude	.\demichromeLog3new.js	/^function prelude() {$/;"	f
+prelude	.\demichromelog1.js	/^function prelude() {$/;"	f
+prelude	.\demichromelog2.js	/^function prelude() {$/;"	f
+prelude	.\demichromelog3.js	/^function prelude() {$/;"	f
+prelude	.\logging_grinder v1.js	/^function prelude() {$/;"	f
+prelude	.\logging_grinder v2 evt.js	/^function prelude() {$/;"	f
+prelude	.\logging_grinder v2.js	/^function prelude() {$/;"	f
+printArr	.\testcase.js	/^function printArr(arr) {$/;"	f
+propMan	.\demichrome1.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\demichrome2.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\demichrome3.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, rIdRs) {$/;"	f
+propMan	.\demichromeLog3new.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, rRetIds) {$/;"	f
+propMan	.\demichromelog1.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\demichromelog2.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\demichromelog3.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, rRetIds) {$/;"	f
+propMan	.\logging_grinder v1.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\logging_grinder v2 evt.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propMan	.\logging_grinder v2.js	/^function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, retValDepth, objName) {$/;"	f
+propfMan	.\demichrome1.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\demichrome2.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\demichrome3.js	/^function propfMan(propStack, recDepth, retValDepth, type, objType) {$/;"	f
+propfMan	.\demichromeLog3new.js	/^function propfMan(propStack, recDepth, retValDepth, type, objName) {$/;"	f
+propfMan	.\demichromelog1.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\demichromelog2.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\demichromelog3.js	/^function propfMan(propStack, recDepth, retValDepth, type, objName) {$/;"	f
+propfMan	.\logging_grinder v1.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\logging_grinder v2 evt.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+propfMan	.\logging_grinder v2.js	/^function propfMan(propStack, retValDepth, type, objName) {$/;"	f
+rand	.\help.js	/^function rand(n) {$/;"	f
+rand	.\helplog.js	/^function rand(n) {$/;"	f
+rand	.\logging_grinder v1.js	/^function rand(n) {$/;"	f
+rand	.\logging_grinder v2 evt.js	/^function rand(n) {$/;"	f
+rand	.\logging_grinder v2.js	/^function rand(n) {$/;"	f
+randAscii	.\help.js	/^function randAscii(len) {$/;"	f
+randAscii	.\helplog.js	/^function randAscii(len) {$/;"	f
+randAscii	.\logging_grinder v1.js	/^function randAscii(len) {$/;"	f
+randAscii	.\logging_grinder v2 evt.js	/^function randAscii(len) {$/;"	f
+randAscii	.\logging_grinder v2.js	/^function randAscii(len) {$/;"	f
+randBool	.\help.js	/^function randBool() {$/;"	f
+randBool	.\helplog.js	/^function randBool() {$/;"	f
+randBool	.\logging_grinder v1.js	/^function randBool() {$/;"	f
+randBool	.\logging_grinder v2 evt.js	/^function randBool() {$/;"	f
+randBool	.\logging_grinder v2.js	/^function randBool() {$/;"	f
+randCSSText	.\help.js	/^function randCSSText() {$/;"	f
+randCSSText	.\helplog.js	/^function randCSSText() {$/;"	f
+randCSSText	.\logging_grinder v1.js	/^function randCSSText() {$/;"	f
+randCSSText	.\logging_grinder v2 evt.js	/^function randCSSText() {$/;"	f
+randCSSText	.\logging_grinder v2.js	/^function randCSSText() {$/;"	f
+randEvt	.\help.js	/^function randEvt(type) {$/;"	f
+randEvt	.\helplog.js	/^function randEvt(type) {$/;"	f
+randEvt	.\logging_grinder v2 evt.js	/^function randEvt(type) {$/;"	f
+randEvt	.\logging_grinder v2.js	/^function randEvt(type) {$/;"	f
+randHTMLCode	.\help.js	/^function randHTMLCode(len, count) {$/;"	f
+randHTMLCode	.\helplog.js	/^function randHTMLCode(len, count) {$/;"	f
+randHTMLCode	.\logging_grinder v1.js	/^function randHTMLCode(len, count) {$/;"	f
+randHTMLCode	.\logging_grinder v2 evt.js	/^function randHTMLCode(len, count) {$/;"	f
+randHTMLCode	.\logging_grinder v2.js	/^function randHTMLCode(len, count) {$/;"	f
+randHTMLEnt	.\help.js	/^function randHTMLEnt(len) {$/;"	f
+randHTMLEnt	.\helplog.js	/^function randHTMLEnt(len) {$/;"	f
+randHTMLEnt	.\logging_grinder v1.js	/^function randHTMLEnt(len) {$/;"	f
+randHTMLEnt	.\logging_grinder v2 evt.js	/^function randHTMLEnt(len) {$/;"	f
+randHTMLEnt	.\logging_grinder v2.js	/^function randHTMLEnt(len) {$/;"	f
+randHex	.\help.js	/^function randHex(len){$/;"	f
+randHex	.\helplog.js	/^function randHex(len){$/;"	f
+randHex	.\logging_grinder v1.js	/^function randHex(len){$/;"	f
+randHex	.\logging_grinder v2 evt.js	/^function randHex(len){$/;"	f
+randHex	.\logging_grinder v2.js	/^function randHex(len){$/;"	f
+randId	.\help.js	/^function randId() {$/;"	f
+randId	.\helplog.js	/^function randId() {$/;"	f
+randId	.\logging_grinder v1.js	/^function randId() {$/;"	f
+randId	.\logging_grinder v2 evt.js	/^function randId() {$/;"	f
+randId	.\logging_grinder v2.js	/^function randId() {$/;"	f
+randIdRs	.\help.js	/^function randIdRs(rIdRs, len) {$/;"	f
+randIds	.\help.js	/^function randIds(rIds, len) {$/;"	f
+randIds	.\helplog.js	/^function randIds(rIds, len) {$/;"	f
+randIds	.\logging_grinder v1.js	/^function randIds(rIds, len) {$/;"	f
+randIds	.\logging_grinder v2 evt.js	/^function randIds(rIds, len) {$/;"	f
+randIds	.\logging_grinder v2.js	/^function randIds(rIds, len) {$/;"	f
+randItem	.\help.js	/^function randItem(arr)$/;"	f
+randItem	.\helplog.js	/^function randItem(arr)$/;"	f
+randItem	.\logging_grinder v1.js	/^function randItem(arr)$/;"	f
+randItem	.\logging_grinder v2 evt.js	/^function randItem(arr)$/;"	f
+randItem	.\logging_grinder v2.js	/^function randItem(arr)$/;"	f
+randObjId	.\help.js	/^function randObjId(type) {$/;"	f
+randObjId	.\helplog.js	/^function randObjId(objId) {$/;"	f
+randObjIds	.\helplog.js	/^function randObjIds(objId, rObjIds, len) {$/;"	f
+randPropf	.\help.js	/^function randPropf(tag, type) {$/;"	f
+randPropf	.\helplog.js	/^function randPropf(tag, type) {$/;"	f
+randPropf	.\logging_grinder v1.js	/^function randPropf(tag, type) {$/;"	f
+randPropf	.\logging_grinder v2 evt.js	/^function randPropf(tag, type) {$/;"	f
+randPropf	.\logging_grinder v2.js	/^function randPropf(tag, type) {$/;"	f
+randPropfDyn	.\help.js	/^function randPropfDyn(obj, type) {$/;"	f
+randPropfDyn	.\helplog.js	/^function randPropfDyn(obj, type) {$/;"	f
+randPropfDyn	.\logging_grinder v1.js	/^function randPropfDyn(obj, type) {$/;"	f
+randPropfDyn	.\logging_grinder v2 evt.js	/^function randPropfDyn(obj, type) {$/;"	f
+randPropfDyn	.\logging_grinder v2.js	/^function randPropfDyn(obj, type) {$/;"	f
+randPropfValue	.\help.js	/^function randPropfValue(idIdx, idRIdx, type, randTable) {$/;"	f
+randPropfValue	.\helplog.js	/^function randPropfValue(idIdx, objIdIdx, type, randTable) {$/;"	f
+randPropfValue	.\logging_grinder v1.js	/^function randPropfValue(idIdx, type, randTable) {$/;"	f
+randPropfValue	.\logging_grinder v2 evt.js	/^function randPropfValue(idIdx, type, randTable) {$/;"	f
+randPropfValue	.\logging_grinder v2.js	/^function randPropfValue(idIdx, type, randTable) {$/;"	f
+randPropfValue.baseTable.boolean	.\help.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.boolean	.\helplog.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.boolean	.\logging_grinder v1.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.boolean	.\logging_grinder v2 evt.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.boolean	.\logging_grinder v2.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.number	.\help.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.number	.\helplog.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.number	.\logging_grinder v1.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.number	.\logging_grinder v2 evt.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.number	.\logging_grinder v2.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.object	.\help.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.object	.\helplog.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.object	.\logging_grinder v1.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.object	.\logging_grinder v2 evt.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.object	.\logging_grinder v2.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.objectR	.\help.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.objectR	.\helplog.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.string	.\help.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.string	.\helplog.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj, 'objectR': rObjR}; $/;"	p
+randPropfValue.baseTable.string	.\logging_grinder v1.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.string	.\logging_grinder v2 evt.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randPropfValue.baseTable.string	.\logging_grinder v2.js	/^    var baseTable = {'boolean': rBool, 'number': rsNum, 'string': rStr, 'object': rObj}; $/;"	p
+randStr	.\help.js	/^function randStr(len) {$/;"	f
+randStr	.\helplog.js	/^function randStr(len) {$/;"	f
+randStr	.\logging_grinder v1.js	/^function randStr(len) {$/;"	f
+randStr	.\logging_grinder v2 evt.js	/^function randStr(len) {$/;"	f
+randStr	.\logging_grinder v2.js	/^function randStr(len) {$/;"	f
+randStyle	.\help.js	/^function randStyle() {$/;"	f
+randStyle	.\helplog.js	/^function randStyle() {$/;"	f
+randStyle	.\logging_grinder v1.js	/^function randStyle() {$/;"	f
+randStyle	.\logging_grinder v2 evt.js	/^function randStyle() {$/;"	f
+randStyle	.\logging_grinder v2.js	/^function randStyle() {$/;"	f
+randStyleValue	.\help.js	/^function randStyleValue(style) {$/;"	f
+randStyleValue	.\helplog.js	/^function randStyleValue(style) {$/;"	f
+randStyleValue	.\logging_grinder v1.js	/^function randStyleValue(style) {$/;"	f
+randStyleValue	.\logging_grinder v2 evt.js	/^function randStyleValue(style) {$/;"	f
+randStyleValue	.\logging_grinder v2.js	/^function randStyleValue(style) {$/;"	f
+randUnicode	.\help.js	/^function randUnicode(len) {$/;"	f
+randUnicode	.\helplog.js	/^function randUnicode(len) {$/;"	f
+randUnicode	.\logging_grinder v1.js	/^function randUnicode(len) {$/;"	f
+randUnicode	.\logging_grinder v2 evt.js	/^function randUnicode(len) {$/;"	f
+randUnicode	.\logging_grinder v2.js	/^function randUnicode(len) {$/;"	f
+rangeOperate	.\demichrome2.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\demichrome3.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\demichromeLog3new.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\demichromelog2.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\demichromelog3.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\logging_grinder v2 evt.js	/^function rangeOperate() {$/;"	f
+rangeOperate	.\logging_grinder v2.js	/^function rangeOperate() {$/;"	f
+re	.\sourceEdit.py	/^import re$/;"	i
+relayout	.\demichrome1.js	/^function relayout() {$/;"	f
+relayout	.\demichrome2.js	/^function relayout() {$/;"	f
+relayout	.\demichrome3.js	/^function relayout() {$/;"	f
+relayout	.\demichromeLog3new.js	/^function relayout() {$/;"	f
+relayout	.\demichromelog1.js	/^function relayout() {$/;"	f
+relayout	.\demichromelog2.js	/^function relayout() {$/;"	f
+relayout	.\demichromelog3.js	/^function relayout() {$/;"	f
+relayout	.\logging_grinder v1.js	/^function relayout() {$/;"	f
+relayout	.\logging_grinder v2 evt.js	/^function relayout() {$/;"	f
+relayout	.\logging_grinder v2.js	/^function relayout() {$/;"	f
+removeArrValue	.\help.js	/^function removeArrValue(arr, value) {$/;"	f
+removeArrValue	.\helplog.js	/^function removeArrValue(arr, value) {$/;"	f
+removeArrValue	.\logging_grinder v1.js	/^function removeArrValue(arr, value) {$/;"	f
+removeArrValue	.\logging_grinder v2 evt.js	/^function removeArrValue(arr, value) {$/;"	f
+removeArrValue	.\logging_grinder v2.js	/^function removeArrValue(arr, value) {$/;"	f
+removeCache	.\help.js	/^function removeCache(cacheArr) {$/;"	f
+removeCache	.\helplog.js	/^function removeCache(cacheArr) {$/;"	f
+removeCache	.\logging_grinder v1.js	/^function removeCache(cacheArr) {$/;"	f
+removeCache	.\logging_grinder v2 evt.js	/^function removeCache(cacheArr) {$/;"	f
+removeCache	.\logging_grinder v2.js	/^function removeCache(cacheArr) {$/;"	f
+removeChildren	.\help.js	/^function removeChildren(elem, type, cacheArr) {$/;"	f
+removeChildren	.\helplog.js	/^function removeChildren(elem, type, cacheArr) {$/;"	f
+removeChildren	.\logging_grinder v1.js	/^function removeChildren(elem, type, cacheArr) {$/;"	f
+removeChildren	.\logging_grinder v2 evt.js	/^function removeChildren(elem, type, cacheArr) {$/;"	f
+removeChildren	.\logging_grinder v2.js	/^function removeChildren(elem, type, cacheArr) {$/;"	f
+removeThis	.\help.js	/^function removeThis(elem, type, cacheArr) {$/;"	f
+removeThis	.\helplog.js	/^function removeThis(elem, type, cacheArr) {$/;"	f
+removeThis	.\logging_grinder v1.js	/^function removeThis(elem, type, cacheArr) {$/;"	f
+removeThis	.\logging_grinder v2 evt.js	/^function removeThis(elem, type, cacheArr) {$/;"	f
+removeThis	.\logging_grinder v2.js	/^function removeThis(elem, type, cacheArr) {$/;"	f
+repeatArr	.\help.js	/^function repeatArr(orignArr, splitStr, count) {$/;"	f
+repeatArr	.\helplog.js	/^function repeatArr(orignArr, splitStr, count) {$/;"	f
+repeatArr	.\logging_grinder v1.js	/^function repeatArr(orignArr, splitStr, count) {$/;"	f
+repeatArr	.\logging_grinder v2 evt.js	/^function repeatArr(orignArr, splitStr, count) {$/;"	f
+repeatArr	.\logging_grinder v2.js	/^function repeatArr(orignArr, splitStr, count) {$/;"	f
+return	.\help.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	c
+return	.\helplog.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	c
+return	.\logging_grinder v1.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	c
+return	.\logging_grinder v2 evt.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	c
+return	.\logging_grinder v2.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	c
+return.toString	.\help.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	m
+return.toString	.\helplog.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	m
+return.toString	.\logging_grinder v1.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	m
+return.toString	.\logging_grinder v2 evt.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	m
+return.toString	.\logging_grinder v2.js	/^    return Object.prototype.toString.call(obj) === '[object Array]';$/;"	m
+reuseElem	.\demichrome1.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichrome2.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichrome3.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichromeLog3new.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichromelog1.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichromelog2.js	/^function reuseElem() {$/;"	f
+reuseElem	.\demichromelog3.js	/^function reuseElem() {$/;"	f
+reuseElem	.\logging_grinder v1.js	/^function reuseElem() {$/;"	f
+reuseElem	.\logging_grinder v2 evt.js	/^function reuseElem() {$/;"	f
+reuseElem	.\logging_grinder v2.js	/^function reuseElem() {$/;"	f
+reuseRange	.\demichrome2.js	/^function reuseRange() {$/;"	f
+reuseRange	.\demichrome3.js	/^function reuseRange() {$/;"	f
+reuseRange	.\demichromeLog3new.js	/^function reuseRange() {$/;"	f
+reuseRange	.\demichromelog2.js	/^function reuseRange() {$/;"	f
+reuseRange	.\demichromelog3.js	/^function reuseRange() {$/;"	f
+reuseRange	.\logging_grinder v2 evt.js	/^function reuseRange() {$/;"	f
+reuseRange	.\logging_grinder v2.js	/^function reuseRange() {$/;"	f
+reuseRetElem	.\demichrome3.js	/^function reuseRetElem() {$/;"	f
+reuseRetElem	.\demichromeLog3new.js	/^function reuseRetElem() {$/;"	f
+reuseRetElem	.\demichromelog3.js	/^function reuseRetElem() {$/;"	f
+setElemRange	.\demichrome2.js	/^function setElemRange() {$/;"	f
+setElemRange	.\demichrome3.js	/^function setElemRange() {$/;"	f
+setElemRange	.\demichromeLog3new.js	/^function setElemRange() {$/;"	f
+setElemRange	.\demichromelog2.js	/^function setElemRange() {$/;"	f
+setElemRange	.\demichromelog3.js	/^function setElemRange() {$/;"	f
+setElemRange	.\logging_grinder v2 evt.js	/^function setElemRange() {$/;"	f
+setElemRange	.\logging_grinder v2.js	/^function setElemRange() {$/;"	f
+setEnv	.\demichrome1.js	/^function setEnv() {$/;"	f
+setEnv	.\demichrome2.js	/^function setEnv() {$/;"	f
+setEnv	.\demichrome3.js	/^function setEnv() {$/;"	f
+setEnv	.\demichromeLog3new.js	/^function setEnv() {$/;"	f
+setEnv	.\demichromelog1.js	/^function setEnv() {$/;"	f
+setEnv	.\demichromelog2.js	/^function setEnv() {$/;"	f
+setEnv	.\demichromelog3.js	/^function setEnv() {$/;"	f
+setEnv	.\logging_grinder v1.js	/^function setEnv() {$/;"	f
+setEnv	.\logging_grinder v2 evt.js	/^function setEnv() {$/;"	f
+setEnv	.\logging_grinder v2.js	/^function setEnv() {$/;"	f
+setEvtHandler	.\demichrome1.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichrome2.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichrome3.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichromeLog3new.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichromelog1.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichromelog2.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\demichromelog3.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\logging_grinder v1.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\logging_grinder v2 evt.js	/^function setEvtHandler() {$/;"	f
+setEvtHandler	.\logging_grinder v2.js	/^function setEvtHandler() {$/;"	f
+setSelection	.\demichrome2.js	/^function setSelection() {$/;"	f
+setSelection	.\demichrome3.js	/^function setSelection() {$/;"	f
+setSelection	.\demichromeLog3new.js	/^function setSelection() {$/;"	f
+setSelection	.\demichromelog2.js	/^function setSelection() {$/;"	f
+setSelection	.\demichromelog3.js	/^function setSelection() {$/;"	f
+setSelection	.\logging_grinder v2 evt.js	/^function setSelection() {$/;"	f
+setSelection	.\logging_grinder v2.js	/^function setSelection() {$/;"	f
+specialOperate	.\demichrome1.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichrome2.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichrome3.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichromeLog3new.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichromelog1.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichromelog2.js	/^function specialOperate() {$/;"	f
+specialOperate	.\demichromelog3.js	/^function specialOperate() {$/;"	f
+specialOperate	.\logging_grinder v1.js	/^function specialOperate() {$/;"	f
+specialOperate	.\logging_grinder v2 evt.js	/^function specialOperate() {$/;"	f
+specialOperate	.\logging_grinder v2.js	/^function specialOperate() {$/;"	f
+srand	.\help.js	/^function srand(n) {$/;"	f
+srand	.\helplog.js	/^function srand(n) {$/;"	f
+srand	.\logging_grinder v1.js	/^function srand(n) {$/;"	f
+srand	.\logging_grinder v2 evt.js	/^function srand(n) {$/;"	f
+srand	.\logging_grinder v2.js	/^function srand(n) {$/;"	f
+styleMan	.\demichrome1.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichrome2.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichrome3.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichromeLog3new.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichromelog1.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichromelog2.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\demichromelog3.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\logging_grinder v1.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\logging_grinder v2 evt.js	/^function styleMan(rId) {$/;"	f
+styleMan	.\logging_grinder v2.js	/^function styleMan(rId) {$/;"	f
+sys	.\sourceEdit.py	/^import sys$/;"	i
+test	.\fuzz materials\demicmAchive.java	/^public class test {$/;"	c
+test.main	.\fuzz materials\demicmAchive.java	/^	public static void main(String[] args)$/;"	m	class:test	access:public	signature:(String[] args)
+testArr	.\testcase.js	/^function testArr() {$/;"	f
+testCase	.\testcase.js	/^function testCase() {$/;"	f
+testId	.\testcase.js	/^function testId() {$/;"	f
+testRand	.\testcase.js	/^function testRand() {$/;"	f
+this.debugbreak	.\logging.js	/^		this.debugbreak = function()$/;"	m
+this.debugbreak	.\logging_grinder v1.js	/^		this.debugbreak = function()$/;"	m
+this.debugbreak	.\logging_grinder v2 evt.js	/^		this.debugbreak = function()$/;"	m
+this.debugbreak	.\logging_grinder v2.js	/^		this.debugbreak = function()$/;"	m
+this.finished	.\logging.js	/^		this.finished = function()$/;"	m
+this.finished	.\logging_grinder v1.js	/^		this.finished = function()$/;"	m
+this.finished	.\logging_grinder v2 evt.js	/^		this.finished = function()$/;"	m
+this.finished	.\logging_grinder v2.js	/^		this.finished = function()$/;"	m
+this.starting	.\logging.js	/^		this.starting = function()$/;"	m
+this.starting	.\logging_grinder v1.js	/^		this.starting = function()$/;"	m
+this.starting	.\logging_grinder v2 evt.js	/^		this.starting = function()$/;"	m
+this.starting	.\logging_grinder v2.js	/^		this.starting = function()$/;"	m
+tickle	.\logging.js	/^function tickle( obj )$/;"	f
+tickle	.\logging_grinder v1.js	/^function tickle( obj )$/;"	f
+tickle	.\logging_grinder v2 evt.js	/^function tickle( obj )$/;"	f
+tickle	.\logging_grinder v2.js	/^function tickle( obj )$/;"	f
+toCSSStyle	.\help.js	/^function toCSSStyle(style) {$/;"	f
+toCSSStyle	.\helplog.js	/^function toCSSStyle(style) {$/;"	f
+toCSSStyle	.\logging_grinder v1.js	/^function toCSSStyle(style) {$/;"	f
+toCSSStyle	.\logging_grinder v2 evt.js	/^function toCSSStyle(style) {$/;"	f
+toCSSStyle	.\logging_grinder v2.js	/^function toCSSStyle(style) {$/;"	f
+tree	.\grindLogCheck.py	/^tree = ET.ElementTree(file='C:\\\\Users\\\\nsf\\\\Desktop\\\\1.log')$/;"	v
+treeIteration	.\demichrome2.js	/^function treeIteration() {$/;"	f
+treeIteration	.\demichrome3.js	/^function treeIteration() {$/;"	f
+treeIteration	.\demichromeLog3new.js	/^function treeIteration() {$/;"	f
+treeIteration	.\demichromelog2.js	/^function treeIteration() {$/;"	f
+treeIteration	.\demichromelog3.js	/^function treeIteration() {$/;"	f
+treeIteration	.\logging_grinder v2 evt.js	/^function treeIteration() {$/;"	f
+treeIteration	.\logging_grinder v2.js	/^function treeIteration() {$/;"	f
+useCacheVal	.\demichrome1.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\demichrome2.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\demichromelog1.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\demichromelog2.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\logging_grinder v1.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\logging_grinder v2 evt.js	/^function useCacheVal() {$/;"	f
+useCacheVal	.\logging_grinder v2.js	/^function useCacheVal() {$/;"	f
+useRangeCacheVal	.\demichrome2.js	/^function useRangeCacheVal() {$/;"	f
+useRangeCacheVal	.\demichromelog2.js	/^function useRangeCacheVal() {$/;"	f
+useRangeCacheVal	.\logging_grinder v2 evt.js	/^function useRangeCacheVal() {$/;"	f
+useRangeCacheVal	.\logging_grinder v2.js	/^function useRangeCacheVal() {$/;"	f
+var.specTable.HTMLCode	.\help.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.HTMLCode	.\helplog.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.HTMLCode	.\logging_grinder v1.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.HTMLCode	.\logging_grinder v2 evt.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.HTMLCode	.\logging_grinder v2.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.sWhere	.\help.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.sWhere	.\helplog.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.sWhere	.\logging_grinder v1.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.sWhere	.\logging_grinder v2 evt.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.sWhere	.\logging_grinder v2.js	/^        var specTable = {'sWhere': rDOMPos, 'HTMLCode': rHTMLCode};$/;"	p
+var.specTable.stringHashId	.\help.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringHashId	.\helplog.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringHashId	.\logging_grinder v1.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringHashId	.\logging_grinder v2 evt.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringHashId	.\logging_grinder v2.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringId	.\help.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringId	.\helplog.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringId	.\logging_grinder v1.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringId	.\logging_grinder v2 evt.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+var.specTable.stringId	.\logging_grinder v2.js	/^        var specTable = {'stringId': rStrId, 'stringHashId': '#'+rStrId, 'stringQueryId': '?id='+rStrId,$/;"	p
+window.onload	.\demichrome1.js	/^window.onload = function() {$/;"	f
+xml	.\grindLogCheck.py	/^    import xml.etree.ElementTree as ET$/;"	i
+xml	.\grindLogCheck.py	/^    import xml.etree.cElementTree as ET$/;"	i

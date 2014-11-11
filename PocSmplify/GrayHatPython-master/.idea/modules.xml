@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GrayHatPython.iml" filepath="$PROJECT_DIR$/.idea/GrayHatPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ghpython_src/.idea/ghpython_src.iml" filepath="$PROJECT_DIR$/../ghpython_src/.idea/ghpython_src.iml" />
+    </modules>
+  </component>
+</project>
+

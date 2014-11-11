@@ -1,0 +1,4 @@
+!sym noisy
+.reload /f chrome_child.dll
+
+SRV*C:\symbols\*http://msdl.microsoft.com/download/symbols;SRV*C:\symbols\*http://chromium-browser-symsrv.commondatastorage.googleapis.com

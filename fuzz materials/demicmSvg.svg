@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+<title id="test-title">linking-uri-01-b</title>
+<desc id="test-desc">Link test of the 'view' element and its attributes, 1 of 2, internal.</desc>
+<!--======================================================================-->
+<!--Content of Test Case follows...                  =====================-->
+<!--======================================================================-->
+<g id="test-body-content">
+<text x="65" y="16" font-size="12" >Link test of the 'view' element and its attributes, 1 of 2, internal.</text>
+<g transform="translate(-150,75)">
+<rect x="300" y="55" width="125" height="85" fill="#aaa" />
+<text x="320" y="70" fill="red" >Go to Rectangle</text>
+<text x="320" y="90" fill="blue" >Go to Ellipse</text>
+<text x="320" y="110" fill="yellow" >Go to Circle</text>
+<text x="320" y="130" fill="green" >Go to Polygon</text>
+<text x="315" y="150" font-size="12" >Click element's line</text>
+<text x="315" y="162" font-size="12" >to link to its view</text>
+</g>
+
+<!-- View with no attributes.  Picture should not change. -->
+<view id="rect-view"/>
+<rect id="rect-object" fill="red"  x="295" y="36" width="135" height="68"/>
+<text id="rect-label" x="340" y="116">Rectangle</text>
+<rect x="292" y="29" width="141" height="91" fill="none" stroke="black" />
+<text x="302" y="130" font-size="10" >No view attributes except id.</text>
+<!-- Test viewBox.  Should blow-up the ellipse in the frame. -->
+<view id="ellipse-view" viewBox="294 221 152 83"/>
+<ellipse id="ellipse-object" fill="blue"  cx="370" cy="251" rx="72" ry="32"/>
+<text id="ellipse-label" x="355" y="295">Ellipse</text>
+<rect x="295" y="216" width="150" height="82" fill="none" stroke="black" />
+<text x="315" y="214" font-size="10" >viewBox, should fill frame.</text>
+<!-- Test preserveAspectRatio. -->
+<view id="circle-view" viewBox="20 29 128 91.5" preserveAspectRatio="none"/>
+<circle id="circle-object" fill="yellow"  cx="85" cy="68" r="36"/>
+<text id="circle-label" x="70" y="116">Circle</text>
+<rect x="36" y="29" width="98" height="91" fill="none" stroke="black" />
+<text x="36" y="128" font-size="10" >viewBox &amp; non-uniform</text>
+<text x="36" y="137" font-size="10" >preserveAspectRatio</text>
+<!-- Test viewTarget attribute, should highlight the polygon. -->
+<view id="polygon-view" viewTarget="polygon-object"/>
+<polygon id="polygon-object" fill="green"  points="87,211 134,238 116,283 57,283 39,238 87,211"/>
+<text id="polygon-label" x="65" y="295">Polygon</text>
+<rect x="36" y="208" width="100" height="89" fill="none" stroke="black" />
+<text x="46" y="197" font-size="10" >viewTarget, should</text>
+<text x="46" y="206" font-size="10" >highlight polygon</text>
+</g>
+
+<text id="revision" x="10" y="340" font-size="40" stroke="none" fill="black">$Revision: 1.6 $</text>
+<rect id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000000"/>
+
+<title id="test-title">linkingCircle-f.svg</title>
+<desc id="test-desc">Some circles with ids, for linking tests.</desc>
+<g id="test-body-content">
+<text x="100" y="20" style="font-size:12">Some circles with ids, for linking tests.</text>
+<circle id="circle-1" cx="220" cy="140" r="35" style="fill:red; stroke:black"/>
+<text style="font-family:Helvetica;font-size:12" x="203" y="99">circle-1</text>
+<circle id="circle-2" cx="100" cy="260" r="20" style="stroke:lime; fill:yellow; stroke-width:4"/>
+<text style="font-family:Helvetica;font-size:12" x="80" y="295">circle-2</text>
+<!-- Framing rect for circle-2 -->
+<rect x="64" y="227" width="72" height="72" style="fill:none; stroke:black"/>
+<circle id="circle-3" cx="340" cy="260" r="50" style="stroke:blue; fill:none; stroke-width:10"/>
+<text style="font-family:Helvetica;font-size:12" x="320" y="332">circle-3</text>
+</g>
+<g id="test-legend">
+<!-- Test-framing rectangle, drawn just inside viewport boundary. -->
+<rect id="test-frame" x="1" y="1" width="478" height="358" style="fill:none; stroke:#000000"/>
+</g>
+
+<defs>
+<filter id="Erode">
+  <feMorphology operator="erode" in="SourceGraphic" radius="1" />
+</filter>
+<filter id="Dilate">
+	<feMorphology operator="dilate" in="SourceGraphic" radius="3" />
+</filter>
+</defs>
+
+<g enable-background="new" >
+<g font-family="Verdana" font-size="50" stroke="red" stroke-width="4">
+	<text x="50" y="60">Target</text>
+	<text x="50" y="120" filter="url(#Erode)">Target</text>
+	<text x="50" y="180" filter="url(#Dilate)">Target</text>
+</g>
+</g>
+
+<desc>Example linecap - demonstrates three stroke-linecap values</desc>
+<rect x="1" y="1" width="1198" height="348" fill="none" stroke="blue" />
+<style type="text/css"><![CDATA[
+.thick { stroke:black; stroke-width:70 }
+.thin { stroke:#ffcccc; stroke-width:5 }
+text { text-anchor:middle; font-size:50; font-family:Verdana }
+circle { fill:#ffcccc; stroke:none }
+]]></style>
+<defs>
+<path id="path1" d="M -125,150 L 0,0 L 125,150" fill="none" />
+<circle id="circle1" cx="0" cy="0" r="8"/>
+</defs>
+<g transform="translate(200,75)">
+<rect x="50"  y="25" width="100" height="200" filter="url(#Default)"/>
+<rect x="50"  y="25" width="100" height="200" fill="none" stroke="green"/>
+<rect x="250" y="25" width="100" height="200" filter="url(#Fitted)"/>
+<rect x="250" y="25" width="100" height="200" fill="none" stroke="green"/>
+<rect x="450" y="25" width="100" height="200" filter="url(#Shifted)"/>
+<rect x="450" y="25" width="100" height="200" fill="none" stroke="green"/>
+<text y="230">'miter' join</text>
+</g>
+
+
+</svg>
+
+
