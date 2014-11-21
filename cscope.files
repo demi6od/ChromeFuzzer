@@ -1,1 +1,56 @@
 E:\GitHub\ChromeFuzzer\fuzz materials\demicmAchive.java
+E:\GitHub\ChromeFuzzer\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\compiled_heapscan_lin.c
+E:\GitHub\ChromeFuzzer\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\compiled_heapscan_win.c
+E:\GitHub\ChromeFuzzer\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap.h
+E:\GitHub\ChromeFuzzer\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap7.h
+E:\GitHub\ChromeFuzzer\fuzz update\node\source\continue\main.c
+E:\GitHub\ChromeFuzzer\fuzz update\node\source\logger\logger.c
+E:\GitHub\ChromeFuzzer\fuzz update\node\source\logger\ReflectiveLoader.c
+E:\GitHub\ChromeFuzzer\fuzz update\node\source\logger\ReflectiveDLLInjection.h
+E:\GitHub\ChromeFuzzer\fuzz update\node\source\logger\ReflectiveLoader.h
+E:\GitHub\ChromeFuzzer\PocSmplify\GrayHatPython-master\ghpython_src\src\addnum.cpp
+E:\GitHub\ChromeFuzzer\PocSmplify\GrayHatPython-master\ghpython_src\src\ghp_inject.cpp
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\dyld.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\Exception.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\implementation.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\MacDll.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\MacX.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\main.c
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\dyld.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\Exception.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\implementation.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\MacDll.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\MacOSX\macdll\windows.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\paimei_ollydbg_connector.cpp
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\stdafx.cpp
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\olly_callbacks.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\olly_redefines.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\paimei_ollydbg_connector.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\plugin.h
+E:\GitHub\ChromeFuzzer\PocSmplify\paimei-master\ollydbg_connector\stdafx.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_bsd.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_common.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_linux.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_osx.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_posix.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_sunos.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_windows.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_bsd.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_common.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_linux.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_osx.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_posix.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_sunos.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\_psutil_windows.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\bsd\process_info.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\bsd\process_info.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\osx\process_info.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\osx\process_info.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\process_handles.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\process_info.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\security.c
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\glpi.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\ntextapi.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\process_handles.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\process_info.h
+E:\GitHub\ChromeFuzzer\PocSmplify\psutil-master\psutil\arch\windows\security.h

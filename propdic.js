@@ -196,7 +196,7 @@ demicm.propDic = {
     paused: {type: 'boolean', normalVal: demicm.bool, dirtyVal: [true], readOnly: false},
     seeking: {type: 'boolean', normalVal: demicm.bool, dirtyVal: [true], readOnly: false},
     loop: {type: 'number', normalVal: demicm.normalNum, dirtyVal: ['infinite'], readOnly: false},
-    volume: {type: 'number', normalVal: [1.0, 0.5, 0.0], dirtyVal: demicm.dirtyNum, readOnly: false},
+    volume: {type: 'number', normalVal: demicm.tinyNum, dirtyVal: demicm.dirtyNum, readOnly: false},
     playbackRate: {type: 'number', normalVal: [1, 0.5, 2, -1], dirtyVal: demicm.dirtyNum, readOnly: false},
     defaultPlaybackRate: {type: 'number', normalVal: [1, 0.5, 2, -1], dirtyVal: demicm.dirtyNum, readOnly: false},
     duration: {type: 'number', normalVal: [100], dirtyVal: demicm.dirtyNum, readOnly: true},
@@ -246,6 +246,24 @@ demicm.propDic = {
     referenceNode: {type: 'object', normalVal: [], dirtyVal: [], readOnly: true},
     currentNode: {type: 'object', normalVal: [], dirtyVal: [], readOnly: true},
     whatToShow: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: true},
+
+    // Canvas
+    fillStyle: {type: 'string', normalVal: ['#FF1122', '#00FF22', '#1100FF'], dirtyVal: ['#FFFFFF'], readOnly: false},
+    strokeStyle: {type: 'string', normalVal: ['#FF1122', '#00FF22', '#1100FF'], dirtyVal: ['#FFFFFF'], readOnly: false},
+    lineCap: {type: 'string', normalVal: ['butt', 'round', 'square'], dirtyVal: [], readOnly: false},
+    lineJoin: {type: 'string', normalVal: ['bevel', 'round', 'miter'], dirtyVal: [], readOnly: false},
+    shadowColor: {type: 'string', normalVal: demicm.color, dirtyVal: [], readOnly: false},
+    shadowBlur: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    shadowOffsetX: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    shadowOffsetY: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    lineWidth: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    miterLimit: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    font: {type: 'string', normalVal: ['italic small-caps bold 12px arial'], dirtyVal: [], readOnly: false},
+    textAlign: {type: 'string', normalVal: ['center', 'end', 'left', 'right', 'start'], dirtyVal: [], readOnly: false},
+    textBaseline: {type: 'string', normalVal: ['alphabetic', 'top', 'hanging', 'middle', 'ideographic', 'bottom'], dirtyVal: [], readOnly: false},
+    globalAlpha: {type: 'number', normalVal: demicm.tinyNum, dirtyVal: demicm.dirtyNum, readOnly: false},
+    globalCompositeOperation: {type: 'string', normalVal: ['source-over', 'source-atop', 'source-in', 'source-out', 'destination-over', 'destination-atop', 'destination-in', 'destination-out', 'lighter', 'copy', 'xor'], dirtyVal: [], readOnly: false},
+
 
     // Attribute
     isId: {type: 'boolean', normalVal: demicm.bool, dirtyVal: [true], readOnly: true},

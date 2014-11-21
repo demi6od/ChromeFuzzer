@@ -411,6 +411,7 @@ demicm.alpha = [
     'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ];
 
+demicm.tinyNum = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1];
 demicm.smallNum = [0, 1, 2, 3, 4, 5, 6, 8, 10];
 demicm.normalNum = [
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29,
@@ -439,6 +440,7 @@ demicm.numPct = demicm.num.concat(demicm.pct);
 
 // Some prop of different elem with different meaning 
 demicm.specialProps = ['type', 'name', 'src', 'rel'];
+demicm.specialFuncs = [];
 
 demicm.type = {
     source: demicm.MIMETypes, object: demicm.MIMETypes, a: demicm.MIMETypes, 

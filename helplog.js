@@ -422,7 +422,15 @@ function toCSSStyle(style) {
 // Revise string for logger
 function logRevise(idIdx, idRIdx, type, value, objType) {
     if (typeof value == 'string') {
-        return ('"' + value + '"');
+        if (value.substring(0, 5) == 'eval:') {
+            if (type == 'param') {
+                return value.substring(5);
+            } else {
+                return value.substring(5).replace('demicm.', '');
+            }
+        } else {
+            return ('"' + value + '"');
+        }
     } else if (typeof value == 'function') {
         if (value.name == '') {
             return value.toString();
