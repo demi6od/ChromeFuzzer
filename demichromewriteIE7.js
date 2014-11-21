@@ -729,7 +729,7 @@ function eventHandler() {
     }
 
     if (percent(demicm.EVENT_CLEAR_PER)) {
-        clear();
+        clearSub();
     }
 
     if (percent(demicm.EVENT_CLEAR_ALL_PER)) {
@@ -2525,9 +2525,9 @@ function layout() {
     }
 }
 
-function clear() {
+function clearSub() {
     if (demicm.IS_DEBUG) {
-        writeFileIE("e://fuzzlog.txt",'[+] clear()');
+        writeFileIE("e://fuzzlog.txt",'[+] clearSub()');
     }
 
     try {
@@ -2621,14 +2621,14 @@ function clear() {
                 break;
 
             default:
-                writeFileIE("e://fuzzlog.txt",'// Warning: clear default');
+                writeFileIE("e://fuzzlog.txt",'// Warning: clearSub default');
                 break;
         }
 
         writeFileIE("e://fuzzlog.txt",'gc();');
         // gc();
     } catch (e) {
-        writeFileIE("e://fuzzlog.txt",'// Error: clear: ' + e.message);
+        writeFileIE("e://fuzzlog.txt",'// Error: clearSub: ' + e.message);
     }
 }
 
@@ -3023,7 +3023,7 @@ function specialOperate() {
     }
 
     if (percent(demicm.CLEAR_PER)) {
-        clear();
+        clearSub();
     }
 
     if (percent(demicm.CLEAR_ALL_PER)) {

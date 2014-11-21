@@ -404,7 +404,12 @@ demicm.nameSpaces = ['http://www.w3.org/1999/xhtml', 'http://www.w3.org/2000/svg
 
 demicm.bool = [true, false];
 
-demicm.string = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
+demicm.str = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
+demicm.normalStr = ['demi6od'];
+demicm.dirtyStr = [
+    "javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
+    "javascript: try {document.write('');} catch(e) {}",
+];
 
 demicm.alpha = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',

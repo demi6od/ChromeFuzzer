@@ -729,7 +729,7 @@ function eventHandler() {
     }
 
     if (percent(demicm.EVENT_CLEAR_PER)) {
-        clear();
+        clearSub();
     }
 
     if (percent(demicm.EVENT_CLEAR_ALL_PER)) {
@@ -2525,9 +2525,9 @@ function layout() {
     }
 }
 
-function clear() {
+function clearSub() {
     if (demicm.IS_DEBUG) {
-        logger.log('[+] clear()', 'grind', 1);
+        logger.log('[+] clearSub()', 'grind', 1);
     }
 
     try {
@@ -2621,14 +2621,14 @@ function clear() {
                 break;
 
             default:
-                logger.log('// Warning: clear default', 'grind', 1);
+                logger.log('// Warning: clearSub default', 'grind', 1);
                 break;
         }
 
         logger.log('gc();', 'grind', 1);
         gc();
     } catch (e) {
-        logger.log('// Error: clear: ' + e.message, 'grind', 1);
+        logger.log('// Error: clearSub: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3023,7 +3023,7 @@ function specialOperate() {
     }
 
     if (percent(demicm.CLEAR_PER)) {
-        clear();
+        clearSub();
     }
 
     if (percent(demicm.CLEAR_ALL_PER)) {

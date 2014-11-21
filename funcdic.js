@@ -16,7 +16,7 @@ demicm.funcBlackList = [
     'appendMap', 'appendAudio', 'appendVideo', 'appendWorker', 'appendSharedWorker', 'appendSvg', 
     'appendXml', 'appendSpecElem', 'constructBaseTree', 'constructDOMTree', 'setAttr', 'constructSpec', 
     'addCSS', 'propfMan', 'propMan', 'funcMan', 'styleMan', 'layout', 
-    'clear', 'clearAll', 'DOMMan', 'winMan', 'attrMan', 'canvas2dMan', 
+    'clearSub', 'clearAll', 'DOMMan', 'winMan', 'attrMan', 'canvas2dMan', 
     'webglMan', 'finale', 'reuseElem', 'reuseRetElem', 'reuseSpec', 'relayout', 
     'operate', 'normalOperate', 'specialOperate', 'multiClear', 'multiMan', 'specObjMan', 
     'groupMan', 'appendWindow', 'appendIframe', 'appendFrame', 'constructMulti', 'getWindow', 
@@ -46,33 +46,33 @@ demicm.funcBlackList = [
     'dispatchEvent', 'removeEventListener', 'addEventListener',
     'webkitCancelKeyRequest', 'webkitAddKey', 'webkitGenerateKeyRequest',
     'write', 'writeln', 'open',
-    'reload', 'go', 'assign', 'navigate', 'open', 'load', 'close', 'submit', 'click',
+    'reload', 'go', 'assign', 'navigate', 'load', 'close', 'submit', 'click',
     'print', 'alert', 'prompt', 'showModalDialog', 'confirm',
-    'setAttributeNode', 'setAttributeNodeNS', 'removeAttributeNode', 'querySelector', 'querySelectorAll', // TODO
+    'setAttributeNode', 'setAttributeNodeNS', 'removeAttributeNode',  // TODO
 ];
 
 // First parameter is return value
 demicm.funcDic = {
     getElementById: [
 		{type: 'object'},
-		{type: 'string', normalVal: demicm.smallNum, dirtyVal: []},
+		{type: 'string', normalVal: demicm.smallNum, dirtyVal: demicm.dirtyStr},
     ],
     getElementsByName: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: ['objectName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     getElementsByTagName: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: ['tagName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     getElementsByTagNameNS: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-        {type: 'string', normalVal: ['tagName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+        {type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     getElementsByClassName: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: ['className'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     item: [
 		{type: 'object'},
@@ -80,7 +80,7 @@ demicm.funcDic = {
     ],
     namedItem: [
 		{type: 'object'},
-		{type: 'string', normalVal: demicm.smallNum, dirtyVal: []},
+		{type: 'string', normalVal: demicm.smallNum, dirtyVal: demicm.dirtyStr},
     ],
     click: [
 		{type: ''},
@@ -150,20 +150,20 @@ demicm.funcDic = {
     ],
     isSupported: [
 		{type: 'boolean'},
-		{type: 'string', normalVal: ['Core'], dirtyVal: []},
+		{type: 'string', normalVal: ['Core'], dirtyVal: demicm.dirtyStr},
         {type: 'string', normalVal: ['1.0', '2.0', '3.0'], dirtyVal: demicm.dirtyNum},
     ],
     lookupPrefix: [
 		{type: 'string'},
-		{type: 'string', normalVal: ['http://127.0.0.1:8080/grinder/'], dirtyVal: []},
+		{type: 'string', normalVal: ['http://127.0.0.1:8080/grinder/'], dirtyVal: demicm.dirtyStr},
     ],
     lookupNamespaceURI: [
 		{type: 'string'},
-		{type: 'string', normalVal: ['demicmPrefix'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     isDefaultNamespace: [
 		{type: 'boolean'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
     ],
     isSameNode: [
 		{type: 'boolean'},
@@ -202,7 +202,7 @@ demicm.funcDic = {
     ],
     setRangeText: [
 		{type: ''},
-		{type: 'string', normalVal: ['text'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
         {type: 'number', normalVal: [0, 1, 2, 3], dirtyVal: demicm.dirtyNum},
@@ -217,12 +217,12 @@ demicm.funcDic = {
     // Canvas
     toDataURL: [
 		{type: 'string'},
-		{type: 'string', normalVal: ['image/png', 'image/webp', 'image/jpeg'], dirtyVal: []},
+		{type: 'string', normalVal: ['image/png', 'image/webp', 'image/jpeg'], dirtyVal: demicm.dirtyStr},
         {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
     ],
     getContext: [
 		{type: 'contextObj'},
-		{type: 'string', normalVal: ['2d', 'webgl'], dirtyVal: []},
+		{type: 'string', normalVal: ['2d', 'webgl'], dirtyVal: demicm.dirtyStr},
     ],
 
     // SVG
@@ -248,9 +248,9 @@ demicm.funcDic = {
     ],
     addTextTrack: [
 		{type: 'objectTextTrack'},
-		{type: 'string', normalVal: ['subtitles', 'caption', 'descriptions', 'chapters', 'metadata'], dirtyVal: []},
-        {type: 'string', normalVal: ['label'], dirtyVal: []},
-        {type: 'string', normalVal: demicm.langs, dirtyVal: []},
+		{type: 'string', normalVal: ['subtitles', 'caption', 'descriptions', 'chapters', 'metadata'], dirtyVal: demicm.dirtyStr},
+        {type: 'string', normalVal: ['label'], dirtyVal: demicm.dirtyStr},
+        {type: 'string', normalVal: demicm.langs, dirtyVal: demicm.dirtyStr},
     ],
 
     // Table
@@ -307,7 +307,7 @@ demicm.funcDic = {
     ],
     setCustomValidity: [
 		{type: ''},
-		{type: 'string', normalVal: ['erroText'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
 
     // Text
@@ -317,7 +317,7 @@ demicm.funcDic = {
     ],
     replaceWholeText: [
         {type: ''},
-        {type: 'string', normalVal: [], dirtyVal: []},
+        {type: 'string', normalVal: [], dirtyVal: demicm.dirtyStr},
     ],
     substringData: [
         {type: 'string'},
@@ -326,12 +326,12 @@ demicm.funcDic = {
     ],
     appendData: [
         {type: ''},
-        {type: 'string', normalVal: [], dirtyVal: []}
+        {type: 'string', normalVal: [], dirtyVal: demicm.dirtyStr}
     ],
     insertData: [
         {type: ''},
 		{type: 'number', normalVal: demicm.smallNum, dirtyVal: demicm.dirtyNum},
-        {type: 'string', normalVal: [], dirtyVal: []},
+        {type: 'string', normalVal: [], dirtyVal: demicm.dirtyStr},
     ],
     deleteData: [
         {type: ''},
@@ -342,7 +342,7 @@ demicm.funcDic = {
         {type: ''},
 		{type: 'number', normalVal: demicm.smallNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.smallNum, dirtyVal: demicm.dirtyNum},
-        {type: 'string', normalVal: [], dirtyVal: []},
+        {type: 'string', normalVal: [], dirtyVal: demicm.dirtyStr},
     ],
 
     // Range 
@@ -360,7 +360,7 @@ demicm.funcDic = {
     ],
     createContextualFragment: [
         {type: 'objectDocumentFragment'},
-		{type: 'string', normalVal: ['<a>htmlCode</a>'], dirtyVal: []},
+		{type: 'string', normalVal: ['<a>htmlCode</a>'], dirtyVal: demicm.dirtyStr},
     ],
     surroundContents: [
         {type: ''},
@@ -530,45 +530,45 @@ demicm.funcDic = {
     ],
     atob: [
         {type: 'string'},
-        {type: 'string', normalVal: ['SGVsbG8gV29ybGQh'], dirtyVal: []},
+        {type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     btoa: [
         {type: 'string'},
-		{type: 'string', normalVal: ['demi6od'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     open: [
         {type: 'objectWindow'},
-		{type: 'string', normalVal: [demicm.URL + 'demicmFuzz.html'], dirtyVal: []},
-		{type: 'string', normalVal: ['_blank', '_self', '_parent', '_top'], dirtyVal: []},
+		{type: 'string', normalVal: [demicm.URL + 'demicmFuzz.html'], dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: ['_blank', '_self', '_parent', '_top'], dirtyVal: demicm.dirtyStr},
     ],
     stop: [
         {type: ''},
     ],
     setInterval: [
         {type: 'number'},
-		{type: 'string', normalVal: ['document;'], dirtyVal: []},
+		{type: 'string', normalVal: ['document;'], dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'string', normalVal: ['JavaScript', 'JScript', 'VBScript'], dirtyVal: ['JavaScript']},
     ],
     setTimeout: [
         {type: 'number'},
-		{type: 'string', normalVal: ['document;'], dirtyVal: []},
+		{type: 'string', normalVal: ['document;'], dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'string', normalVal: ['JavaScript', 'JScript', 'VBScript'], dirtyVal: ['JavaScript']},
     ],
     postMessage: [
         {type: ''},
-		{type: 'string', normalVal: ['message'], dirtyVal: []},
-		{type: 'string', normalVal: [demicm.URL + 'demicmFuzz.html'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: [demicm.URL + 'demicmFuzz.html'], dirtyVal: demicm.dirtyStr},
 		{type: 'object', normalVal: [], dirtyVal: []},
     ],
     matchMedia: [
         {type: 'boolean'},
-        {type: 'string', normalVal: ['(min-width: 400px)'], dirtyVal: []},
+        {type: 'string', normalVal: ['(min-width: 400px)'], dirtyVal: demicm.dirtyStr},
     ],
     find: [
         {type: 'boolean'},
-		{type: 'string', normalVal: ['findStr'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
 		{type: 'boolean', normalVal: demicm.bool, dirtyVal: [true]},
 		{type: 'boolean', normalVal: demicm.bool, dirtyVal: [true]},
 		{type: 'boolean', normalVal: demicm.bool, dirtyVal: [true]},
@@ -599,12 +599,12 @@ demicm.funcDic = {
     getComputedStyle: [
         {type: 'objectStyle'},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: ['pseudoElt'], dirtyVal: []},
+		{type: 'string', normalVal: ['pseudoElt'], dirtyVal: demicm.dirtyStr},
     ],
     getMatchedCSSRules: [
         {type: 'objectStyle'},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: ['pseudoClass'], dirtyVal: []},
+		{type: 'string', normalVal: ['pseudoClass'], dirtyVal: demicm.dirtyStr},
     ],
 
     // Document
@@ -620,8 +620,8 @@ demicm.funcDic = {
     renameNode: [
         {type: 'object'},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['nodeName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     close: [
         {type: 'object'},
@@ -643,35 +643,35 @@ demicm.funcDic = {
     ],
     createAttribute: [
         {type: 'objectAttr'},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     createComment: [
         {type: 'objectComment'},
-		{type: 'string', normalVal: ['commentStr'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     createCDATASection: [
         {type: 'objectCDATA'},
-		{type: 'string', normalVal: ['CDATAStr'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     createEntityReference: [
         {type: 'objectEntity'},
-		{type: 'string', normalVal: ['entityName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     createDocumentFragment: [
         {type: 'objectDocumentFragment'},
     ],
     createEvent: [
         {type: 'objectEvent'},
-		{type: 'string', normalVal: ['HTMLEvents', 'MouseEvents', 'UIEvents'], dirtyVal: []},
+		{type: 'string', normalVal: ['HTMLEvents', 'MouseEvents', 'UIEvents'], dirtyVal: demicm.dirtyStr},
     ],
     createExpression: [
         {type: 'objectXPath'},
-        {type: 'string', normalVal: ['/body/a'], dirtyVal: []},
+        {type: 'string', normalVal: ['/body/a'], dirtyVal: demicm.dirtyStr},
         {type: 'object', normalVal: [function(prefix){return 'http://www.w3.org/1999/xhtml';}], dirtyVal: []},
     ],
     evaluate: [
         {type: 'objectXPath'},
-        {type: 'string', normalVal: ['/body/a'], dirtyVal: []},
+        {type: 'string', normalVal: ['/body/a'], dirtyVal: demicm.dirtyStr},
 		{type: 'object', normalVal: [], dirtyVal: []},
         {type: 'object', normalVal: [function(prefix){return 'http://www.w3.org/1999/xhtml';}], dirtyVal: []},
     ],
@@ -681,35 +681,35 @@ demicm.funcDic = {
     createProcessingInstruction: [
         {type: 'objectProc'},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     loadXML: [
         {type: 'objectXML'},
-		{type: 'string', normalVal: ['<tag>demi6od</tag>'], dirtyVal: []},
+		{type: 'string', normalVal: ['<tag>demi6od</tag>'], dirtyVal: demicm.dirtyStr},
     ],
     queryCommandEnabled: [
         {type: 'boolean'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     queryCommandIndeterm: [
         {type: 'boolean'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     queryCommandState: [
         {type: 'boolean'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     queryCommandSupported: [
         {type: 'boolean'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     queryCommandText: [
         {type: 'string'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     queryCommandValue: [
         {type: 'objectSpec'},
-		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: []},
+		{type: 'string', normalVal: demicm.cmdNames, dirtyVal: demicm.dirtyStr},
     ],
     elementFromPoint: [
         {type: 'object'},
@@ -723,15 +723,15 @@ demicm.funcDic = {
     ],
     getCSSCanvasContext: [
         {type: 'objectCSS'},
-		{type: 'string', normalVal: ['2d'], dirtyVal: []},
-		{type: 'string', normalVal: ['animation'], dirtyVal: []},
+		{type: 'string', normalVal: ['2d'], dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: ['animation'], dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
     ],
     getOverrideStyle: [
         {type: 'objectStyle'},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: ['pseudoElt'], dirtyVal: []},
+		{type: 'string', normalVal: ['pseudoElt'], dirtyVal: demicm.dirtyStr},
     ],
     createNSResolver: [
         {type: 'objectXPathResolver'},
@@ -741,21 +741,21 @@ demicm.funcDic = {
     // Nodemap
     getNamedItem: [
 		{type: 'object'},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     getNamedItemNS: [
 		{type: 'object'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     removeNamedItem: [
 		{type: 'object'},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     removeNamedItemNS: [
 		{type: 'object'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     setNamedItem: [
 		{type: 'object'},
@@ -763,7 +763,7 @@ demicm.funcDic = {
     ],
     setNamedItemNS: [
 		{type: 'object'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
 		{type: 'object', normalVal: [], dirtyVal: []},
     ],
     item: [
@@ -774,14 +774,14 @@ demicm.funcDic = {
     // Attribute
     setAttribute: [
 		{type: ''},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
-		{type: 'string', normalVal: ['attrVal'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     setAttributeNS: [
 		{type: ''},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
-		{type: 'string', normalVal: ['attrVal'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     setAttributeNode: [
 		{type: 'objectAttr'},
@@ -793,30 +793,30 @@ demicm.funcDic = {
     ],
     getAttribute: [
 		{type: 'string'},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     getAttributeNS: [
 		{type: 'string'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     getAttributeNode: [
 		{type: 'objectAttr'},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     getAttributeNodeNS: [
 		{type: 'objectAttr'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     removeAttribute: [
 		{type: ''},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     removeAttributeNS: [
 		{type: ''},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attrName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     removeAttributeNode: [
 		{type: 'objectAttr'},
@@ -827,12 +827,12 @@ demicm.funcDic = {
     ],
     hasAttribute: [
 		{type: 'boolean'},
-		{type: 'string', normalVal: ['attributeName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     hasAttributeNS: [
 		{type: 'boolean'},
-		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: []},
-		{type: 'string', normalVal: ['attributeName'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.nameSpaces, dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
 
     // Event
@@ -862,11 +862,11 @@ demicm.funcDic = {
     // CSS
     querySelector: [
 		{type: 'object'},
-		{type: 'string', normalVal: [], dirtyVal: []},
+		{type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     querySelectorAll: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: [], dirtyVal: []},
+		{type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     getClientRects: [
 		{type: 'objectRectList'},
@@ -878,11 +878,11 @@ demicm.funcDic = {
     // Web Storage
     setItem: [
 		{type: 'object'},
-		{type: 'string', normalVal: [], dirtyVal: []},
+		{type: 'string', normalVal: [], dirtyVal: demicm.dirtyStr},
     ],
     querySelectorAll: [
 		{type: 'objectList'},
-		{type: 'string', normalVal: [], dirtyVal: []},
+		{type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     getClientRects: [
 		{type: 'objectRectList'},
@@ -897,7 +897,7 @@ demicm.funcDic = {
     ],
     webkitMatchesSelector: [
 		{type: 'boolean'},
-		{type: 'string', normalVal: ['CSSSelectors'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.tags, dirtyVal: demicm.dirtyStr},
     ],
     webkitCreateShadowRoot: [
 		{type: 'objectRoot'},
@@ -916,6 +916,8 @@ demicm.funcDic = {
     ],
     webkitResolveLocalFileSystemURL: [
 		{type: ''},
+		{type: 'object', normalVal: [], dirtyVal: []},
+		{type: 'object', normalVal: [], dirtyVal: []},
     ],
     webkitConvertPointFromPageToNode: [
 		{type: ''},
@@ -976,7 +978,7 @@ demicm.funcDic = {
     ],
     send: [
         {type: ''},
-		{type: 'object', normalVal: ['GET', 'POST', 'PUT'], dirtyVal: []},
+		{type: 'object', normalVal: ['GET', 'POST', 'PUT'], dirtyVal: demicm.dirtyStr},
     ],
     setRequestHeader: [
         {type: ''},
@@ -997,12 +999,12 @@ demicm.funcDic = {
     addColorStop: [
 		{type: ''},
 		{type: 'number', normalVal: demicm.tinyNum, dirtyVal: demicm.dirtyNum},
-		{type: 'string', normalVal: demicm.color, dirtyVal: []},
+		{type: 'string', normalVal: demicm.color, dirtyVal: demicm.dirtyStr},
     ],
     createPattern: [
 		{type: ''},
 		{type: 'object', normalVal: [], dirtyVal: []},
-		{type: 'string', normalVal: ['repeat', 'repeat-x','no-repeat', 'repeat-y'], dirtyVal: []},
+		{type: 'string', normalVal: ['repeat', 'repeat-x','no-repeat', 'repeat-y'], dirtyVal: demicm.dirtyStr},
     ],
     clearRect: [
 		{type: ''},
@@ -1026,18 +1028,18 @@ demicm.funcDic = {
     ],
     measureText: [
 		{type: ''},
-		{type: 'string', normalVal: ['fillText'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
     ],
     strokeText: [
 		{type: ''},
-		{type: 'string', normalVal: ['fillText'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
     ],
     fillText: [
 		{type: ''},
-		{type: 'string', normalVal: ['fillText'], dirtyVal: []},
+		{type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
@@ -1321,7 +1323,7 @@ demicm.funcDic = {
     shaderSource: [
 		{type: ''},
 		{type: 'object', normalVal: ['eval:demicm.vshader', 'eval:demicm.fshader'], dirtyVal: []},
-		{type: 'string', normalVal: ['eval:demicm.VSHADER_SOURCE', 'eval:demicm.FSHADER_SOURCE'], dirtyVal: []},
+		{type: 'string', normalVal: ['eval:demicm.VSHADER_SOURCE', 'eval:demicm.FSHADER_SOURCE'], dirtyVal: demicm.dirtyStr},
     ],
     isShader: [
 		{type: 'boolean'},
@@ -1407,25 +1409,25 @@ demicm.funcDic = {
     getUniformLocation: [
 		{type: 'number'},
 		{type: 'object', normalVal: ['eval:demicm.webgl.program'], dirtyVal: []},
-		{type: 'string', normalVal: ['u_MvpMatrix', 'u_MvpMatrixFromLight'], dirtyVal: []},
+		{type: 'string', normalVal: ['u_MvpMatrix', 'u_MvpMatrixFromLight'], dirtyVal: demicm.dirtyStr},
     ],
     getAttribLocation: [
 		{type: 'number'},
 		{type: 'object', normalVal: ['eval:demicm.webgl.program'], dirtyVal: []},
-		{type: 'string', normalVal: ['a_Position', 'a_Color'], dirtyVal: []},
+		{type: 'string', normalVal: ['a_Position', 'a_Color'], dirtyVal: demicm.dirtyStr},
     ],
     bindAttribLocation: [
 		{type: ''},
 		{type: 'object', normalVal: ['eval:demicm.webgl.program'], dirtyVal: []},
 		{type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum},
-		{type: 'string', normalVal: ['a_Position', 'a_Color'], dirtyVal: []},
+		{type: 'string', normalVal: ['a_Position', 'a_Color'], dirtyVal: demicm.dirtyStr},
     ],
     createBuffer: [
 		{type: 'object'},
     ],
     getExtension: [
 		{type: 'object'},
-		{type: 'string', normalVal: ["ANGLE_instanced_arrays", "EXT_blend_minmax", "EXT_frag_depth", "EXT_shader_texture_lod", "EXT_texture_filter_anisotropic", "WEBKIT_EXT_texture_filter_anisotropic", "OES_element_index_uint", "OES_standard_derivatives", "OES_texture_float", "OES_texture_float_linear", "OES_texture_half_float", "OES_texture_half_float_linear", "OES_vertex_array_object", "WEBGL_compressed_texture_s3tc", "WEBKIT_WEBGL_compressed_texture_s3tc", "WEBGL_debug_renderer_info", "WEBGL_debug_shaders", "WEBGL_depth_texture", "WEBKIT_WEBGL_depth_texture", "WEBGL_draw_buffers", "WEBGL_lose_context", "WEBKIT_WEBGL_lose_context"] , dirtyVal: []},
+		{type: 'string', normalVal: ["ANGLE_instanced_arrays", "EXT_blend_minmax", "EXT_frag_depth", "EXT_shader_texture_lod", "EXT_texture_filter_anisotropic", "WEBKIT_EXT_texture_filter_anisotropic", "OES_element_index_uint", "OES_standard_derivatives", "OES_texture_float", "OES_texture_float_linear", "OES_texture_half_float", "OES_texture_half_float_linear", "OES_vertex_array_object", "WEBGL_compressed_texture_s3tc", "WEBKIT_WEBGL_compressed_texture_s3tc", "WEBGL_debug_renderer_info", "WEBGL_debug_shaders", "WEBGL_depth_texture", "WEBKIT_WEBGL_depth_texture", "WEBGL_draw_buffers", "WEBGL_lose_context", "WEBKIT_WEBGL_lose_context"] , dirtyVal: demicm.dirtyStr},
     ],
     deleteBuffer: [
 		{type: ''},
