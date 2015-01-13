@@ -127,14 +127,14 @@ demicm.WIN_PER = 20; // 20
 demicm.ATTR_PER = 100; // 100
 demicm.SET_ATTR_PER = 20; // 20
 
-demicm.ADD_WEBGL_PER = 80; // 80
+demicm.ADD_WEBGL_PER = 20; // 20
 demicm.WEBGL_PER = 80; // 80
 demicm.DRAW_WEBGL_PER = 20; // 20
 
-demicm.ADD_CANVAS2D_PER = 60; // 60
+demicm.ADD_CANVAS2D_PER = 20; // 20
 demicm.CANVAS2D_PER = 60; // 60
 
-demicm.ADD_NETWORK = 50; // 50
+demicm.ADD_NETWORK = 10; // 10
 
 // Multi page
 demicm.MULTI_MAN_PER = 40; // 40 
@@ -1544,6 +1544,27 @@ function appendNetwork(rId, rTxt) {
     id[id.length - 1].id = id.length - 1;
 }
 
+function appendStyle(rId, rTxt) {
+    // Add style
+    logger.log('id_' + id.length + ' = document.createElement("style");', 'grind', 1);
+    id[id.length] = document.createElement('style');
+    logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
+    id[id.length - 1].id = id.length - 1;
+
+    var cssList = '';
+    var tagList = randItem(demicm.idTags);
+    for (var j = 0; j < demicm.idTags.length / 3; j++) {
+        tagList += ', ' + randItem(demicm.idTags);
+    }
+    cssList += tagList + ' ' + randCSSText() + ' ';
+
+    logger.log('id_' + (id.length - 1) + '.innerText = "' + cssList + '";', 'grind', 1);
+    id[id.length - 1].innerText = cssList;
+
+    logger.log('id_' + rId + '.appendChild(id_' + (id.length - 1) + ');', 'grind', 1);
+    id[rId].appendChild(id[id.length - 1]);
+}
+
 function appendTable(rId, rTxt) {
     // Add table
     logger.log('id_' + id.length + ' = document.createElement("table");', 'grind', 1);
@@ -1902,9 +1923,26 @@ function appendSharedWorker() {
 }
 
 function appendSvg(rId, rTxt) {
-    // Add svg
+    // Add embed svg
     logger.log('id_' + id.length + ' = document.createElement("embed");', 'grind', 1);
     id[id.length] = document.createElement('embed');
+    logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
+    id[id.length - 1].id = id.length - 1;
+    logger.log('id_' + (id.length - 1) + '.src = "demicmSvg.svg";', 'grind', 1);
+    id[id.length - 1].src = 'demicmSvg.svg';
+    logger.log('id_' + (id.length - 1) + '.type = "image/svg+xml";', 'grind', 1);
+    id[id.length - 1].type = 'image/svg+xml';
+    logger.log('id_' + (id.length - 1) + '.width = "320";', 'grind', 1);
+    id[id.length - 1].width = '320';
+    logger.log('id_' + (id.length - 1) + '.height = "240";', 'grind', 1);
+    id[id.length - 1].height = '240';
+
+    logger.log('id_' + rId + '.appendChild(id_' + (id.length - 1) + ');', 'grind', 1);
+    id[rId].appendChild(id[id.length - 1]);
+
+    // Add img svg
+    logger.log('id_' + id.length + ' = document.createElement("img");', 'grind', 1);
+    id[id.length] = document.createElement('img');
     logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
     id[id.length - 1].id = id.length - 1;
     logger.log('id_' + (id.length - 1) + '.src = "demicmSvg.svg";', 'grind', 1);
@@ -1969,6 +2007,8 @@ function appendSpecElem() {
             logger.log('// Warning: appendSpecElem default', 'grind', 1);
             break;
     }
+
+    appendStyle(rId, rTxt);
 
     if(percent(demicm.ADD_NETWORK)) {
         var rId = randId(true, false, true);

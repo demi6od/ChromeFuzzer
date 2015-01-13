@@ -25,6 +25,8 @@ module Grinder
                 # demi
 				@@fuzzers    = []
 				@@logging_js = nil
+				@@worker_js = nil
+				@@sharedworker_js = nil
 				@@jpg        = nil
 				@@java        = nil
 				@@class        = nil
@@ -45,6 +47,7 @@ module Grinder
 				@@track        = nil
 				@@svg        = nil
 				@@xml       = nil
+				@@xsl       = nil
 				@@gif        = nil
 				@@pdf        = nil
 				@@count      = 0
@@ -72,6 +75,14 @@ module Grinder
 				end
 				
                 # demi
+				def self.worker_js( data )
+					@@worker_js = data
+				end
+
+				def self.sharedworker_js( data )
+					@@sharedworker_js = data
+				end
+
 				def self.mp4( data )
 					@@mp4 = data
 				end
@@ -86,6 +97,10 @@ module Grinder
 
 				def self.xml( data )
 					@@xml = data
+				end
+
+				def self.xsl( data )
+					@@xsl = data
 				end
 
 				def self.svg( data )
@@ -238,6 +253,14 @@ module Grinder
 						response['Content-Type'] = 'text/javascript'
 						response.body            = @@logging_js
                     # demi
+					elsif( request.path == '/demicmWorker.js' )
+						response.status          = 200
+						response['Content-Type'] = 'text/javascript'
+						response.body            = @@worker_js
+					elsif( request.path == '/demicmSharedWorker.js' )
+						response.status          = 200
+						response['Content-Type'] = 'text/javascript'
+						response.body            = @@sharedworker_js
 					elsif( request.path == '/demicmDesc.txt' )
 						response.status          = 200
 						response['Content-Type'] = 'text/plain'
@@ -286,7 +309,7 @@ module Grinder
 						response.status          = 200
 						response['Content-Type'] = 'image/gif'
 						response.body            = @@gif
-					elsif( request.path == '/demicmAchive.class' )
+					elsif( request.path == '/demicmCodeBase.class' )
 						response.status          = 200
                         response['Content-Type'] = 'application/java-vm'
 						response.body            = @@class
@@ -318,6 +341,10 @@ module Grinder
 						response.status          = 200
                         response['Content-Type'] = 'text/xml'
 						response.body            = @@xml
+                    elsif( request.path == '/demicmXsl.xsl' )
+						response.status          = 200
+                        response['Content-Type'] = 'text/xsl'
+						response.body            = @@xsl
 					elsif( request.path == '/testcase_generate' )
 						html                     = @@reductor ? @@reductor.testcase_generate : nil
 						response['Content-Type'] = 'text/html; charset=utf-8;'
@@ -438,6 +465,14 @@ module Grinder
 				end
 				
                 # demi
+				::File.open( './data/demicmWorker.js', 'r' ) do | f |
+					GrinderServlet.worker_js( f.read( f.stat.size ) )
+				end
+				
+				::File.open( './data/demicmSharedWorker.js', 'r' ) do | f |
+					GrinderServlet.sharedworker_js( f.read( f.stat.size ) )
+				end
+				
 				::File.open( './data/demicmAchive.java', 'r' ) do | f |
 					GrinderServlet.java( f.read( f.stat.size ) )
 				end
@@ -518,6 +553,10 @@ module Grinder
 					GrinderServlet.xml( f.read( f.stat.size ) )
 				end
 				
+				::File.open( './data/demicmXsl.xsl', 'r' ) do | f |
+					GrinderServlet.xsl( f.read( f.stat.size ) )
+				end
+
 				::File.open( './data/grind.jpg', 'rb' ) do | f |
 					GrinderServlet.jpg( f.read( f.stat.size ) )
 				end

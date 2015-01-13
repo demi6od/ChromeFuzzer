@@ -13,6 +13,8 @@ import re
 import shutil
 import codecs
 
+NULL_PTR_THR = 0x400
+
 gCurDir = os.getcwd()
 gNodeDir = re.sub(r'\\crashes\\\w+$', '', gCurDir)
 
@@ -93,7 +95,7 @@ def main():
                     keyReg = match.group(1)
                     match = re.search(keyReg + r' = 0x(\w{8}) ', crashLog)
                     regVal = match.group(1)
-                    if regVal == '00000000':
+                    if int(regVal, 16) < NULL_PTR_THR:
                         crashType = 'Null Pointer Deference'
 
             # Copy distinct first hash files

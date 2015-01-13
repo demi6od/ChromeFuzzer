@@ -47,6 +47,7 @@ module Grinder
 				@@track        = nil
 				@@svg        = nil
 				@@xml       = nil
+				@@xsl       = nil
 				@@gif        = nil
 				@@pdf        = nil
 				@@count      = 0
@@ -96,6 +97,10 @@ module Grinder
 
 				def self.xml( data )
 					@@xml = data
+				end
+
+				def self.xsl( data )
+					@@xsl = data
 				end
 
 				def self.svg( data )
@@ -336,6 +341,10 @@ module Grinder
 						response.status          = 200
                         response['Content-Type'] = 'text/xml'
 						response.body            = @@xml
+                    elsif( request.path == '/demicmXsl.xsl' )
+						response.status          = 200
+                        response['Content-Type'] = 'text/xsl'
+						response.body            = @@xsl
 					elsif( request.path == '/testcase_generate' )
 						html                     = @@reductor ? @@reductor.testcase_generate : nil
 						response['Content-Type'] = 'text/html; charset=utf-8;'
@@ -544,6 +553,10 @@ module Grinder
 					GrinderServlet.xml( f.read( f.stat.size ) )
 				end
 				
+				::File.open( './data/demicmXsl.xsl', 'r' ) do | f |
+					GrinderServlet.xsl( f.read( f.stat.size ) )
+				end
+
 				::File.open( './data/grind.jpg', 'rb' ) do | f |
 					GrinderServlet.jpg( f.read( f.stat.size ) )
 				end

@@ -1,0 +1,350 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AF_INET	.\defines.py	/^AF_INET                        = 0x00000002$/;"	v
+AF_INET6	.\defines.py	/^AF_INET6                       = 0x00000017$/;"	v
+BYTE	.\windows_h.py	/^BYTE = c_ubyte$/;"	v
+CHAR	.\windows_h.py	/^CHAR = c_char$/;"	v
+CONTEXT	.\windows_h.py	/^CONTEXT = _CONTEXT$/;"	v
+CONTEXT_CONTROL	.\defines.py	/^CONTEXT_CONTROL                = 0x00010001$/;"	v
+CONTEXT_DEBUG_REGISTERS	.\defines.py	/^CONTEXT_DEBUG_REGISTERS        = 0x00010010$/;"	v
+CONTEXT_FULL	.\defines.py	/^CONTEXT_FULL                   = 0x00010007$/;"	v
+CREATE_NEW_CONSOLE	.\defines.py	/^CREATE_NEW_CONSOLE             = 0x00000010$/;"	v
+CREATE_PROCESS_DEBUG_EVENT	.\defines.py	/^CREATE_PROCESS_DEBUG_EVENT     = 0x00000003$/;"	v
+CREATE_PROCESS_DEBUG_INFO	.\windows_h.py	/^CREATE_PROCESS_DEBUG_INFO = _CREATE_PROCESS_DEBUG_INFO$/;"	v
+CREATE_THREAD_DEBUG_EVENT	.\defines.py	/^CREATE_THREAD_DEBUG_EVENT      = 0x00000002$/;"	v
+CREATE_THREAD_DEBUG_INFO	.\windows_h.py	/^CREATE_THREAD_DEBUG_INFO = _CREATE_THREAD_DEBUG_INFO$/;"	v
+DBG_CONTINUE	.\defines.py	/^DBG_CONTINUE                   = 0x00010002$/;"	v
+DBG_EXCEPTION_HANDLED	.\defines.py	/^DBG_EXCEPTION_HANDLED          = 0x00010001$/;"	v
+DBG_EXCEPTION_NOT_HANDLED	.\defines.py	/^DBG_EXCEPTION_NOT_HANDLED      = 0x80010001$/;"	v
+DEBUG_EVENT	.\windows_h.py	/^DEBUG_EVENT = _DEBUG_EVENT$/;"	v
+DEBUG_ONLY_THIS_PROCESS	.\defines.py	/^DEBUG_ONLY_THIS_PROCESS        = 0x00000002$/;"	v
+DEBUG_PROCESS	.\defines.py	/^DEBUG_PROCESS                  = 0x00000001$/;"	v
+DWORD	.\windows_h.py	/^DWORD = c_ulong$/;"	v
+EFLAGS_RF	.\defines.py	/^EFLAGS_RF                      = 0x00010000$/;"	v
+EFLAGS_TRAP	.\defines.py	/^EFLAGS_TRAP                    = 0x00000100$/;"	v
+ERROR_NO_MORE_FILES	.\defines.py	/^ERROR_NO_MORE_FILES            = 0x00000012$/;"	v
+EXCEPTION_ACCESS_VIOLATION	.\defines.py	/^EXCEPTION_ACCESS_VIOLATION     = 0xC0000005$/;"	v
+EXCEPTION_BREAKPOINT	.\defines.py	/^EXCEPTION_BREAKPOINT           = 0x80000003$/;"	v
+EXCEPTION_DEBUG_EVENT	.\defines.py	/^EXCEPTION_DEBUG_EVENT          = 0x00000001$/;"	v
+EXCEPTION_DEBUG_INFO	.\windows_h.py	/^EXCEPTION_DEBUG_INFO = _EXCEPTION_DEBUG_INFO$/;"	v
+EXCEPTION_GUARD_PAGE	.\defines.py	/^EXCEPTION_GUARD_PAGE           = 0x80000001$/;"	v
+EXCEPTION_RECORD	.\windows_h.py	/^EXCEPTION_RECORD = _EXCEPTION_RECORD$/;"	v
+EXCEPTION_SINGLE_STEP	.\defines.py	/^EXCEPTION_SINGLE_STEP          = 0x80000004$/;"	v
+EXIT_PROCESS_DEBUG_EVENT	.\defines.py	/^EXIT_PROCESS_DEBUG_EVENT       = 0x00000005$/;"	v
+EXIT_PROCESS_DEBUG_INFO	.\windows_h.py	/^EXIT_PROCESS_DEBUG_INFO = _EXIT_PROCESS_DEBUG_INFO$/;"	v
+EXIT_THREAD_DEBUG_EVENT	.\defines.py	/^EXIT_THREAD_DEBUG_EVENT        = 0x00000004$/;"	v
+EXIT_THREAD_DEBUG_INFO	.\windows_h.py	/^EXIT_THREAD_DEBUG_INFO = _EXIT_THREAD_DEBUG_INFO$/;"	v
+FILE_MAP_READ	.\defines.py	/^FILE_MAP_READ                  = 0x00000004$/;"	v
+FLOATING_SAVE_AREA	.\windows_h.py	/^FLOATING_SAVE_AREA = _FLOATING_SAVE_AREA$/;"	v
+FORMAT_MESSAGE_ALLOCATE_BUFFER	.\defines.py	/^FORMAT_MESSAGE_ALLOCATE_BUFFER = 0x00000100$/;"	v
+FORMAT_MESSAGE_FROM_SYSTEM	.\defines.py	/^FORMAT_MESSAGE_FROM_SYSTEM     = 0x00001000$/;"	v
+HANDLE	.\windows_h.py	/^HANDLE = c_void_p$/;"	v
+HW_ACCESS	.\defines.py	/^HW_ACCESS                      = 0x00000003$/;"	v
+HW_EXECUTE	.\defines.py	/^HW_EXECUTE                     = 0x00000000$/;"	v
+HW_WRITE	.\defines.py	/^HW_WRITE                       = 0x00000001$/;"	v
+INVALID_HANDLE_VALUE	.\defines.py	/^INVALID_HANDLE_VALUE           = 0xFFFFFFFF$/;"	v
+LDT_ENTRY	.\windows_h.py	/^LDT_ENTRY = _LDT_ENTRY$/;"	v
+LOAD_DLL_DEBUG_EVENT	.\defines.py	/^LOAD_DLL_DEBUG_EVENT           = 0x00000006$/;"	v
+LOAD_DLL_DEBUG_INFO	.\windows_h.py	/^LOAD_DLL_DEBUG_INFO = _LOAD_DLL_DEBUG_INFO$/;"	v
+LONG	.\windows_h.py	/^LONG = c_long$/;"	v
+LPBYTE	.\windows_h.py	/^LPBYTE = POINTER(BYTE)$/;"	v
+LPSTR	.\windows_h.py	/^LPSTR = POINTER(CHAR)$/;"	v
+LPTHREAD_START_ROUTINE	.\windows_h.py	/^LPTHREAD_START_ROUTINE = PTHREAD_START_ROUTINE$/;"	v
+LPVOID	.\windows_h.py	/^LPVOID = c_void_p$/;"	v
+LUID	.\windows_h.py	/^LUID = _LUID$/;"	v
+LUID_AND_ATTRIBUTES	.\windows_h.py	/^LUID_AND_ATTRIBUTES = _LUID_AND_ATTRIBUTES$/;"	v
+MEMORY_BASIC_INFORMATION	.\windows_h.py	/^MEMORY_BASIC_INFORMATION = _MEMORY_BASIC_INFORMATION$/;"	v
+MEM_COMMIT	.\defines.py	/^MEM_COMMIT                     = 0x00001000$/;"	v
+MEM_DECOMMIT	.\defines.py	/^MEM_DECOMMIT                   = 0x00004000$/;"	v
+MEM_IMAGE	.\defines.py	/^MEM_IMAGE                      = 0x01000000$/;"	v
+MEM_RELEASE	.\defines.py	/^MEM_RELEASE                    = 0x00008000$/;"	v
+MIB_TCPTABLE_OWNER_PID	.\defines.py	/^class MIB_TCPTABLE_OWNER_PID(Structure):$/;"	c	inherits:Structure
+MIB_TCP_STATE_LISTEN	.\defines.py	/^MIB_TCP_STATE_LISTEN           = 0x00000002$/;"	v
+MIB_UDPTABLE_OWNER_PID	.\defines.py	/^class MIB_UDPTABLE_OWNER_PID(Structure):$/;"	c	inherits:Structure
+MODULEENTRY32	.\defines.py	/^class MODULEENTRY32(Structure):$/;"	c	inherits:Structure
+N10_LDT_ENTRY3DOLLAR_43DOLLAR_5E	.\windows_h.py	/^class N10_LDT_ENTRY3DOLLAR_43DOLLAR_5E(Structure):$/;"	c	inherits:Structure
+N10_LDT_ENTRY3DOLLAR_43DOLLAR_6E	.\windows_h.py	/^class N10_LDT_ENTRY3DOLLAR_43DOLLAR_6E(Structure):$/;"	c	inherits:Structure
+N10_LDT_ENTRY3DOLLAR_4E	.\windows_h.py	/^class N10_LDT_ENTRY3DOLLAR_4E(Union):$/;"	c	inherits:Union
+N12_DEBUG_EVENT4DOLLAR_39E	.\windows_h.py	/^class N12_DEBUG_EVENT4DOLLAR_39E(Union):$/;"	c	inherits:Union
+N12_SYSTEM_INFO4DOLLAR_374DOLLAR_38E	.\windows_h.py	/^class N12_SYSTEM_INFO4DOLLAR_374DOLLAR_38E(Structure):$/;"	c	inherits:Structure
+N12_SYSTEM_INFO4DOLLAR_37E	.\windows_h.py	/^class N12_SYSTEM_INFO4DOLLAR_37E(Union):$/;"	c	inherits:Union
+OUTPUT_DEBUG_STRING_EVENT	.\defines.py	/^OUTPUT_DEBUG_STRING_EVENT      = 0x00000008$/;"	v
+OUTPUT_DEBUG_STRING_INFO	.\windows_h.py	/^OUTPUT_DEBUG_STRING_INFO = _OUTPUT_DEBUG_STRING_INFO$/;"	v
+PAGE_EXECUTE	.\defines.py	/^PAGE_EXECUTE                   = 0x00000010$/;"	v
+PAGE_EXECUTE_READ	.\defines.py	/^PAGE_EXECUTE_READ              = 0x00000020$/;"	v
+PAGE_EXECUTE_READWRITE	.\defines.py	/^PAGE_EXECUTE_READWRITE         = 0x00000040$/;"	v
+PAGE_EXECUTE_WRITECOPY	.\defines.py	/^PAGE_EXECUTE_WRITECOPY         = 0x00000080$/;"	v
+PAGE_GUARD	.\defines.py	/^PAGE_GUARD                     = 0x00000100$/;"	v
+PAGE_NOACCESS	.\defines.py	/^PAGE_NOACCESS                  = 0x00000001$/;"	v
+PAGE_NOCACHE	.\defines.py	/^PAGE_NOCACHE                   = 0x00000200$/;"	v
+PAGE_READONLY	.\defines.py	/^PAGE_READONLY                  = 0x00000002$/;"	v
+PAGE_READWRITE	.\defines.py	/^PAGE_READWRITE                 = 0x00000004$/;"	v
+PAGE_WRITECOMBINE	.\defines.py	/^PAGE_WRITECOMBINE              = 0x00000400$/;"	v
+PAGE_WRITECOPY	.\defines.py	/^PAGE_WRITECOPY                 = 0x00000008$/;"	v
+PROCESSENTRY32	.\defines.py	/^class PROCESSENTRY32(Structure):$/;"	c	inherits:Structure
+PROCESS_ALL_ACCESS	.\defines.py	/^PROCESS_ALL_ACCESS             = 0x001F0FFF$/;"	v
+PROCESS_INFORMATION	.\windows_h.py	/^PROCESS_INFORMATION = _PROCESS_INFORMATION$/;"	v
+PTHREAD_START_ROUTINE	.\windows_h.py	/^    PTHREAD_START_ROUTINE = CFUNCTYPE(DWORD, c_void_p)$/;"	v
+PTHREAD_START_ROUTINE	.\windows_h.py	/^    PTHREAD_START_ROUTINE = WINFUNCTYPE(DWORD, c_void_p)$/;"	v	class:_CREATE_THREAD_DEBUG_INFO
+PVOID	.\windows_h.py	/^PVOID = c_void_p$/;"	v
+RIP_EVENT	.\defines.py	/^RIP_EVENT                      = 0x00000009$/;"	v
+RIP_INFO	.\windows_h.py	/^RIP_INFO = _RIP_INFO$/;"	v
+SE_PRIVILEGE_ENABLED	.\defines.py	/^SE_PRIVILEGE_ENABLED           = 0x00000002$/;"	v
+SIZE_T	.\windows_h.py	/^SIZE_T = UINT_PTR$/;"	v
+STARTUPINFO	.\windows_h.py	/^STARTUPINFO = STARTUPINFOA$/;"	v
+STARTUPINFOA	.\windows_h.py	/^STARTUPINFOA = _STARTUPINFOA$/;"	v
+STRING_EXPLORATION_MIN_LENGTH	.\pydbg.py	/^    STRING_EXPLORATION_MIN_LENGTH = 2$/;"	v	class:pydbg
+STRING_EXPLORATON_BUF_SIZE	.\pydbg.py	/^    STRING_EXPLORATON_BUF_SIZE    = 256$/;"	v	class:pydbg
+SW_SHOW	.\defines.py	/^SW_SHOW                        = 0x00000005$/;"	v
+SYSDBG_MSR	.\defines.py	/^class SYSDBG_MSR(Structure):$/;"	c	inherits:Structure
+SYSTEM_INFO	.\windows_h.py	/^SYSTEM_INFO = _SYSTEM_INFO$/;"	v
+SysDbgReadMsr	.\defines.py	/^SysDbgReadMsr                  = 16$/;"	v
+SysDbgWriteMsr	.\defines.py	/^SysDbgWriteMsr                 = 17$/;"	v
+TCP_TABLE_OWNER_PID_ALL	.\defines.py	/^TCP_TABLE_OWNER_PID_ALL        = 0x00000005$/;"	v
+TH32CS_INHERIT	.\defines.py	/^TH32CS_INHERIT      = 0x80000000$/;"	v
+TH32CS_SNAPALL	.\defines.py	/^TH32CS_SNAPALL      = (TH32CS_SNAPHEAPLIST | TH32CS_SNAPPROCESS | TH32CS_SNAPTHREAD | TH32CS_SNAPMODULE)$/;"	v
+TH32CS_SNAPHEAPLIST	.\defines.py	/^TH32CS_SNAPHEAPLIST = 0x00000001$/;"	v
+TH32CS_SNAPMODULE	.\defines.py	/^TH32CS_SNAPMODULE   = 0x00000008$/;"	v
+TH32CS_SNAPPROCESS	.\defines.py	/^TH32CS_SNAPPROCESS  = 0x00000002$/;"	v
+TH32CS_SNAPTHREAD	.\defines.py	/^TH32CS_SNAPTHREAD   = 0x00000004$/;"	v
+THREADENTRY32	.\defines.py	/^class THREADENTRY32(Structure):$/;"	c	inherits:Structure
+THREAD_ALL_ACCESS	.\defines.py	/^THREAD_ALL_ACCESS              = 0x001F03FF$/;"	v
+TOKEN_ADJUST_PRIVILEGES	.\defines.py	/^TOKEN_ADJUST_PRIVILEGES        = 0x00000020$/;"	v
+TOKEN_PRIVILEGES	.\windows_h.py	/^TOKEN_PRIVILEGES = _TOKEN_PRIVILEGES$/;"	v
+UDP_TABLE_OWNER_PID	.\defines.py	/^UDP_TABLE_OWNER_PID            = 0x00000001$/;"	v
+UINT_PTR	.\windows_h.py	/^UINT_PTR = c_ulong$/;"	v
+UNLOAD_DLL_DEBUG_EVENT	.\defines.py	/^UNLOAD_DLL_DEBUG_EVENT         = 0x00000007$/;"	v
+UNLOAD_DLL_DEBUG_INFO	.\windows_h.py	/^UNLOAD_DLL_DEBUG_INFO = _UNLOAD_DLL_DEBUG_INFO$/;"	v
+USER_CALLBACK_DEBUG_EVENT	.\defines.py	/^USER_CALLBACK_DEBUG_EVENT      = 0xDEADBEEF     # added for callback support in debug event loop.$/;"	v
+VIRTUAL_MEM	.\defines.py	/^VIRTUAL_MEM                    = 0x00003000$/;"	v
+WORD	.\windows_h.py	/^WORD = c_ushort$/;"	v
+_CONTEXT	.\windows_h.py	/^class _CONTEXT(Structure):$/;"	c	inherits:Structure
+_CREATE_PROCESS_DEBUG_INFO	.\windows_h.py	/^class _CREATE_PROCESS_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_CREATE_THREAD_DEBUG_INFO	.\windows_h.py	/^class _CREATE_THREAD_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_DEBUG_EVENT	.\windows_h.py	/^class _DEBUG_EVENT(Structure):$/;"	c	inherits:Structure
+_EXCEPTION_DEBUG_INFO	.\windows_h.py	/^class _EXCEPTION_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_EXCEPTION_RECORD	.\windows_h.py	/^class _EXCEPTION_RECORD(Structure):$/;"	c	inherits:Structure
+_EXIT_PROCESS_DEBUG_INFO	.\windows_h.py	/^class _EXIT_PROCESS_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_EXIT_THREAD_DEBUG_INFO	.\windows_h.py	/^class _EXIT_THREAD_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_FLOATING_SAVE_AREA	.\windows_h.py	/^class _FLOATING_SAVE_AREA(Structure):$/;"	c	inherits:Structure
+_LDT_ENTRY	.\windows_h.py	/^class _LDT_ENTRY(Structure):$/;"	c	inherits:Structure
+_LOAD_DLL_DEBUG_INFO	.\windows_h.py	/^class _LOAD_DLL_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+_LUID	.\windows_h.py	/^class _LUID(Structure):$/;"	c	inherits:Structure
+_LUID_AND_ATTRIBUTES	.\windows_h.py	/^class _LUID_AND_ATTRIBUTES(Structure):$/;"	c	inherits:Structure
+_MEMORY_BASIC_INFORMATION	.\windows_h.py	/^class _MEMORY_BASIC_INFORMATION(Structure):$/;"	c	inherits:Structure
+_MIB_TCPROW_OWNER_PID	.\defines.py	/^class _MIB_TCPROW_OWNER_PID(Structure):$/;"	c	inherits:Structure
+_MIB_UDPROW_OWNER_PID	.\defines.py	/^class _MIB_UDPROW_OWNER_PID(Structure):$/;"	c	inherits:Structure
+_OUTPUT_DEBUG_STRING_INFO	.\windows_h.py	/^class _OUTPUT_DEBUG_STRING_INFO(Structure):$/;"	c	inherits:Structure
+_PROCESS_INFORMATION	.\windows_h.py	/^class _PROCESS_INFORMATION(Structure):$/;"	c	inherits:Structure
+_RIP_INFO	.\windows_h.py	/^class _RIP_INFO(Structure):$/;"	c	inherits:Structure
+_STARTUPINFOA	.\windows_h.py	/^class _STARTUPINFOA(Structure):$/;"	c	inherits:Structure
+_SYSTEM_INFO	.\windows_h.py	/^class _SYSTEM_INFO(Structure):$/;"	c	inherits:Structure
+_TOKEN_PRIVILEGES	.\windows_h.py	/^class _TOKEN_PRIVILEGES(Structure):$/;"	c	inherits:Structure
+_UNLOAD_DLL_DEBUG_INFO	.\windows_h.py	/^class _UNLOAD_DLL_DEBUG_INFO(Structure):$/;"	c	inherits:Structure
+__all__	.\__init__.py	/^[$/;"	v
+__del__	.\system_dll.py	/^    def __del__ (self):$/;"	m	class:system_dll	file:	access:private
+__getattr__	.\pydbg_client.py	/^    def __getattr__ (self, method_name):$/;"	m	class:pydbg_client	file:	access:private
+__init__	.\breakpoint.py	/^    def __init__ (self, address=None, original_byte=None, description="", restore=True, handler=None):$/;"	m	class:breakpoint	access:public
+__init__	.\hardware_breakpoint.py	/^    def __init__ (self, address=None, length=0, condition="", description="", restore=True, slot=None, handler=None):$/;"	m	class:hardware_breakpoint	access:public
+__init__	.\memory_breakpoint.py	/^    def __init__ (self, address=None, size=None, mbi=None, description="", handler=None):$/;"	m	class:memory_breakpoint	access:public
+__init__	.\memory_snapshot_block.py	/^    def __init__ (self, mbi=None, data=None):$/;"	m	class:memory_snapshot_block	access:public
+__init__	.\memory_snapshot_context.py	/^    def __init__ (self, thread_id=None, context=None):$/;"	m	class:memory_snapshot_context	access:public
+__init__	.\pdx.py	/^    def __init__ (self, message, win32_exception=False):$/;"	m	class:pdx	access:public
+__init__	.\pydbg.py	/^    def __init__ (self, ff=True, cs=False):$/;"	m	class:pydbg	access:public
+__init__	.\pydbg_client.py	/^    def __init__ (self, host, port):$/;"	m	class:pydbg_client	access:public
+__init__	.\system_dll.py	/^    def __init__ (self, handle, base):$/;"	m	class:system_dll	access:public
+__str__	.\pdx.py	/^    def __str__ (self):$/;"	m	class:pdx	file:	access:private
+_construct	.\my_ctypes.py	/^def _construct (typ, raw_bytes):$/;"	f	access:public
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:MIB_TCPTABLE_OWNER_PID
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:MIB_UDPTABLE_OWNER_PID
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:MODULEENTRY32
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:PROCESSENTRY32
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:SYSDBG_MSR
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:THREADENTRY32
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:_MIB_TCPROW_OWNER_PID
+_fields_	.\defines.py	/^    _fields_ = [$/;"	v	class:_MIB_UDPROW_OWNER_PID
+_reduce	.\my_ctypes.py	/^def _reduce (self):$/;"	f	access:public
+addr_to_dll	.\pydbg.py	/^    def addr_to_dll (self, address):$/;"	m	class:pydbg	access:public
+addr_to_module	.\pydbg.py	/^    def addr_to_module (self, address):$/;"	m	class:pydbg	access:public
+address	.\breakpoint.py	/^    address       = None$/;"	v	class:breakpoint
+address	.\hardware_breakpoint.py	/^    address     = None$/;"	v	class:hardware_breakpoint
+address	.\memory_breakpoint.py	/^    address     = None$/;"	v	class:memory_breakpoint
+advapi32	.\pydbg.py	/^    advapi32 = kernel32$/;"	v
+advapi32	.\pydbg.py	/^    advapi32 = windll.advapi32$/;"	v
+attach	.\pydbg.py	/^    def attach (self, pid):$/;"	m	class:pydbg	access:public
+base	.\system_dll.py	/^    base   = None$/;"	v	class:system_dll
+bp_del	.\pydbg.py	/^    def bp_del (self, address):$/;"	m	class:pydbg	access:public
+bp_del_all	.\pydbg.py	/^    def bp_del_all (self):$/;"	m	class:pydbg	access:public
+bp_del_hw	.\pydbg.py	/^    def bp_del_hw (self, address=None, slot=None):$/;"	m	class:pydbg	access:public
+bp_del_hw_all	.\pydbg.py	/^    def bp_del_hw_all (self):$/;"	m	class:pydbg	access:public
+bp_del_mem	.\pydbg.py	/^    def bp_del_mem (self, address):$/;"	m	class:pydbg	access:public
+bp_del_mem_all	.\pydbg.py	/^    def bp_del_mem_all (self):$/;"	m	class:pydbg	access:public
+bp_is_ours	.\pydbg.py	/^    def bp_is_ours (self, address_to_check):$/;"	m	class:pydbg	access:public
+bp_is_ours_mem	.\pydbg.py	/^    def bp_is_ours_mem (self, address_to_check):$/;"	m	class:pydbg	access:public
+bp_set	.\pydbg.py	/^    def bp_set (self, address, description="", restore=True, handler=None):$/;"	m	class:pydbg	access:public
+bp_set_hw	.\pydbg.py	/^    def bp_set_hw (self, address, length, condition, description="", restore=True, handler=None):$/;"	m	class:pydbg	access:public
+bp_set_mem	.\pydbg.py	/^    def bp_set_mem (self, address, size, description="", handler=None):$/;"	m	class:pydbg	access:public
+breakpoint	.\breakpoint.py	/^class breakpoint:$/;"	c	inherits:
+cPickle	.\pydbg_client.py	/^import cPickle$/;"	i
+c_types	.\my_ctypes.py	/^           c_ulonglong, c_float, c_double, c_char_p, c_wchar_p, c_void_p)$/;"	v
+callbacks	.\pydbg_client.py	/^    callbacks = {}$/;"	v	class:pydbg_client
+close_handle	.\pydbg.py	/^    def close_handle (self, handle):$/;"	m	class:pydbg	access:public
+condition	.\hardware_breakpoint.py	/^    condition   = None$/;"	v	class:hardware_breakpoint
+context	.\memory_snapshot_context.py	/^    context   = None$/;"	v	class:memory_snapshot_context
+copy	.\pydbg.py	/^import copy$/;"	i
+copy_depth	.\memory_breakpoint.py	/^    copy_depth  = 0                                # degrees of separation from original buffer$/;"	v	class:memory_breakpoint
+data	.\memory_snapshot_block.py	/^    data = None$/;"	v	class:memory_snapshot_block
+dbg_print_all_debug_registers	.\pydbg.py	/^    def dbg_print_all_debug_registers (self):$/;"	m	class:pydbg	access:public
+dbg_print_all_guarded_pages	.\pydbg.py	/^    def dbg_print_all_guarded_pages (self):$/;"	m	class:pydbg	access:public
+debug_active_process	.\pydbg.py	/^    def debug_active_process (self, pid):$/;"	m	class:pydbg	access:public
+debug_event_iteration	.\pydbg.py	/^    def debug_event_iteration (self):$/;"	m	class:pydbg	access:public
+debug_event_loop	.\pydbg.py	/^    def debug_event_loop (self):$/;"	m	class:pydbg	access:public
+debug_event_loop	.\pydbg_client.py	/^    def debug_event_loop (self):$/;"	m	class:pydbg_client	access:public
+debug_set_process_kill_on_exit	.\pydbg.py	/^    def debug_set_process_kill_on_exit (self, kill_on_exit):$/;"	m	class:pydbg	access:public
+description	.\breakpoint.py	/^    description   = None$/;"	v	class:breakpoint
+description	.\hardware_breakpoint.py	/^    description = None$/;"	v	class:hardware_breakpoint
+description	.\memory_breakpoint.py	/^    description = None$/;"	v	class:memory_breakpoint
+detach	.\pydbg.py	/^    def detach (self):$/;"	m	class:pydbg	access:public
+disasm	.\pydbg.py	/^    def disasm (self, address):$/;"	m	class:pydbg	access:public
+disasm_around	.\pydbg.py	/^    def disasm_around (self, address, num_inst=5):$/;"	m	class:pydbg	access:public
+dump_context	.\pydbg.py	/^    def dump_context (self, context=None, stack_depth=5, print_dots=True):$/;"	m	class:pydbg	access:public
+dump_context_list	.\pydbg.py	/^    def dump_context_list (self, context=None, stack_depth=5, print_dots=True, hex_dump=False):$/;"	m	class:pydbg	access:public
+enumerate_modules	.\pydbg.py	/^    def enumerate_modules (self):$/;"	m	class:pydbg	access:public
+enumerate_processes	.\pydbg.py	/^    def enumerate_processes (self):$/;"	m	class:pydbg	access:public
+enumerate_threads	.\pydbg.py	/^    def enumerate_threads (self):$/;"	m	class:pydbg	access:public
+error_code	.\pdx.py	/^    error_code = None$/;"	v	class:pdx
+event_handler_create_process	.\pydbg.py	/^    def event_handler_create_process (self):$/;"	m	class:pydbg	access:public
+event_handler_create_thread	.\pydbg.py	/^    def event_handler_create_thread (self):$/;"	m	class:pydbg	access:public
+event_handler_exit_process	.\pydbg.py	/^    def event_handler_exit_process (self):$/;"	m	class:pydbg	access:public
+event_handler_exit_thread	.\pydbg.py	/^    def event_handler_exit_thread (self):$/;"	m	class:pydbg	access:public
+event_handler_load_dll	.\pydbg.py	/^    def event_handler_load_dll (self):$/;"	m	class:pydbg	access:public
+event_handler_unload_dll	.\pydbg.py	/^    def event_handler_unload_dll (self):$/;"	m	class:pydbg	access:public
+exception_handler_access_violation	.\pydbg.py	/^    def exception_handler_access_violation (self):$/;"	m	class:pydbg	access:public
+exception_handler_breakpoint	.\pydbg.py	/^    def exception_handler_breakpoint (self):$/;"	m	class:pydbg	access:public
+exception_handler_guard_page	.\pydbg.py	/^    def exception_handler_guard_page (self):$/;"	m	class:pydbg	access:public
+exception_handler_single_step	.\pydbg.py	/^    def exception_handler_single_step (self):$/;"	m	class:pydbg	access:public
+flip_endian	.\pydbg.py	/^    def flip_endian (self, dword):$/;"	m	class:pydbg	access:public
+flip_endian_dword	.\pydbg.py	/^    def flip_endian_dword (self, bytes):$/;"	m	class:pydbg	access:public
+func_resolve	.\pydbg.py	/^    def func_resolve (self, dll, function):$/;"	m	class:pydbg	access:public
+func_resolve_debuggee	.\pydbg.py	/^    def func_resolve_debuggee (self, dll_name, func_name):$/;"	m	class:pydbg	access:public
+get_arg	.\pydbg.py	/^    def get_arg (self, index, context=None):$/;"	m	class:pydbg	access:public
+get_ascii_string	.\pydbg.py	/^    def get_ascii_string (self, data):$/;"	m	class:pydbg	access:public
+get_attr	.\pydbg.py	/^    def get_attr (self, attribute):$/;"	m	class:pydbg	access:public
+get_debug_privileges	.\pydbg.py	/^    def get_debug_privileges (self):$/;"	m	class:pydbg	access:public
+get_instruction	.\pydbg.py	/^    def get_instruction (self, address):$/;"	m	class:pydbg	access:public
+get_printable_string	.\pydbg.py	/^    def get_printable_string (self, data, print_dots=True):$/;"	m	class:pydbg	access:public
+get_register	.\pydbg.py	/^    def get_register (self, register):$/;"	m	class:pydbg	access:public
+get_system_dll	.\pydbg.py	/^    def get_system_dll (self, idx):$/;"	m	class:pydbg	access:public
+get_thread_context	.\pydbg.py	/^    def get_thread_context (self, thread_handle=None, thread_id=0):$/;"	m	class:pydbg	access:public
+get_unicode_string	.\pydbg.py	/^    def get_unicode_string (self, data):$/;"	m	class:pydbg	access:public
+handle	.\system_dll.py	/^    handle = None$/;"	v	class:system_dll
+handler	.\breakpoint.py	/^    handler       = None$/;"	v	class:breakpoint
+handler	.\hardware_breakpoint.py	/^    handler     = None$/;"	v	class:hardware_breakpoint
+handler	.\memory_breakpoint.py	/^    handler     = None$/;"	v	class:memory_breakpoint
+hardware_breakpoint	.\hardware_breakpoint.py	/^class hardware_breakpoint:$/;"	c	inherits:
+hex_dump	.\pydbg.py	/^    def hex_dump (self, data, addr=0, prefix=""):$/;"	m	class:pydbg	access:public
+hide_debugger	.\pydbg.py	/^    def hide_debugger (self):$/;"	m	class:pydbg	access:public
+host	.\pydbg_client.py	/^    host      = None$/;"	v	class:pydbg_client
+id	.\memory_breakpoint.py	/^    id          = 0                                # unique breakpoint identifier$/;"	v	class:memory_breakpoint
+iphlpapi	.\pydbg.py	/^    iphlpapi = windll.iphlpapi$/;"	v
+is_address_on_stack	.\pydbg.py	/^    def is_address_on_stack (self, address, context=None):$/;"	m	class:pydbg	access:public
+iterate_modules	.\pydbg.py	/^    def iterate_modules (self):$/;"	m	class:pydbg	access:public
+iterate_processes	.\pydbg.py	/^    def iterate_processes (self):$/;"	m	class:pydbg	access:public
+iterate_threads	.\pydbg.py	/^    def iterate_threads (self):$/;"	m	class:pydbg	access:public
+kernel32	.\pdx.py	/^    kernel32 = CDLL(os.path.join(os.path.dirname(__file__), "libmacdll.dylib"))$/;"	v
+kernel32	.\pdx.py	/^    kernel32 = windll.kernel32$/;"	v
+kernel32	.\pydbg.py	/^    kernel32 = CDLL(os.path.join(os.path.dirname(__file__), "libmacdll.dylib"))$/;"	v
+kernel32	.\pydbg.py	/^    kernel32 = windll.kernel32$/;"	v
+kernel32	.\system_dll.py	/^    kernel32 = CDLL(os.path.join(os.path.dirname(__file__), "libmacdll.dylib"))$/;"	v
+kernel32	.\system_dll.py	/^    kernel32 = windll.kernel32$/;"	v
+length	.\hardware_breakpoint.py	/^    length      = None$/;"	v	class:hardware_breakpoint
+load	.\pydbg.py	/^    def load (self, path_to_file, command_line=None, create_new_console=False, show_window=True):$/;"	m	class:pydbg	access:public
+mbi	.\memory_breakpoint.py	/^    mbi         = None$/;"	v	class:memory_breakpoint
+mbi	.\memory_snapshot_block.py	/^    mbi  = None$/;"	v	class:memory_snapshot_block
+memory_breakpoint	.\memory_breakpoint.py	/^class memory_breakpoint:$/;"	c	inherits:
+memory_snapshot_block	.\memory_snapshot_block.py	/^class memory_snapshot_block:$/;"	c	inherits:
+memory_snapshot_context	.\memory_snapshot_context.py	/^class memory_snapshot_context:$/;"	c	inherits:
+message	.\pdx.py	/^    message    = None$/;"	v	class:pdx
+method_missing	.\pydbg_client.py	/^    def method_missing (self, method_name, *args, **kwargs):$/;"	m	class:pydbg_client	access:public
+name	.\system_dll.py	/^    name   = None$/;"	v	class:system_dll
+ntdll	.\pydbg.py	/^    ntdll    = windll.ntdll$/;"	v
+on_stack	.\memory_breakpoint.py	/^    on_stack    = False                            # is this memory breakpoint on a stack buffer?$/;"	v	class:memory_breakpoint
+open_process	.\pydbg.py	/^    def open_process (self, pid):$/;"	m	class:pydbg	access:public
+open_thread	.\pydbg.py	/^    def open_thread (self, thread_id):$/;"	m	class:pydbg	access:public
+original_byte	.\breakpoint.py	/^    original_byte = None$/;"	v	class:breakpoint
+os	.\pdx.py	/^import os.path$/;"	i
+os	.\pydbg.py	/^import os.path$/;"	i
+os	.\system_dll.py	/^import os$/;"	i
+os	.\system_dll.py	/^import os.path$/;"	i
+page_guard_clear	.\pydbg.py	/^    def page_guard_clear (self):$/;"	m	class:pydbg	access:public
+page_guard_restore	.\pydbg.py	/^    def page_guard_restore (self):$/;"	m	class:pydbg	access:public
+path	.\pdx.py	/^import os.path$/;"	i
+path	.\pydbg.py	/^import os.path$/;"	i
+path	.\system_dll.py	/^    path   = None$/;"	v	class:system_dll
+path	.\system_dll.py	/^import os.path$/;"	i
+pdx	.\pdx.py	/^class pdx (Exception):$/;"	c	inherits:Exception
+pe	.\system_dll.py	/^    pe     = None$/;"	v	class:system_dll
+pickle_recv	.\pydbg_client.py	/^    def pickle_recv (self):$/;"	m	class:pydbg_client	access:public
+pickle_send	.\pydbg_client.py	/^    def pickle_send (self, data):$/;"	m	class:pydbg_client	access:public
+pid_to_port	.\pydbg.py	/^    def pid_to_port (self, pid):$/;"	m	class:pydbg	access:public
+port	.\pydbg_client.py	/^    port      = None$/;"	v	class:pydbg_client
+process_restore	.\pydbg.py	/^    def process_restore (self):$/;"	m	class:pydbg	access:public
+process_snapshot	.\pydbg.py	/^    def process_snapshot (self, mem_only=False):$/;"	m	class:pydbg	access:public
+psapi	.\system_dll.py	/^    psapi    = kernel32$/;"	v
+psapi	.\system_dll.py	/^    psapi    = windll.psapi$/;"	v
+pydasm	.\pydbg.py	/^import pydasm$/;"	i
+pydbg	.\pydbg.py	/^class pydbg:$/;"	c	inherits:
+pydbg	.\pydbg_client.py	/^    pydbg     = None$/;"	v	class:pydbg_client
+pydbg_client	.\pydbg_client.py	/^class pydbg_client:$/;"	c	inherits:
+random	.\memory_breakpoint.py	/^import random$/;"	i
+read	.\pydbg.py	/^    def read (self, address, length):$/;"	m	class:pydbg	access:public
+read_count	.\memory_breakpoint.py	/^    read_count  = 0                                # number of times the target buffer was read from$/;"	v	class:memory_breakpoint
+read_msr	.\pydbg.py	/^    def read_msr (self, address):$/;"	m	class:pydbg	access:public
+read_process_memory	.\pydbg.py	/^    def read_process_memory (self, address, length):$/;"	m	class:pydbg	access:public
+restore	.\breakpoint.py	/^    restore       = None$/;"	v	class:breakpoint
+restore	.\hardware_breakpoint.py	/^    restore     = None$/;"	v	class:hardware_breakpoint
+resume_all_threads	.\pydbg.py	/^    def resume_all_threads (self):$/;"	m	class:pydbg	access:public
+resume_thread	.\pydbg.py	/^    def resume_thread (self, thread_id):$/;"	m	class:pydbg	access:public
+ret_self	.\pydbg.py	/^    def ret_self (self):$/;"	m	class:pydbg	access:public
+run	.\pydbg.py	/^    def run (self):$/;"	m	class:pydbg	access:public
+run	.\pydbg_client.py	/^    def run (self):$/;"	m	class:pydbg_client	access:public
+seh_unwind	.\pydbg.py	/^    def seh_unwind (self, context=None):$/;"	m	class:pydbg	access:public
+set_attr	.\pydbg.py	/^    def set_attr (self, attribute, value):$/;"	m	class:pydbg	access:public
+set_callback	.\pydbg.py	/^    def set_callback (self, exception_code, callback_func):$/;"	m	class:pydbg	access:public
+set_callback	.\pydbg_client.py	/^    def set_callback (self, exception_code, callback_func):$/;"	m	class:pydbg_client	access:public
+set_debugger_active	.\pydbg.py	/^    def set_debugger_active (self, enable):$/;"	m	class:pydbg	access:public
+set_register	.\pydbg.py	/^    def set_register (self, register, value):$/;"	m	class:pydbg	access:public
+set_thread_context	.\pydbg.py	/^    def set_thread_context (self, context, thread_handle=None, thread_id=0):$/;"	m	class:pydbg	access:public
+sigint_handler	.\pydbg.py	/^    def sigint_handler (self, signal_number, stack_frame):$/;"	m	class:pydbg	access:public
+signal	.\pydbg.py	/^import signal$/;"	i
+single_step	.\pydbg.py	/^    def single_step (self, enable, thread_handle=None):$/;"	m	class:pydbg	access:public
+size	.\memory_breakpoint.py	/^    size        = None$/;"	v	class:memory_breakpoint
+size	.\system_dll.py	/^    size   = 0$/;"	v	class:system_dll
+slot	.\hardware_breakpoint.py	/^    slot        = None$/;"	v	class:hardware_breakpoint
+smart_dereference	.\pydbg.py	/^    def smart_dereference (self, address, print_dots=True, hex_dump=False):$/;"	m	class:pydbg	access:public
+socket	.\pydbg.py	/^import socket$/;"	i
+socket	.\pydbg_client.py	/^import socket$/;"	i
+split_count	.\memory_breakpoint.py	/^    split_count = 0                                # number of times this breakpoint was split$/;"	v	class:memory_breakpoint
+stack_range	.\pydbg.py	/^    def stack_range (self, context=None):$/;"	m	class:pydbg	access:public
+stack_unwind	.\pydbg.py	/^    def stack_unwind (self, context=None):$/;"	m	class:pydbg	access:public
+struct	.\pydbg.py	/^import struct$/;"	i
+suspend_all_threads	.\pydbg.py	/^    def suspend_all_threads (self):$/;"	m	class:pydbg	access:public
+suspend_thread	.\pydbg.py	/^    def suspend_thread (self, thread_id):$/;"	m	class:pydbg	access:public
+sys	.\pydbg.py	/^import sys$/;"	i
+system_dll	.\system_dll.py	/^class system_dll:$/;"	c	inherits:
+terminate_process	.\pydbg.py	/^    def terminate_process (self, exit_code=0, method="terminateprocess"):$/;"	m	class:pydbg	access:public
+thread_id	.\memory_snapshot_context.py	/^    thread_id = None$/;"	v	class:memory_snapshot_context
+to_binary	.\pydbg.py	/^    def to_binary (self, number, bit_count=32):$/;"	m	class:pydbg	access:public
+to_decimal	.\pydbg.py	/^    def to_decimal (self, binary):$/;"	m	class:pydbg	access:public
+virtual_alloc	.\pydbg.py	/^    def virtual_alloc (self, address, size, alloc_type, protection):$/;"	m	class:pydbg	access:public
+virtual_free	.\pydbg.py	/^    def virtual_free (self, address, size, free_type):$/;"	m	class:pydbg	access:public
+virtual_protect	.\pydbg.py	/^    def virtual_protect (self, base_address, size, protection):$/;"	m	class:pydbg	access:public
+virtual_query	.\pydbg.py	/^    def virtual_query (self, address):$/;"	m	class:pydbg	access:public
+win32_error	.\pydbg.py	/^    def win32_error (self, prefix=None):$/;"	m	class:pydbg	access:public
+write	.\pydbg.py	/^    def write (self, address, data, length=0):$/;"	m	class:pydbg	access:public
+write_msr	.\pydbg.py	/^    def write_msr (self, address, data):$/;"	m	class:pydbg	access:public
+write_process_memory	.\pydbg.py	/^    def write_process_memory (self, address, data, length=0):$/;"	m	class:pydbg	access:public

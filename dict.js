@@ -16,6 +16,7 @@ if (demicm.IS_FUZZ_GROUP) {
 
 demicm.elemDic = {
     a            : 'HTMLAnchorElement',
+    acronym      : 'HTMLElement',
     abbr         : 'HTMLElement',
     address      : 'HTMLElement',
     applet       : 'HTMLAppletElement',
@@ -24,6 +25,8 @@ demicm.elemDic = {
     aside        : 'HTMLElement',
     audio        : 'HTMLAudioElement',
     b            : 'HTMLElement',
+    big          : 'HTMLElement',
+    center       : 'HTMLElement',
     base         : 'HTMLBaseElement',
     basefont     : 'HTMLElement',
     bdi          : 'HTMLElement',
@@ -35,6 +38,7 @@ demicm.elemDic = {
     button       : 'HTMLButtonElement',
     canvas       : 'HTMLCanvasElement',
     caption      : 'HTMLTableCaptionElement',
+    content      : 'HTMLContentElement',
     cite         : 'HTMLElement',
     code         : 'HTMLElement',
     col          : 'HTMLTableColElement',
@@ -50,13 +54,18 @@ demicm.elemDic = {
     div          : 'HTMLDivElement',
     dl           : 'HTMLDListElement',
     dt           : 'HTMLElement',
+    dir          : 'HTMLDirectoryElement',
     em           : 'HTMLElement',
     embed        : 'HTMLEmbedElement',
     fieldset     : 'HTMLFieldSetElement',
     figcaption   : 'HTMLElement',
     figure       : 'HTMLElement',
     footer       : 'HTMLElement',
+    frame        : 'HTMLFrameElement',
+    frameset     : 'HTMLFrameSetElement',
+    main         : 'HTMLElement',
     form         : 'HTMLFormElement',
+    font         : 'HTMLFontElement',
     h1           : 'HTMLHeadingElement',
     h2           : 'HTMLHeadingElement',
     h3           : 'HTMLHeadingElement',
@@ -85,13 +94,17 @@ demicm.elemDic = {
     mark         : 'HTMLElement',
     marquee      : 'HTMLMarqueeElement',
     menu         : 'HTMLMenuElement',
+    menuitem     : 'HTMLUnknownElement',
     meta         : 'HTMLMetaElement',
     meter        : 'HTMLMeterElement',
     nav          : 'HTMLElement',
+    nolayer      : 'HTMLElement',
+    plaintext    : 'HTMLElement',
     noscript     : 'HTMLElement',
     nobr         : 'HTMLElement',
     noembed      : 'HTMLElement',
     noframes     : 'HTMLElement',
+    picture      : 'HTMLPictureElement',
     object       : 'HTMLObjectElement',
     ol           : 'HTMLOListElement',
     optgroup     : 'HTMLOptGroupElement',
@@ -100,12 +113,19 @@ demicm.elemDic = {
     p            : 'HTMLParagraphElement',
     param        : 'HTMLParamElement',
     pre          : 'HTMLPreElement',
+    listing      : 'HTMLPreElement',
+    xmp          : 'HTMLPreElement',
     progress     : 'HTMLProgressElement',
     q            : 'HTMLQuoteElement',
     rp           : 'HTMLElement',
+    shadow       : 'HTMLShadowElement',
     rt           : 'HTMLElement',
+    image        : 'HTMLUnknownElement',
+    rtc          : 'HTMLUnknownElement',
     ruby         : 'HTMLElement',
+    rb           : 'HTMLUnknownElement',
     s            : 'HTMLElement',
+    strike       : 'HTMLElement',
     samp         : 'HTMLElement',
     script       : 'HTMLScriptElement',
     section      : 'HTMLElement',
@@ -136,6 +156,7 @@ demicm.elemDic = {
     video        : 'HTMLVideoElement',
     wbr          : 'HTMLElement',
     html         : 'HTMLHtmlElement',
+    template     : 'HTMLTemplateElement',
 
     // Pseudo tag
     unknown          : 'HTMLUnknownElement',
@@ -407,8 +428,12 @@ demicm.bool = [true, false];
 demicm.str = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
 demicm.normalStr = ['demi6od'];
 demicm.dirtyStr = [
-    "javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
-    "javascript: try {document.write('');} catch(e) {}",
+    //"javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
+    //"javascript: try {document.write('');} catch(e) {}",
+    "filesystem:http://demi6od:password@127.0.0.1:8000/temporary/path/to/file.png",
+];
+demicm.dirtyHtml = [
+    //"<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
 ];
 
 demicm.alpha = [
@@ -427,8 +452,8 @@ demicm.normalNumPct = demicm.normalNum.concat(demicm.normalPct);
 demicm.normalNumPctStar = demicm.normalNumPct.concat(['*']); 
 
 demicm.dirtyNum = [
-    0x7f, -0x7f, 0xff, -0xff, 0x7fff, -0x7fff, 0xffff, -0xffff, 0x7fffffff, -0x7fffffff, 0xffffffff, -0xffffffff,
-    0, 0.1111, -0.1111, -1, 5e6, -7e6, 8e-6, -8e-6, 2e100, -2e100, 7500000000, -7500000000, 4400000000, -4400000000
+    0x7f, -0x7f, 0xff, -0xff, 0x7fff, -0x7fff, 0xffff, -0xffff, 0x7fffffff, -0x7fffffff, 0xffffffff, 0xfffffffc, -0xffffffff,
+    0, -1, 2e100, -2e100, 0x20000001, 0x10000001, 0x40000001, 0x40000000, 0x3fffffff, 0x80000001, 0x80000000
 ];
 demicm.dirtyPct = ['0%', '-1%', '-50%', '101%', '500%'];
 demicm.dirtyNumPct = demicm.dirtyNum.concat(demicm.dirtyPct);

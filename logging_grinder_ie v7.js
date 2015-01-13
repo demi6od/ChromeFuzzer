@@ -127,14 +127,14 @@ demicm.WIN_PER = 20; // 20
 demicm.ATTR_PER = 100; // 100
 demicm.SET_ATTR_PER = 20; // 20
 
-demicm.ADD_WEBGL_PER = 80; // 80
+demicm.ADD_WEBGL_PER = 20; // 20
 demicm.WEBGL_PER = 80; // 80
 demicm.DRAW_WEBGL_PER = 20; // 20
 
-demicm.ADD_CANVAS2D_PER = 60; // 60
+demicm.ADD_CANVAS2D_PER = 20; // 20
 demicm.CANVAS2D_PER = 60; // 60
 
-demicm.ADD_NETWORK = 50; // 50
+demicm.ADD_NETWORK = 10; // 10
 
 // Multi page
 demicm.MULTI_MAN_PER = 40; // 40 
@@ -1544,6 +1544,27 @@ function appendNetwork(rId, rTxt) {
     id[id.length - 1].id = id.length - 1;
 }
 
+function appendStyle(rId, rTxt) {
+    // Add style
+    logger.log('id_' + id.length + ' = document.createElement("style");', 'grind', 1);
+    id[id.length] = document.createElement('style');
+    logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
+    id[id.length - 1].id = id.length - 1;
+
+    var cssList = '';
+    var tagList = randItem(demicm.idTags);
+    for (var j = 0; j < demicm.idTags.length / 3; j++) {
+        tagList += ', ' + randItem(demicm.idTags);
+    }
+    cssList += tagList + ' ' + randCSSText() + ' ';
+
+    logger.log('id_' + (id.length - 1) + '.innerText = "' + cssList + '";', 'grind', 1);
+    id[id.length - 1].innerText = cssList;
+
+    logger.log('id_' + rId + '.appendChild(id_' + (id.length - 1) + ');', 'grind', 1);
+    id[rId].appendChild(id[id.length - 1]);
+}
+
 function appendTable(rId, rTxt) {
     // Add table
     logger.log('id_' + id.length + ' = document.createElement("table");', 'grind', 1);
@@ -1902,9 +1923,26 @@ function appendSharedWorker() {
 }
 
 function appendSvg(rId, rTxt) {
-    // Add svg
+    // Add embed svg
     logger.log('id_' + id.length + ' = document.createElement("embed");', 'grind', 1);
     id[id.length] = document.createElement('embed');
+    logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
+    id[id.length - 1].id = id.length - 1;
+    logger.log('id_' + (id.length - 1) + '.src = "demicmSvg.svg";', 'grind', 1);
+    id[id.length - 1].src = 'demicmSvg.svg';
+    logger.log('id_' + (id.length - 1) + '.type = "image/svg+xml";', 'grind', 1);
+    id[id.length - 1].type = 'image/svg+xml';
+    logger.log('id_' + (id.length - 1) + '.width = "320";', 'grind', 1);
+    id[id.length - 1].width = '320';
+    logger.log('id_' + (id.length - 1) + '.height = "240";', 'grind', 1);
+    id[id.length - 1].height = '240';
+
+    logger.log('id_' + rId + '.appendChild(id_' + (id.length - 1) + ');', 'grind', 1);
+    id[rId].appendChild(id[id.length - 1]);
+
+    // Add img svg
+    logger.log('id_' + id.length + ' = document.createElement("img");', 'grind', 1);
+    id[id.length] = document.createElement('img');
     logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
     id[id.length - 1].id = id.length - 1;
     logger.log('id_' + (id.length - 1) + '.src = "demicmSvg.svg";', 'grind', 1);
@@ -1969,6 +2007,8 @@ function appendSpecElem() {
             logger.log('// Warning: appendSpecElem default', 'grind', 1);
             break;
     }
+
+    appendStyle(rId, rTxt);
 
     if(percent(demicm.ADD_NETWORK)) {
         var rId = randId(true, false, true);
@@ -4129,6 +4169,7 @@ if (demicm.IS_FUZZ_GROUP) {
 
 demicm.elemDic = {
     a            : 'HTMLAnchorElement',
+    acronym      : 'HTMLElement',
     abbr         : 'HTMLElement',
     address      : 'HTMLElement',
     applet       : 'HTMLAppletElement',
@@ -4137,6 +4178,8 @@ demicm.elemDic = {
     aside        : 'HTMLElement',
     audio        : 'HTMLAudioElement',
     b            : 'HTMLElement',
+    big          : 'HTMLElement',
+    center       : 'HTMLElement',
     base         : 'HTMLBaseElement',
     basefont     : 'HTMLElement',
     bdi          : 'HTMLElement',
@@ -4148,6 +4191,7 @@ demicm.elemDic = {
     button       : 'HTMLButtonElement',
     canvas       : 'HTMLCanvasElement',
     caption      : 'HTMLTableCaptionElement',
+    content      : 'HTMLContentElement',
     cite         : 'HTMLElement',
     code         : 'HTMLElement',
     col          : 'HTMLTableColElement',
@@ -4163,13 +4207,18 @@ demicm.elemDic = {
     div          : 'HTMLDivElement',
     dl           : 'HTMLDListElement',
     dt           : 'HTMLElement',
+    dir          : 'HTMLDirectoryElement',
     em           : 'HTMLElement',
     embed        : 'HTMLEmbedElement',
     fieldset     : 'HTMLFieldSetElement',
     figcaption   : 'HTMLElement',
     figure       : 'HTMLElement',
     footer       : 'HTMLElement',
+    frame        : 'HTMLFrameElement',
+    frameset     : 'HTMLFrameSetElement',
+    main         : 'HTMLElement',
     form         : 'HTMLFormElement',
+    font         : 'HTMLFontElement',
     h1           : 'HTMLHeadingElement',
     h2           : 'HTMLHeadingElement',
     h3           : 'HTMLHeadingElement',
@@ -4198,13 +4247,17 @@ demicm.elemDic = {
     mark         : 'HTMLElement',
     marquee      : 'HTMLMarqueeElement',
     menu         : 'HTMLMenuElement',
+    menuitem     : 'HTMLUnknownElement',
     meta         : 'HTMLMetaElement',
     meter        : 'HTMLMeterElement',
     nav          : 'HTMLElement',
+    nolayer      : 'HTMLElement',
+    plaintext    : 'HTMLElement',
     noscript     : 'HTMLElement',
     nobr         : 'HTMLElement',
     noembed      : 'HTMLElement',
     noframes     : 'HTMLElement',
+    picture      : 'HTMLPictureElement',
     object       : 'HTMLObjectElement',
     ol           : 'HTMLOListElement',
     optgroup     : 'HTMLOptGroupElement',
@@ -4213,12 +4266,19 @@ demicm.elemDic = {
     p            : 'HTMLParagraphElement',
     param        : 'HTMLParamElement',
     pre          : 'HTMLPreElement',
+    listing      : 'HTMLPreElement',
+    xmp          : 'HTMLPreElement',
     progress     : 'HTMLProgressElement',
     q            : 'HTMLQuoteElement',
     rp           : 'HTMLElement',
+    shadow       : 'HTMLShadowElement',
     rt           : 'HTMLElement',
+    image        : 'HTMLUnknownElement',
+    rtc          : 'HTMLUnknownElement',
     ruby         : 'HTMLElement',
+    rb           : 'HTMLUnknownElement',
     s            : 'HTMLElement',
+    strike       : 'HTMLElement',
     samp         : 'HTMLElement',
     script       : 'HTMLScriptElement',
     section      : 'HTMLElement',
@@ -4249,6 +4309,7 @@ demicm.elemDic = {
     video        : 'HTMLVideoElement',
     wbr          : 'HTMLElement',
     html         : 'HTMLHtmlElement',
+    template     : 'HTMLTemplateElement',
 
     // Pseudo tag
     unknown          : 'HTMLUnknownElement',
@@ -4520,8 +4581,12 @@ demicm.bool = [true, false];
 demicm.str = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
 demicm.normalStr = ['demi6od'];
 demicm.dirtyStr = [
-    "javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
-    "javascript: try {document.write('');} catch(e) {}",
+    //"javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
+    //"javascript: try {document.write('');} catch(e) {}",
+    "filesystem:http://demi6od:password@127.0.0.1:8000/temporary/path/to/file.png",
+];
+demicm.dirtyHtml = [
+    //"<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
 ];
 
 demicm.alpha = [
@@ -4540,8 +4605,8 @@ demicm.normalNumPct = demicm.normalNum.concat(demicm.normalPct);
 demicm.normalNumPctStar = demicm.normalNumPct.concat(['*']); 
 
 demicm.dirtyNum = [
-    0x7f, -0x7f, 0xff, -0xff, 0x7fff, -0x7fff, 0xffff, -0xffff, 0x7fffffff, -0x7fffffff, 0xffffffff, -0xffffffff,
-    0, 0.1111, -0.1111, -1, 5e6, -7e6, 8e-6, -8e-6, 2e100, -2e100, 7500000000, -7500000000, 4400000000, -4400000000
+    0x7f, -0x7f, 0xff, -0xff, 0x7fff, -0x7fff, 0xffff, -0xffff, 0x7fffffff, -0x7fffffff, 0xffffffff, 0xfffffffc, -0xffffffff,
+    0, -1, 2e100, -2e100, 0x20000001, 0x10000001, 0x40000001, 0x40000000, 0x3fffffff, 0x80000001, 0x80000000
 ];
 demicm.dirtyPct = ['0%', '-1%', '-50%', '101%', '500%'];
 demicm.dirtyNumPct = demicm.dirtyNum.concat(demicm.dirtyPct);
@@ -6342,26 +6407,26 @@ demicm.funcBlackList = [
     'setSelection', 'nodeIteration', 'treeIteration', 'moveIterator', 'moveTreeWalker', 'alterRange', 
     'alterSelection', 'constructGroup', 'reuseGroup', 'objMan', 'preludeFirst', 'preludeSecond', 
     'setPropSty', 'setEnv', 'eventHandler', 'setEvtHandler', 'addTextNode', 'appendForm', 
-    'appendList', 'appendCanvas2D', 'appendWebGL', 'drawWebgl', 'appendNetwork', 'appendTable', 
-    'appendMap', 'appendAudio', 'appendVideo', 'appendWorker', 'appendSharedWorker', 'appendSvg', 
-    'appendXml', 'appendSpecElem', 'constructBaseTree', 'constructDOMTree', 'setAttr', 'constructSpec', 
-    'addCSS', 'propfMan', 'propMan', 'funcMan', 'styleMan', 'layout', 
-    'clearSub', 'clearAll', 'DOMMan', 'winMan', 'attrMan', 'canvas2dMan', 
-    'webglMan', 'finale', 'reuseElem', 'reuseRetElem', 'reuseSpec', 'relayout', 
-    'operate', 'normalOperate', 'specialOperate', 'multiClear', 'multiMan', 'specObjMan', 
-    'groupMan', 'appendWindow', 'appendIframe', 'appendFrame', 'constructMulti', 'getWindow', 
-    'getIframe', 'getFrame', 'getMultiElems', 'demiStart', 'demiFront', 'demiBack', 
-    'demiEnd', 'rand', 'randItem', 'srand', 'randBool', 'randHex', 
-    'randAlpha', 'randAscii', 'randHTMLEnt', 'randUnicode', 'randStr', 'randHTMLCode', 
-    'percent', 'getTagName', 'randId', 'randIds', 'randObjId', 'randObjIds', 
-    'getPropf', 'updatePropfCache', 'randPropf', 'randPropfDyn', 'randPropfVal', 'randStyle', 
-    'randStyleVal', 'randCSSText', 'toCSSStyle', 'logRevise', 'removeThis', 'removeChildren', 
-    'removeCache', 'clearThisId', 'clearChildrenId', 'removeArrVal', 'inArr', 'isArr', 
-    'repeatArr', 'convoluteArr', 'cloneObj', 'extendObj', 'isPosInt', 'elemInDOM', 
-    'writeFileCM', 'writeFileIE', 'getTags', 'getElemName', 'getPropAndFunc', 'getDistPropAndFunc', 
-    'tickle', 'LOGGER', 'initShaders', 'createProgram', 'loadShader', 'getWebGLContext', 
-    'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 'testCase', 
-    'testcase', 'testCase', 
+    'appendList', 'appendCanvas2D', 'appendWebGL', 'drawWebgl', 'appendNetwork', 'appendStyle', 
+    'appendTable', 'appendMap', 'appendAudio', 'appendVideo', 'appendWorker', 'appendSharedWorker', 
+    'appendSvg', 'appendXml', 'appendSpecElem', 'constructBaseTree', 'constructDOMTree', 'setAttr', 
+    'constructSpec', 'addCSS', 'propfMan', 'propMan', 'funcMan', 'styleMan', 
+    'layout', 'clearSub', 'clearAll', 'DOMMan', 'winMan', 'attrMan', 
+    'canvas2dMan', 'webglMan', 'finale', 'reuseElem', 'reuseRetElem', 'reuseSpec', 
+    'relayout', 'operate', 'normalOperate', 'specialOperate', 'multiClear', 'multiMan', 
+    'specObjMan', 'groupMan', 'appendWindow', 'appendIframe', 'appendFrame', 'constructMulti', 
+    'getWindow', 'getIframe', 'getFrame', 'getMultiElems', 'demiStart', 'demiFront', 
+    'demiBack', 'demiEnd', 'rand', 'randItem', 'srand', 'randBool', 
+    'randHex', 'randAlpha', 'randAscii', 'randHTMLEnt', 'randUnicode', 'randStr', 
+    'randHTMLCode', 'percent', 'getTagName', 'randId', 'randIds', 'randObjId', 
+    'randObjIds', 'getPropf', 'updatePropfCache', 'randPropf', 'randPropfDyn', 'randPropfVal', 
+    'randStyle', 'randStyleVal', 'randCSSText', 'toCSSStyle', 'logRevise', 'removeThis', 
+    'removeChildren', 'removeCache', 'clearThisId', 'clearChildrenId', 'removeArrVal', 'inArr', 
+    'isArr', 'repeatArr', 'convoluteArr', 'cloneObj', 'extendObj', 'isPosInt', 
+    'elemInDOM', 'writeFileCM', 'writeFileIE', 'getTags', 'getElemName', 'getPropAndFunc', 
+    'getDistPropAndFunc', 'tickle', 'LOGGER', 'initShaders', 'createProgram', 'loadShader', 
+    'getWebGLContext', 'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 
+    'testCase', 'testcase', 'testCase', 
     // Auto func black list end
 
     // Grinder server special func result
@@ -6690,7 +6755,7 @@ demicm.funcDic = {
     ],
     createContextualFragment: [
         {type: 'objectDocumentFragment'},
-		{type: 'string', normalVal: ['<a>htmlCode</a>'], dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: demicm.dirtyHtml, dirtyVal: demicm.dirtyStr},
     ],
     surroundContents: [
         {type: ''},

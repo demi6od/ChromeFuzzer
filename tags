@@ -206,6 +206,7 @@ BEGIN_LI	.\PocSmplify\paimei-master\console\modules\_PAIMEIdiff\PAIMEIDiffReport
 BEGIN_LIST	.\PocSmplify\paimei-master\console\modules\_PAIMEIdiff\PAIMEIDiffReport.py	/^BEGIN_LIST = "<ul>\\n"$/;"	v
 BEGIN_TD	.\PocSmplify\paimei-master\console\modules\_PAIMEIdiff\PAIMEIDiffReport.py	/^BEGIN_TD = "<td>\\n"$/;"	v
 BEGIN_TR	.\PocSmplify\paimei-master\console\modules\_PAIMEIdiff\PAIMEIDiffReport.py	/^BEGIN_TR = "<tr>\\n"$/;"	v
+BINARY	.\websocket.py	/^    BINARY = 0x02$/;"	v	class:WebSocketConnection
 BKBLACK	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	135;"	d
 BKCYAN	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	138;"	d
 BKGRAY	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	136;"	d
@@ -981,6 +982,7 @@ EXPORT	.\PocSmplify\paimei-master\MacOSX\macdll\implementation.c	16;"	d	file:
 Eax	.\PocSmplify\paimei-master\MacOSX\macdll\windows.h	/^    DWORD   Eax;$/;"	m	struct:_CONTEXT	access:public
 Ebp	.\PocSmplify\paimei-master\MacOSX\macdll\windows.h	/^    DWORD   Ebp;$/;"	m	struct:_CONTEXT	access:public
 Ebx	.\PocSmplify\paimei-master\MacOSX\macdll\windows.h	/^    DWORD   Ebx;$/;"	m	struct:_CONTEXT	access:public
+EchoHandler	.\websocket.py	/^class EchoHandler(object):$/;"	c	inherits:object
 Ecx	.\PocSmplify\paimei-master\MacOSX\macdll\windows.h	/^    DWORD   Ecx;$/;"	m	struct:_CONTEXT	access:public
 Edi	.\PocSmplify\paimei-master\MacOSX\macdll\windows.h	/^    DWORD   Edi;$/;"	m	struct:_CONTEXT	access:public
 EditReconDlg	.\PocSmplify\paimei-master\console\modules\_PAIMEIpeek\EditReconDlg.py	/^class EditReconDlg(wx.Dialog):$/;"	c	inherits:wx.Dialog
@@ -2183,6 +2185,7 @@ ModuleWrapper	.\PocSmplify\psutil-master\psutil\__init__.py	/^    class ModuleWr
 Msgbox	.\fuzz update\node\lib\metasm\metasm\gui\gtk.rb	/^module Msgbox$/;"	m	class:Metasm.Gui
 Msgbox	.\fuzz update\node\lib\metasm\metasm\gui\qt.rb	/^module Msgbox$/;"	m	class:Metasm.Gui
 Msgbox	.\fuzz update\node\lib\metasm\metasm\gui\win32.rb	/^module Msgbox$/;"	m	class:Metasm.Gui
+MyHTTPRequestHandler	.\xmlhttprequest.py	/^class MyHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):$/;"	c	inherits:SimpleHTTPServer.SimpleHTTPRequestHandler
 MyHook	.\fuzz update\node\lib\metasm\samples\dbg-apihook.rb	/^class MyHook < ApiHook$/;"	c
 MySQLdb	.\PocSmplify\paimei-master\__install_requirements.py	/^    import MySQLdb$/;"	i
 MySQLdb	.\PocSmplify\paimei-master\__setup_mysql.py	/^import MySQLdb$/;"	i
@@ -3226,6 +3229,7 @@ Signature	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap7.h	
 Signature	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap7.h	/^	ULONG32      Signature;$/;"	m	struct:_HEAP_USERDATA_HEADER	access:public
 SimdReg	.\fuzz update\node\lib\metasm\metasm\cpu\ia32\main.rb	/^	class SimdReg < Argument$/;"	c	class:Metasm
 SimdReg	.\fuzz update\node\lib\metasm\metasm\cpu\x86_64\main.rb	/^	class SimdReg < Ia32::SimdReg$/;"	c	class:Metasm.X86_64
+SimpleHTTPServer	.\xmlhttprequest.py	/^import SimpleHTTPServer$/;"	i
 Size	.\PocSmplify\psutil-master\psutil\arch\windows\glpi.h	/^    DWORD Size;$/;"	m	struct:_CACHE_DESCRIPTOR	access:public
 Size	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap.h	/^\/*0x000*\/             UINT16       Size;$/;"	m	struct:_HEAP_ENTRY	access:public
 Size	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap.h	/^\/*0x000*\/             UINT16       Size;$/;"	m	struct:_HEAP_FREE_ENTRY::__anon5::__anon6	access:public
@@ -3242,6 +3246,7 @@ SleepTimeBias	.\PocSmplify\psutil-master\psutil\arch\windows\ntextapi.h	/^    UL
 SmallTagIndex	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap.h	/^\/*0x004*\/     UINT8        SmallTagIndex;$/;"	m	struct:_HEAP_ENTRY	access:public
 SmallTagIndex	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap.h	/^\/*0x004*\/     UINT8        SmallTagIndex;$/;"	m	struct:_HEAP_FREE_ENTRY	access:public
 SmallTagIndex	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\winheap7.h	/^	UINT8        SmallTagIndex;$/;"	m	struct:_HEAP_ENTRY	access:public
+SocketServer	.\xmlhttprequest.py	/^import SocketServer$/;"	i
 SortListItems	.\PocSmplify\paimei-master\console\modules\_PAIMEIdiff\MatchedListCtrl.py	/^    def SortListItems(self, col=-1, ascending=1): $/;"	m	class:MatchedListCtrl	access:public
 Sortsorteddata	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	/^extc int     cdecl Sortsorteddata(t_sorted *sd,int sort);$/;"	p	signature:(t_sorted *sd,int sort)
 Span	.\fuzz update\node\lib\metasm\misc\txt2html.rb	/^class Span < Elem$/;"	c	class:Html
@@ -3353,6 +3358,7 @@ TESTFN	.\PocSmplify\psutil-master\test\test_psutil.py	/^TESTFN = os.path.join(os
 TESTFN_UNICODE	.\PocSmplify\psutil-master\test\test_psutil.py	/^        TESTFN_UNICODE = TESTFN + "???"$/;"	v
 TESTFN_UNICODE	.\PocSmplify\psutil-master\test\test_psutil.py	/^        TESTFN_UNICODE = unicode(TESTFN_UNICODE, sys.getfilesystemencoding())$/;"	v
 TESTFN_UNICODE	.\PocSmplify\psutil-master\test\test_psutil.py	/^TESTFN_UNICODE = TESTFN + "ƒőő"$/;"	v
+TEXT	.\websocket.py	/^    TEXT = 0x01$/;"	v	class:WebSocketConnection
 TEXTLEN	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	106;"	d
 TH32CS_INHERIT	.\PocSmplify\GrayHatPython-master\ghpython_src\src\my_debugger_defines.py	/^TH32CS_INHERIT      = 0x80000000$/;"	v
 TH32CS_INHERIT	.\PocSmplify\GrayHatPython-master\my_debugger_defines.py	/^TH32CS_INHERIT = 0x80000000$/;"	v
@@ -3816,6 +3822,8 @@ WebGLUtils.create3DContext	.\lib\webgl-utils.js	/^var create3DContext = function
 WebGLUtils.makeFailHTML	.\lib\webgl-utils.js	/^var makeFailHTML = function(msg) {$/;"	f
 WebGLUtils.setupWebGL	.\lib\webgl-utils.js	/^var setupWebGL = function(canvas, opt_attribs, opt_onError) {$/;"	f
 WebGLUtils.setupWebGL.handleCreationError	.\lib\webgl-utils.js	/^  function handleCreationError(msg) {$/;"	f
+WebSocketConnection	.\websocket.py	/^class WebSocketConnection(asyncore.dispatcher_with_send):$/;"	c	inherits:asyncore.dispatcher_with_send
+WebSocketServer	.\websocket.py	/^class WebSocketServer(asyncore.dispatcher):$/;"	c	inherits:asyncore.dispatcher
 WebStats	.\fuzz update\node\core\webstats.rb	/^		class WebStats$/;"	c	class:Grinder.Core
 While	.\fuzz update\node\lib\metasm\metasm\compile_c.rb	/^	class While$/;"	c	class:Metasm.C
 While	.\fuzz update\node\lib\metasm\metasm\parse_c.rb	/^	class While < Statement$/;"	c	class:Metasm.C
@@ -4983,6 +4991,9 @@ __init__	.\PocSmplify\pydbg-master\pdx.py	/^    def __init__ (self, message, win
 __init__	.\PocSmplify\pydbg-master\pydbg.py	/^    def __init__ (self, ff=True, cs=False):$/;"	m	class:pydbg	access:public
 __init__	.\PocSmplify\pydbg-master\pydbg_client.py	/^    def __init__ (self, host, port):$/;"	m	class:pydbg_client	access:public
 __init__	.\PocSmplify\pydbg-master\system_dll.py	/^    def __init__ (self, handle, base):$/;"	m	class:system_dll	access:public
+__init__	.\websocket.py	/^    def __init__(self, conn):$/;"	m	class:EchoHandler	access:public
+__init__	.\websocket.py	/^    def __init__(self, conn, server):$/;"	m	class:WebSocketConnection	access:public
+__init__	.\websocket.py	/^    def __init__(self, port=80, handlers=None):$/;"	m	class:WebSocketServer	access:public
 __init_args_and_local_vars__	.\PocSmplify\paimei-master\pida\function.py	/^    def __init_args_and_local_vars__ (self):$/;"	m	class:function	file:	access:private
 __init_basic_blocks__	.\PocSmplify\paimei-master\pida\function.py	/^    def __init_basic_blocks__ (self):$/;"	m	class:function	file:	access:private
 __init_collect_function_chunks__	.\PocSmplify\paimei-master\pida\function.py	/^    def __init_collect_function_chunks__ (self):$/;"	m	class:function	file:	access:private
@@ -5550,6 +5561,13 @@ appendAudio	.\logging_grinder_crash v7.js	/^function appendAudio(rId, rTxt) {$/;
 appendAudio	.\logging_grinder_crash_ie v6.js	/^function appendAudio(rId, rTxt) {$/;"	f
 appendAudio	.\logging_grinder_ie v6.js	/^function appendAudio(rId, rTxt) {$/;"	f
 appendAudio	.\logging_grinder_ie v7.js	/^function appendAudio(rId, rTxt) {$/;"	f
+appendCanvas2D	.\demichrome7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\demichromelog7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\demichromewrite7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\demichromewriteIE7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\logging_grinder v7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\logging_grinder_crash v7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
+appendCanvas2D	.\logging_grinder_ie v7.js	/^function appendCanvas2D(rId, rTxt) {$/;"	f
 appendForm	.\demichrome5.js	/^function appendForm(rId, rTxt) {$/;"	f
 appendForm	.\demichrome6.js	/^function appendForm(rId, rTxt) {$/;"	f
 appendForm	.\demichrome7.js	/^function appendForm(rId, rTxt) {$/;"	f
@@ -5826,6 +5844,7 @@ assert_syntax	.\PocSmplify\psutil-master\test\test_psutil.py	/^    def assert_sy
 ast	.\PocSmplify\psutil-master\test\test_psutil.py	/^    ast = None$/;"	v
 ast	.\PocSmplify\psutil-master\test\test_psutil.py	/^    import ast  # python >= 2.6$/;"	i
 ast_to_c	.\fuzz update\node\lib\metasm\samples\dynamic_ruby.rb	/^	def ast_to_c(ast, scope, want_value = true)$/;"	f	class:RubyLiveCompiler
+asyncore	.\websocket.py	/^import asyncore$/;"	i
 atexit	.\PocSmplify\paimei-master\struct_spy.py	/^import atexit$/;"	i
 atexit	.\PocSmplify\psutil-master\examples\iotop.py	/^import atexit$/;"	i
 atexit	.\PocSmplify\psutil-master\examples\nettop.py	/^import atexit$/;"	i
@@ -6236,6 +6255,13 @@ callback_handler_wrapper	.\PocSmplify\paimei-master\pydbg_server.py	/^    def ca
 callback_run	.\fuzz update\node\lib\metasm\metasm\dynldr.rb	/^	def self.callback_run(id, args)$/;"	F	class:Metasm.DynLdr.lib_from_sym
 callbacks	.\PocSmplify\pydbg-master\pydbg_client.py	/^    callbacks = {}$/;"	v	class:pydbg_client
 can_find_path	.\fuzz update\node\lib\metasm\metasm\gui\dasm_graph.rb	/^	def can_find_path(src, dst, done={})$/;"	f
+canvas2dMan	.\demichrome7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\demichromelog7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\demichromewrite7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\demichromewriteIE7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\logging_grinder v7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\logging_grinder_crash v7.js	/^function canvas2dMan() {$/;"	f
+canvas2dMan	.\logging_grinder_ie v7.js	/^function canvas2dMan() {$/;"	f
 captured	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	/^  int            captured;             \/\/ Mouse is captured by dump$/;"	m	struct:t_dump	access:public
 captured	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	/^  int            captured;             \/\/ One of CAPT_xxx, set to CAPT_FREE$/;"	m	struct:t_bar	access:public
 catch_exception_raise	.\PocSmplify\paimei-master\MacOSX\macdll\Exception.c	/^extern kern_return_t catch_exception_raise($/;"	f	signature:( mach_port_t exception_port, mach_port_t thread, mach_port_t task, exception_type_t exception, exception_data_t code, mach_msg_type_number_t codeCnt )
@@ -6331,17 +6357,13 @@ clear	.\demichrome3.js	/^function clear() {$/;"	f
 clear	.\demichrome4.js	/^function clear() {$/;"	f
 clear	.\demichrome5.js	/^function clear() {$/;"	f
 clear	.\demichrome6.js	/^function clear() {$/;"	f
-clear	.\demichrome7.js	/^function clear() {$/;"	f
 clear	.\demichromelog1.js	/^function clear() {$/;"	f
 clear	.\demichromelog2.js	/^function clear() {$/;"	f
 clear	.\demichromelog3.js	/^function clear() {$/;"	f
 clear	.\demichromelog4.js	/^function clear() {$/;"	f
 clear	.\demichromelog6.js	/^function clear() {$/;"	f
-clear	.\demichromelog7.js	/^function clear() {$/;"	f
 clear	.\demichromewrite6.js	/^function clear() {$/;"	f
-clear	.\demichromewrite7.js	/^function clear() {$/;"	f
 clear	.\demichromewriteIE6.js	/^function clear() {$/;"	f
-clear	.\demichromewriteIE7.js	/^function clear() {$/;"	f
 clear	.\fuzz update\node\lib\metasm\metasm\gui\dasm_graph.rb	/^	def clear$/;"	f	class:Metasm.Gui.Graph
 clear	.\logging_grinder v1.js	/^function clear() {$/;"	f
 clear	.\logging_grinder v2 evt.js	/^function clear() {$/;"	f
@@ -6349,13 +6371,10 @@ clear	.\logging_grinder v2.js	/^function clear() {$/;"	f
 clear	.\logging_grinder v3.js	/^function clear() {$/;"	f
 clear	.\logging_grinder v4.js	/^function clear() {$/;"	f
 clear	.\logging_grinder v6.js	/^function clear() {$/;"	f
-clear	.\logging_grinder v7.js	/^function clear() {$/;"	f
 clear	.\logging_grinder_crash v4.js	/^function clear() {$/;"	f
 clear	.\logging_grinder_crash v6.js	/^function clear() {$/;"	f
-clear	.\logging_grinder_crash v7.js	/^function clear() {$/;"	f
 clear	.\logging_grinder_crash_ie v6.js	/^function clear() {$/;"	f
 clear	.\logging_grinder_ie v6.js	/^function clear() {$/;"	f
-clear	.\logging_grinder_ie v7.js	/^function clear() {$/;"	f
 clearAll	.\demichrome1.js	/^function clearAll() {$/;"	f
 clearAll	.\demichrome2.js	/^function clearAll() {$/;"	f
 clearAll	.\demichrome3.js	/^function clearAll() {$/;"	f
@@ -6401,6 +6420,13 @@ clearChildrenId	.\logging_grinder_crash v7.js	/^function clearChildrenId(elem) {
 clearChildrenId	.\logging_grinder_crash_ie v6.js	/^function clearChildrenId(elem) {$/;"	f
 clearChildrenId	.\logging_grinder_ie v6.js	/^function clearChildrenId(elem) {$/;"	f
 clearChildrenId	.\logging_grinder_ie v7.js	/^function clearChildrenId(elem) {$/;"	f
+clearSub	.\demichrome7.js	/^function clearSub() {$/;"	f
+clearSub	.\demichromelog7.js	/^function clearSub() {$/;"	f
+clearSub	.\demichromewrite7.js	/^function clearSub() {$/;"	f
+clearSub	.\demichromewriteIE7.js	/^function clearSub() {$/;"	f
+clearSub	.\logging_grinder v7.js	/^function clearSub() {$/;"	f
+clearSub	.\logging_grinder_crash v7.js	/^function clearSub() {$/;"	f
+clearSub	.\logging_grinder_ie v7.js	/^function clearSub() {$/;"	f
 clearThisId	.\help.js	/^function clearThisId(elem) {$/;"	f
 clearThisId	.\helplog.js	/^function clearThisId(elem) {$/;"	f
 clearThisId	.\logging_grinder v1.js	/^function clearThisId(elem) {$/;"	f
@@ -7702,6 +7728,10 @@ demicm.elemDic.abbr	.\logging_grinder_crash v7.js	/^    abbr         : 'HTMLElem
 demicm.elemDic.abbr	.\logging_grinder_crash_ie v6.js	/^    abbr         : 'HTMLElement',$/;"	p
 demicm.elemDic.abbr	.\logging_grinder_ie v6.js	/^    abbr         : 'HTMLElement',$/;"	p
 demicm.elemDic.abbr	.\logging_grinder_ie v7.js	/^    abbr         : 'HTMLElement',$/;"	p
+demicm.elemDic.acronym	.\dict.js	/^    acronym      : 'HTMLElement',$/;"	p
+demicm.elemDic.acronym	.\logging_grinder v7.js	/^    acronym      : 'HTMLElement',$/;"	p
+demicm.elemDic.acronym	.\logging_grinder_crash v7.js	/^    acronym      : 'HTMLElement',$/;"	p
+demicm.elemDic.acronym	.\logging_grinder_ie v7.js	/^    acronym      : 'HTMLElement',$/;"	p
 demicm.elemDic.address	.\dict.js	/^    address      : 'HTMLElement',$/;"	p
 demicm.elemDic.address	.\logging_grinder v1.js	/^    address    : 'HTMLElement',$/;"	p
 demicm.elemDic.address	.\logging_grinder v2 evt.js	/^    address    : 'HTMLElement',$/;"	p
@@ -7870,6 +7900,10 @@ demicm.elemDic.bgsound	.\logging_grinder_crash v7.js	/^    bgsound      : 'HTMLE
 demicm.elemDic.bgsound	.\logging_grinder_crash_ie v6.js	/^    bgsound      : 'HTMLElement',$/;"	p
 demicm.elemDic.bgsound	.\logging_grinder_ie v6.js	/^    bgsound      : 'HTMLElement',$/;"	p
 demicm.elemDic.bgsound	.\logging_grinder_ie v7.js	/^    bgsound      : 'HTMLElement',$/;"	p
+demicm.elemDic.big	.\dict.js	/^    big          : 'HTMLElement',$/;"	p
+demicm.elemDic.big	.\logging_grinder v7.js	/^    big          : 'HTMLElement',$/;"	p
+demicm.elemDic.big	.\logging_grinder_crash v7.js	/^    big          : 'HTMLElement',$/;"	p
+demicm.elemDic.big	.\logging_grinder_ie v7.js	/^    big          : 'HTMLElement',$/;"	p
 demicm.elemDic.blockquote	.\dict.js	/^    blockquote   : 'HTMLQuoteElement',$/;"	p
 demicm.elemDic.blockquote	.\logging_grinder v1.js	/^    blockquote : 'HTMLQuoteElement',$/;"	p
 demicm.elemDic.blockquote	.\logging_grinder v2 evt.js	/^    blockquote : 'HTMLQuoteElement',$/;"	p
@@ -7954,6 +7988,10 @@ demicm.elemDic.caption	.\logging_grinder_crash v7.js	/^    caption      : 'HTMLT
 demicm.elemDic.caption	.\logging_grinder_crash_ie v6.js	/^    caption      : 'HTMLTableCaptionElement',$/;"	p
 demicm.elemDic.caption	.\logging_grinder_ie v6.js	/^    caption      : 'HTMLTableCaptionElement',$/;"	p
 demicm.elemDic.caption	.\logging_grinder_ie v7.js	/^    caption      : 'HTMLTableCaptionElement',$/;"	p
+demicm.elemDic.center	.\dict.js	/^    center       : 'HTMLElement',$/;"	p
+demicm.elemDic.center	.\logging_grinder v7.js	/^    center       : 'HTMLElement',$/;"	p
+demicm.elemDic.center	.\logging_grinder_crash v7.js	/^    center       : 'HTMLElement',$/;"	p
+demicm.elemDic.center	.\logging_grinder_ie v7.js	/^    center       : 'HTMLElement',$/;"	p
 demicm.elemDic.cite	.\dict.js	/^    cite         : 'HTMLElement',$/;"	p
 demicm.elemDic.cite	.\logging_grinder v1.js	/^    cite       : 'HTMLElement',$/;"	p
 demicm.elemDic.cite	.\logging_grinder v2 evt.js	/^    cite       : 'HTMLElement',$/;"	p
@@ -8024,6 +8062,10 @@ demicm.elemDic.command	.\logging_grinder_crash v7.js	/^    command      : 'HTMLC
 demicm.elemDic.command	.\logging_grinder_crash_ie v6.js	/^    command      : 'HTMLCommandElement',$/;"	p
 demicm.elemDic.command	.\logging_grinder_ie v6.js	/^    command      : 'HTMLCommandElement',$/;"	p
 demicm.elemDic.command	.\logging_grinder_ie v7.js	/^    command      : 'HTMLCommandElement',$/;"	p
+demicm.elemDic.content	.\dict.js	/^    content      : 'HTMLContentElement',$/;"	p
+demicm.elemDic.content	.\logging_grinder v7.js	/^    content      : 'HTMLContentElement',$/;"	p
+demicm.elemDic.content	.\logging_grinder_crash v7.js	/^    content      : 'HTMLContentElement',$/;"	p
+demicm.elemDic.content	.\logging_grinder_ie v7.js	/^    content      : 'HTMLContentElement',$/;"	p
 demicm.elemDic.data	.\dict.js	/^    data         : 'HTMLDataElement',$/;"	p
 demicm.elemDic.data	.\logging_grinder v1.js	/^    data       : 'HTMLDataElement',$/;"	p
 demicm.elemDic.data	.\logging_grinder v2 evt.js	/^    data       : 'HTMLDataElement',$/;"	p
@@ -8122,6 +8164,10 @@ demicm.elemDic.dialog	.\logging_grinder_crash v7.js	/^    dialog       : 'HTMLDi
 demicm.elemDic.dialog	.\logging_grinder_crash_ie v6.js	/^    dialog       : 'HTMLDialogElement',$/;"	p
 demicm.elemDic.dialog	.\logging_grinder_ie v6.js	/^    dialog       : 'HTMLDialogElement',$/;"	p
 demicm.elemDic.dialog	.\logging_grinder_ie v7.js	/^    dialog       : 'HTMLDialogElement',$/;"	p
+demicm.elemDic.dir	.\dict.js	/^    dir          : 'HTMLDirectoryElement',$/;"	p
+demicm.elemDic.dir	.\logging_grinder v7.js	/^    dir          : 'HTMLDirectoryElement',$/;"	p
+demicm.elemDic.dir	.\logging_grinder_crash v7.js	/^    dir          : 'HTMLDirectoryElement',$/;"	p
+demicm.elemDic.dir	.\logging_grinder_ie v7.js	/^    dir          : 'HTMLDirectoryElement',$/;"	p
 demicm.elemDic.div	.\dict.js	/^    div          : 'HTMLDivElement',$/;"	p
 demicm.elemDic.div	.\logging_grinder v1.js	/^    div        : 'HTMLDivElement',$/;"	p
 demicm.elemDic.div	.\logging_grinder v2 evt.js	/^    div        : 'HTMLDivElement',$/;"	p
@@ -8234,6 +8280,10 @@ demicm.elemDic.figure	.\logging_grinder_crash v7.js	/^    figure       : 'HTMLEl
 demicm.elemDic.figure	.\logging_grinder_crash_ie v6.js	/^    figure       : 'HTMLElement',$/;"	p
 demicm.elemDic.figure	.\logging_grinder_ie v6.js	/^    figure       : 'HTMLElement',$/;"	p
 demicm.elemDic.figure	.\logging_grinder_ie v7.js	/^    figure       : 'HTMLElement',$/;"	p
+demicm.elemDic.font	.\dict.js	/^    font         : 'HTMLFontElement',$/;"	p
+demicm.elemDic.font	.\logging_grinder v7.js	/^    font         : 'HTMLFontElement',$/;"	p
+demicm.elemDic.font	.\logging_grinder_crash v7.js	/^    font         : 'HTMLFontElement',$/;"	p
+demicm.elemDic.font	.\logging_grinder_ie v7.js	/^    font         : 'HTMLFontElement',$/;"	p
 demicm.elemDic.footer	.\dict.js	/^    footer       : 'HTMLElement',$/;"	p
 demicm.elemDic.footer	.\logging_grinder v1.js	/^    footer     : 'HTMLElement',$/;"	p
 demicm.elemDic.footer	.\logging_grinder v2 evt.js	/^    footer     : 'HTMLElement',$/;"	p
@@ -8262,6 +8312,14 @@ demicm.elemDic.form	.\logging_grinder_crash v7.js	/^    form         : 'HTMLForm
 demicm.elemDic.form	.\logging_grinder_crash_ie v6.js	/^    form         : 'HTMLFormElement',$/;"	p
 demicm.elemDic.form	.\logging_grinder_ie v6.js	/^    form         : 'HTMLFormElement',$/;"	p
 demicm.elemDic.form	.\logging_grinder_ie v7.js	/^    form         : 'HTMLFormElement',$/;"	p
+demicm.elemDic.frame	.\dict.js	/^    frame        : 'HTMLFrameElement',$/;"	p
+demicm.elemDic.frame	.\logging_grinder v7.js	/^    frame        : 'HTMLFrameElement',$/;"	p
+demicm.elemDic.frame	.\logging_grinder_crash v7.js	/^    frame        : 'HTMLFrameElement',$/;"	p
+demicm.elemDic.frame	.\logging_grinder_ie v7.js	/^    frame        : 'HTMLFrameElement',$/;"	p
+demicm.elemDic.frameset	.\dict.js	/^    frameset     : 'HTMLFrameSetElement',$/;"	p
+demicm.elemDic.frameset	.\logging_grinder v7.js	/^    frameset     : 'HTMLFrameSetElement',$/;"	p
+demicm.elemDic.frameset	.\logging_grinder_crash v7.js	/^    frameset     : 'HTMLFrameSetElement',$/;"	p
+demicm.elemDic.frameset	.\logging_grinder_ie v7.js	/^    frameset     : 'HTMLFrameSetElement',$/;"	p
 demicm.elemDic.h1	.\dict.js	/^    h1           : 'HTMLHeadingElement',$/;"	p
 demicm.elemDic.h1	.\logging_grinder v1.js	/^    h1         : 'HTMLHeadingElement',$/;"	p
 demicm.elemDic.h1	.\logging_grinder v2 evt.js	/^    h1         : 'HTMLHeadingElement',$/;"	p
@@ -8598,6 +8656,10 @@ demicm.elemDic.link	.\logging_grinder_crash v7.js	/^    link         : 'HTMLLink
 demicm.elemDic.link	.\logging_grinder_crash_ie v6.js	/^    link         : 'HTMLLinkElement',$/;"	p
 demicm.elemDic.link	.\logging_grinder_ie v6.js	/^    link         : 'HTMLLinkElement',$/;"	p
 demicm.elemDic.link	.\logging_grinder_ie v7.js	/^    link         : 'HTMLLinkElement',$/;"	p
+demicm.elemDic.main	.\dict.js	/^    main         : 'HTMLElement',$/;"	p
+demicm.elemDic.main	.\logging_grinder v7.js	/^    main         : 'HTMLElement',$/;"	p
+demicm.elemDic.main	.\logging_grinder_crash v7.js	/^    main         : 'HTMLElement',$/;"	p
+demicm.elemDic.main	.\logging_grinder_ie v7.js	/^    main         : 'HTMLElement',$/;"	p
 demicm.elemDic.map	.\dict.js	/^    map          : 'HTMLMapElement',$/;"	p
 demicm.elemDic.map	.\logging_grinder v1.js	/^    map        : 'HTMLMapElement',$/;"	p
 demicm.elemDic.map	.\logging_grinder v2 evt.js	/^    map        : 'HTMLMapElement',$/;"	p
@@ -8654,6 +8716,10 @@ demicm.elemDic.menu	.\logging_grinder_crash v7.js	/^    menu         : 'HTMLMenu
 demicm.elemDic.menu	.\logging_grinder_crash_ie v6.js	/^    menu         : 'HTMLMenuElement',$/;"	p
 demicm.elemDic.menu	.\logging_grinder_ie v6.js	/^    menu         : 'HTMLMenuElement',$/;"	p
 demicm.elemDic.menu	.\logging_grinder_ie v7.js	/^    menu         : 'HTMLMenuElement',$/;"	p
+demicm.elemDic.menuitem	.\dict.js	/^    menuitem     : 'HTMLUnknownElement',$/;"	p
+demicm.elemDic.menuitem	.\logging_grinder v7.js	/^    menuitem     : 'HTMLUnknownElement',$/;"	p
+demicm.elemDic.menuitem	.\logging_grinder_crash v7.js	/^    menuitem     : 'HTMLUnknownElement',$/;"	p
+demicm.elemDic.menuitem	.\logging_grinder_ie v7.js	/^    menuitem     : 'HTMLUnknownElement',$/;"	p
 demicm.elemDic.meta	.\dict.js	/^    meta         : 'HTMLMetaElement',$/;"	p
 demicm.elemDic.meta	.\logging_grinder v1.js	/^    meta       : 'HTMLMetaElement',$/;"	p
 demicm.elemDic.meta	.\logging_grinder v2 evt.js	/^    meta       : 'HTMLMetaElement',$/;"	p
@@ -8738,6 +8804,10 @@ demicm.elemDic.noframes	.\logging_grinder_crash v7.js	/^    noframes     : 'HTML
 demicm.elemDic.noframes	.\logging_grinder_crash_ie v6.js	/^    noframes     : 'HTMLElement',$/;"	p
 demicm.elemDic.noframes	.\logging_grinder_ie v6.js	/^    noframes     : 'HTMLElement',$/;"	p
 demicm.elemDic.noframes	.\logging_grinder_ie v7.js	/^    noframes     : 'HTMLElement',$/;"	p
+demicm.elemDic.nolayer	.\dict.js	/^    nolayer      : 'HTMLElement',$/;"	p
+demicm.elemDic.nolayer	.\logging_grinder v7.js	/^    nolayer      : 'HTMLElement',$/;"	p
+demicm.elemDic.nolayer	.\logging_grinder_crash v7.js	/^    nolayer      : 'HTMLElement',$/;"	p
+demicm.elemDic.nolayer	.\logging_grinder_ie v7.js	/^    nolayer      : 'HTMLElement',$/;"	p
 demicm.elemDic.noscript	.\dict.js	/^    noscript     : 'HTMLElement',$/;"	p
 demicm.elemDic.noscript	.\logging_grinder v1.js	/^    noscript   : 'HTMLElement',$/;"	p
 demicm.elemDic.noscript	.\logging_grinder v2 evt.js	/^    noscript   : 'HTMLElement',$/;"	p
@@ -8752,6 +8822,14 @@ demicm.elemDic.noscript	.\logging_grinder_crash v7.js	/^    noscript     : 'HTML
 demicm.elemDic.noscript	.\logging_grinder_crash_ie v6.js	/^    noscript     : 'HTMLElement',$/;"	p
 demicm.elemDic.noscript	.\logging_grinder_ie v6.js	/^    noscript     : 'HTMLElement',$/;"	p
 demicm.elemDic.noscript	.\logging_grinder_ie v7.js	/^    noscript     : 'HTMLElement',$/;"	p
+demicm.elemDic.picture	.\dict.js	/^    picture      : 'HTMLPictureElement',$/;"	p
+demicm.elemDic.picture	.\logging_grinder v7.js	/^    picture      : 'HTMLPictureElement',$/;"	p
+demicm.elemDic.picture	.\logging_grinder_crash v7.js	/^    picture      : 'HTMLPictureElement',$/;"	p
+demicm.elemDic.picture	.\logging_grinder_ie v7.js	/^    picture      : 'HTMLPictureElement',$/;"	p
+demicm.elemDic.plaintext	.\dict.js	/^    plaintext    : 'HTMLElement',$/;"	p
+demicm.elemDic.plaintext	.\logging_grinder v7.js	/^    plaintext    : 'HTMLElement',$/;"	p
+demicm.elemDic.plaintext	.\logging_grinder_crash v7.js	/^    plaintext    : 'HTMLElement',$/;"	p
+demicm.elemDic.plaintext	.\logging_grinder_ie v7.js	/^    plaintext    : 'HTMLElement',$/;"	p
 demicm.func	.\dict.js	/^demicm.func = function() { return 'demi6od'; };$/;"	f
 demicm.func	.\dictnew.js	/^demicm.func = function() { return 'demi6od'; };$/;"	f
 demicm.func	.\funcdic_b.js	/^demicm.func = function() { return 'demi6od'; };$/;"	f
@@ -8962,6 +9040,7 @@ disk_usage	.\PocSmplify\psutil-master\psutil\_psosx.py	/^disk_usage = _psposix.d
 disk_usage	.\PocSmplify\psutil-master\psutil\_psposix.py	/^def disk_usage(path):$/;"	f	access:public
 disk_usage	.\PocSmplify\psutil-master\psutil\_pssunos.py	/^disk_usage = _psposix.disk_usage$/;"	v
 disk_usage	.\PocSmplify\psutil-master\psutil\_pswindows.py	/^def disk_usage(path):$/;"	f	access:public
+dispatch	.\websocket.py	/^    def dispatch(self, data):$/;"	m	class:EchoHandler	access:public
 display	.\PocSmplify\paimei-master\struct_spy.py	/^    def display(self, dbg, excepts=True):$/;"	m	class:Offset	access:public
 display	.\PocSmplify\paimei-master\struct_spy.py	/^    def display(self, dbg, offsets=True):$/;"	m	class:Structure	access:public
 display	.\PocSmplify\paimei-master\struct_spy.py	/^    def display(self,dbg):$/;"	m	class:DbgException	access:public
@@ -9058,6 +9137,12 @@ dragdropfile	.\fuzz update\node\lib\metasm\metasm\gui\dasm_main.rb	/^	def dragdr
 dragdropfile	.\fuzz update\node\lib\metasm\metasm\gui\debug.rb	/^	def dragdropfile(f)$/;"	f	class:Metasm.Gui.DbgWidget
 dragdropfile	.\fuzz update\node\lib\metasm\metasm\gui\win32.rb	/^	def dragdropfile(f)$/;"	f	class:Metasm.Gui.InputBox.IBoxWidget
 drawWebgl	.\demichrome7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\demichromelog7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\demichromewrite7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\demichromewriteIE7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\logging_grinder v7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\logging_grinder_crash v7.js	/^function drawWebgl() {$/;"	f
+drawWebgl	.\logging_grinder_ie v7.js	/^function drawWebgl() {$/;"	f
 draw_color	.\fuzz update\node\lib\metasm\metasm\gui\gtk.rb	/^	def draw_color(col)$/;"	f	class:Metasm
 draw_color	.\fuzz update\node\lib\metasm\metasm\gui\qt.rb	/^	def draw_color(col)$/;"	f	class:Metasm.Gui.DrawableWidget
 draw_color	.\fuzz update\node\lib\metasm\metasm\gui\win32.rb	/^	def draw_color(col)$/;"	f	class:Metasm.Gui.DrawableWidget
@@ -9473,11 +9558,13 @@ encode_xword	.\fuzz update\node\lib\metasm\metasm\exe_format\coff_encode.rb	/^	d
 encode_xword	.\fuzz update\node\lib\metasm\metasm\exe_format\elf_encode.rb	/^	def encode_xword(w)  Expression[w].encode((@bitsize == 32 ? :u32 : :u64), @endianness, (caller if $DEBUG)) end$/;"	f	class:Metasm.ELF
 encode_xword	.\fuzz update\node\lib\metasm\metasm\exe_format\macho.rb	/^	def encode_xword(val)       Expression[val].encode((@size == 32 ? :u32 : :u64), @endianness) end$/;"	f	class:Metasm.LoadCommand
 encode_xword	.\fuzz update\node\lib\metasm\metasm\exe_format\xcoff.rb	/^	def encode_xword(w) Expression[w].encode((@intsize == 32 ? :u32 : :u64), @endianness) end$/;"	f	class:Metasm
+encodestring	.\websocket.py	/^from base64 import encodestring$/;"	i
 encrypt	.\fuzz update\node\core\crypt.rb	/^			def Crypt.encrypt( rsa_key, data, split_char=';', cipher_algorithm='aes-256-cbc' )$/;"	F	class:Grinder.Core.Crypt
 encrypted	.\fuzz update\node\core\crypt.rb	/^			def Crypt.encrypted?( file, split_char=';' )$/;"	F	class:Grinder.Core.Crypt
 end	.\PocSmplify\paimei-master\tracer_msr_branch.py	/^end   = 0$/;"	v
 end	.\PocSmplify\paimei-master\tracer_single_step.py	/^end   = 0$/;"	v
 end	.\PocSmplify\psutil-master\docs\make.bat	/^:end$/;"	l
+end_headers	.\xmlhttprequest.py	/^    def end_headers(self):$/;"	m	class:MyHTTPRequestHandler	access:public
 end_of_packer	.\PocSmplify\paimei-master\push_pop_unpacker.py	/^def end_of_packer (dbg):$/;"	f	access:public
 end_stepout	.\fuzz update\node\lib\metasm\metasm\debug.rb	/^	def end_stepout(di = di_at(pc))$/;"	f	class:Metasm
 end_time	.\PocSmplify\paimei-master\console\modules\PAIMEIfilefuzz.py	/^    end_time             = "00:00:00"$/;"	v	class:PAIMEIfilefuzz
@@ -10546,13 +10633,16 @@ hack_x64_32	.\fuzz update\node\lib\metasm\metasm\os\linux.rb	/^	def hack_x64_32$
 handle	.\PocSmplify\pydbg-master\system_dll.py	/^    handle = None$/;"	v	class:system_dll
 handle	.\fuzz update\node\lib\metasm\metasm\os\windows.rb	/^		def handle$/;"	f	class:Metasm.Thread
 handle	.\fuzz update\node\lib\metasm\metasm\os\windows.rb	/^		def handle$/;"	f	class:Metasm.WinOS.Process
+handle_accept	.\websocket.py	/^    def handle_accept(self):$/;"	m	class:WebSocketServer	access:public
 handle_av	.\PocSmplify\paimei-master\debuggee_procedure_call.py	/^def handle_av (dbg):$/;"	f	access:public
 handle_bp	.\PocSmplify\paimei-master\debuggee_procedure_call.py	/^def handle_bp (dbg):$/;"	f	access:public
+handle_close	.\websocket.py	/^    def handle_close(self):$/;"	m	class:WebSocketConnection	access:public
 handle_command	.\fuzz update\node\lib\metasm\metasm\gui\debug.rb	/^	def handle_command$/;"	f	class:Metasm.Gui.DbgConsoleWidget.init_commands
 handle_key	.\fuzz update\node\lib\metasm\samples\dasmnavig.rb	/^	def handle_key(k)$/;"	f	class:Ansi.set_cursor_pos.Viewer
 handle_key_navig	.\fuzz update\node\lib\metasm\samples\dasmnavig.rb	/^	def handle_key_navig(k)$/;"	f	class:Ansi.set_cursor_pos.Viewer
 handle_key_search	.\fuzz update\node\lib\metasm\samples\dasmnavig.rb	/^	def handle_key_search(k)$/;"	f	class:Ansi.set_cursor_pos.Viewer
 handle_keypress	.\fuzz update\node\lib\metasm\samples\lindebug.rb	/^	def handle_keypress(k)$/;"	f	class:Ansi.set_cursor_pos.LinDebug
+handle_read	.\websocket.py	/^    def handle_read(self):$/;"	m	class:WebSocketConnection	access:public
 handlep_is_running	.\PocSmplify\psutil-master\psutil\arch\windows\process_info.c	/^handlep_is_running(HANDLE hProcess)$/;"	f	signature:(HANDLE hProcess)
 handler	.\PocSmplify\pydbg-master\breakpoint.py	/^    handler       = None$/;"	v	class:breakpoint
 handler	.\PocSmplify\pydbg-master\hardware_breakpoint.py	/^    handler     = None$/;"	v	class:hardware_breakpoint
@@ -10607,6 +10697,7 @@ hash	.\fuzz update\node\lib\metasm\metasm\disassemble.rb	/^	def hash ; @origin.h
 hash	.\fuzz update\node\lib\metasm\metasm\disassemble.rb	/^	def hash ; [origin, expr].hash ; end$/;"	f	class:Metasm.BacktraceTrace
 hash	.\fuzz update\node\lib\metasm\metasm\main.rb	/^	def hash$/;"	f	class:Metasm.Expression
 hash	.\fuzz update\node\source\logger\ReflectiveLoader.h	/^__forceinline DWORD hash( char * c )$/;"	f	signature:( char * c )
+hash_key	.\websocket.py	/^    def hash_key(self, key):$/;"	m	class:WebSocketConnection	access:public
 hash_name	.\fuzz update\node\lib\metasm\samples\shellcode-dynlink.rb	/^def hash_name(sym)$/;"	f
 hash_symbol_name	.\fuzz update\node\lib\metasm\metasm\exe_format\elf.rb	/^	def self.hash_symbol_name(name)$/;"	F	class:Metasm.ELF.DwarfDebug
 hashlib	.\PocSmplify\paimei-master\pida\__init__.py	/^import hashlib$/;"	i
@@ -12998,6 +13089,7 @@ parse_attributes	.\fuzz update\node\lib\metasm\metasm\parse_c.rb	/^		def parse_a
 parse_c	.\fuzz update\node\lib\metasm\metasm\disassemble.rb	/^	def parse_c(str, filename=nil, lineno=1)$/;"	f	class:Metasm
 parse_c	.\fuzz update\node\lib\metasm\metasm\dynldr.rb	/^	def self.parse_c(src)$/;"	F	class:Metasm.DynLdr
 parse_c_file	.\fuzz update\node\lib\metasm\metasm\disassemble.rb	/^	def parse_c_file(file)$/;"	f	class:Metasm
+parse_connecting	.\websocket.py	/^    def parse_connecting(self):$/;"	m	class:WebSocketConnection	access:public
 parse_data	.\fuzz update\node\lib\metasm\metasm\parse.rb	/^	def parse_data$/;"	f	class:Metasm.ExeFormat
 parse_data_data	.\fuzz update\node\lib\metasm\metasm\parse.rb	/^	def parse_data_data(type)$/;"	f	class:Metasm.ExeFormat
 parse_declarator	.\fuzz update\node\lib\metasm\metasm\parse_c.rb	/^		def parse_declarator(parser, scope, rec = false)$/;"	f	class:Metasm.C.Variable
@@ -13010,6 +13102,7 @@ parse_expr	.\fuzz update\node\lib\metasm\metasm\gui\debug.rb	/^	def parse_expr(a
 parse_expr!	.\fuzz update\node\lib\metasm\metasm\debug.rb	/^	def parse_expr!(arg, &b)$/;"	f	class:Metasm
 parse_expr!	.\fuzz update\node\lib\metasm\metasm\gui\debug.rb	/^	def parse_expr!(arg)$/;"	f	class:Metasm.Gui.DbgConsoleWidget
 parse_file	.\fuzz update\node\lib\metasm\metasm\parse_c.rb	/^		def parse_file(file)$/;"	f	class:Metasm.C.Parser
+parse_frame	.\websocket.py	/^    def parse_frame(self):$/;"	m	class:WebSocketConnection	access:public
 parse_init	.\fuzz update\node\lib\metasm\metasm\exe_format\a_out.rb	/^	def parse_init$/;"	f	class:Metasm.AOut
 parse_init	.\fuzz update\node\lib\metasm\metasm\exe_format\bflt.rb	/^	def parse_init$/;"	f	class:Metasm.Bflt
 parse_init	.\fuzz update\node\lib\metasm\metasm\exe_format\coff_encode.rb	/^	def parse_init$/;"	f
@@ -15198,7 +15291,11 @@ selfMan	.\fuzz materials\demicmFrameIE.html	/^            function selfMan() {$/
 selfMan	.\fuzz materials\demicmTarget.html	/^            function selfMan() {$/;"	f
 selfMan	.\fuzz materials\demicmTargetIE.html	/^            function selfMan() {$/;"	f
 send	.\PocSmplify\paimei-master\utils\udraw_connector.py	/^    def send (self, data):$/;"	m	class:udraw_connector	access:public
+send	.\websocket.py	/^    def send(self, s):$/;"	m	class:WebSocketConnection	access:public
+send_bytes	.\websocket.py	/^    def send_bytes(self, bytes):$/;"	m	class:WebSocketConnection	access:public
+send_my_headers	.\xmlhttprequest.py	/^    def send_my_headers(self):$/;"	m	class:MyHTTPRequestHandler	access:public
 send_regs	.\fuzz update\node\lib\metasm\metasm\os\remote.rb	/^	def send_regs(r = {})$/;"	f	class:Metasm.GdbClient
+send_server_handshake_10	.\websocket.py	/^    def send_server_handshake_10(self, headers):$/;"	m	class:WebSocketConnection	access:public
 send_signal	.\PocSmplify\psutil-master\build\lib.win32-2.7\psutil\__init__.py	/^    def send_signal(self, sig):$/;"	m	class:Process	access:public
 send_signal	.\PocSmplify\psutil-master\psutil\__init__.py	/^    def send_signal(self, sig):$/;"	m	class:Process	access:public
 server	.\PocSmplify\GrayHatPython-master\ghpython_src\src\backdoor_shell.py	/^server = socket.socket( socket.AF_INET, socket.SOCK_STREAM )$/;"	v
@@ -15494,10 +15591,12 @@ sh	.\PocSmplify\psutil-master\test\_linux.py	/^from test_psutil import (skip_on_
 sh	.\PocSmplify\psutil-master\test\_osx.py	/^from test_psutil import (TOLERANCE, sh, get_test_subprocess, reap_children,$/;"	i
 sh	.\PocSmplify\psutil-master\test\_sunos.py	/^from test_psutil import sh, unittest$/;"	i
 sh	.\PocSmplify\psutil-master\test\test_psutil.py	/^def sh(cmdline, stdout=subprocess.PIPE, stderr=subprocess.PIPE):$/;"	f	access:public
+sha1	.\websocket.py	/^from hashlib import sha1$/;"	i
 shape	.\PocSmplify\paimei-master\pgraph\node.py	/^    shape        = "box"$/;"	v	class:node
 share?	.\fuzz update\node\lib\metasm\metasm\cpu\ia32\main.rb	/^		def share?(other)$/;"	f	class:Metasm.Reg
 share?	.\fuzz update\node\lib\metasm\metasm\cpu\x86_64\main.rb	/^		def share?(other)$/;"	f	class:Metasm.X86_64.Reg
 share_namespace	.\fuzz update\node\lib\metasm\metasm\main.rb	/^	def share_namespace(other)$/;"	f	class:Metasm.ExeFormat
+sharedworker_js	.\fuzz update\node\core\server.rb	/^				def self.sharedworker_js( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
 sharedworker_js	.\fuzz update\server_my.rb	/^				def self.sharedworker_js( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
 shellcode	.\PocSmplify\GrayHatPython-master\ghpython_src\src\code_injector.py	/^"\\x6b\\x69\\x6c\\x6c\\x20\\x2f\\x50\\x49\\x44\\x20\\x41\\x41\\x41\\x41\\x00"$/;"	v
 shellcode	.\PocSmplify\GrayHatPython-master\ghpython_src\src\code_injector.py	/^shellcode     = shellcode.replace( replace_string, replace_value )$/;"	v
@@ -15649,6 +15748,7 @@ socket	.\PocSmplify\psutil-master\test\test_psutil.py	/^              "time.slee
 socket	.\PocSmplify\psutil-master\test\test_psutil.py	/^import socket$/;"	i
 socket	.\PocSmplify\pydbg-master\pydbg.py	/^import socket$/;"	i
 socket	.\PocSmplify\pydbg-master\pydbg_client.py	/^import socket$/;"	i
+socket	.\websocket.py	/^import socket$/;"	i
 socket_logger_ws2_recv	.\PocSmplify\paimei-master\console\modules\PAIMEIpeek.py	/^    def socket_logger_ws2_recv (self, dbg, args, ret):$/;"	m	class:PAIMEIpeek	access:public
 socket_logger_ws2_recvfrom	.\PocSmplify\paimei-master\console\modules\PAIMEIpeek.py	/^    def socket_logger_ws2_recvfrom (self, dbg, args, ret):$/;"	m	class:PAIMEIpeek	access:public
 socket_logger_wsock_recv	.\PocSmplify\paimei-master\console\modules\PAIMEIpeek.py	/^    def socket_logger_wsock_recv (self, dbg, args, ret):$/;"	m	class:PAIMEIpeek	access:public
@@ -15839,6 +15939,7 @@ struct	.\PocSmplify\paimei-master\struct_spy.py	/^import struct$/;"	i
 struct	.\PocSmplify\psutil-master\build\lib.win32-2.7\psutil\_pslinux.py	/^import struct$/;"	i
 struct	.\PocSmplify\psutil-master\psutil\_pslinux.py	/^import struct$/;"	i
 struct	.\PocSmplify\pydbg-master\pydbg.py	/^import struct$/;"	i
+struct	.\websocket.py	/^import struct$/;"	i
 struct_ancestors	.\fuzz update\node\lib\metasm\metasm\parse_c.rb	/^		def struct_ancestors$/;"	f	class:Metasm.C.Block
 struct_fields	.\fuzz update\node\lib\metasm\metasm\exe_format\serialstruct.rb	/^	def struct_fields(exe=nil)$/;"	f
 struct_find_roots	.\fuzz update\node\lib\metasm\samples\dbg-plugins\heapscan\graphheap.rb	/^	def struct_find_roots(addr)$/;"	f	class:Gui.GraphHeapWidget
@@ -16574,6 +16675,7 @@ terminate	.\fuzz update\node\lib\metasm\metasm\gui\dasm_main.rb	/^	def terminate
 terminate	.\fuzz update\node\lib\metasm\metasm\os\linux.rb	/^		def terminate$/;"	f	class:LinOS.Process
 terminate	.\fuzz update\node\lib\metasm\metasm\os\windows.rb	/^		def terminate(exitcode=0)$/;"	f	class:Metasm.Thread
 terminate	.\fuzz update\node\lib\metasm\metasm\os\windows.rb	/^		def terminate(exitcode=0)$/;"	f	class:Metasm.WinOS
+terminate	.\websocket.py	/^    def terminate(self):$/;"	m	class:WebSocketConnection	access:public
 terminate_process	.\PocSmplify\pydbg-master\pydbg.py	/^    def terminate_process (self, exit_code=0, method="terminateprocess"):$/;"	m	class:pydbg	access:public
 test	.\PocSmplify\paimei-master\MacOSX\macdll\MacDll.h	/^void test(int pid);/;"	p	signature:(int pid)
 test	.\PocSmplify\psutil-master\build\lib.win32-2.7\psutil\__init__.py	/^def test():$/;"	f	access:public
@@ -17058,6 +17160,7 @@ time	.\PocSmplify\psutil-master\test\test_psutil.py	/^        code += "cmd = ['%
 time	.\PocSmplify\psutil-master\test\test_psutil.py	/^        pyline += "import time; time.sleep(2);"$/;"	i
 time	.\PocSmplify\psutil-master\test\test_psutil.py	/^        s += "cmd = [PYTHON, '-c', 'import time; time.sleep(2);'];"$/;"	i
 time	.\PocSmplify\psutil-master\test\test_psutil.py	/^import time$/;"	i
+time	.\websocket.py	/^import time$/;"	i
 timedCount	.\fuzz materials\demicmSharedWorker.js	/^function timedCount() {$/;"	f
 timedCount	.\fuzz materials\demicmWorker.js	/^function timedCount() {$/;"	f
 timedelta	.\PocSmplify\psutil-master\examples\top.py	/^from datetime import datetime, timedelta$/;"	i
@@ -17763,6 +17866,7 @@ with_res	.\fuzz update\node\lib\metasm\metasm\cpu\arc\decode.rb	/^	def with_res(
 withcpu	.\fuzz update\node\lib\metasm\metasm\exe_format\shellcode.rb	/^	def self.withcpu(cpu)$/;"	F	class:Metasm.Shellcode
 wmi	.\PocSmplify\psutil-master\test\_windows.py	/^    import wmi$/;"	i
 wmi	.\PocSmplify\psutil-master\test\_windows.py	/^    wmi = None$/;"	v
+worker_js	.\fuzz update\node\core\server.rb	/^				def self.worker_js( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
 worker_js	.\fuzz update\server_my.rb	/^				def self.worker_js( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
 working_with_the_libraries	.\PocSmplify\paimei-master\docs\developer_docs.html	/^<a name="working_with_the_libraries"><\/a><h2>Working with the Libraries<\/h2>$/;"	a
 wrapEvent	.\lib\webgl-debug.js	/^  function wrapEvent(listener) {$/;"	f
@@ -17939,6 +18043,8 @@ xrange	.\PocSmplify\psutil-master\psutil\_pswindows.py	/^from psutil._compat imp
 xrange	.\PocSmplify\psutil-master\test\test_memory_leaks.py	/^from psutil._compat import callable, xrange$/;"	i
 xrefs	.\PocSmplify\paimei-master\var_backtrace.py	/^        xrefs = CodeRefsTo(key, 0)$/;"	v
 xshift	.\PocSmplify\paimei-master\ollydbg_connector\plugin.h	/^  int            xshift;               \/\/ Shift in X direction, pixels$/;"	m	struct:t_table	access:public
+xsl	.\fuzz update\node\core\server.rb	/^				def self.xsl( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
+xsl	.\fuzz update\server_my.rb	/^				def self.xsl( data )$/;"	F	class:Grinder.Core.Server.GrinderServlet
 xtobtn	.\fuzz update\node\lib\metasm\metasm\gui\win32.rb	/^	def xtobtn(x)$/;"	f	class:Metasm.Gui.ListWindow.LBoxWidget
 xy_to_col	.\fuzz update\node\lib\metasm\samples\dasm-plugins\bookmark.rb	/^		def xy_to_col(x, y)$/;"	f	class:ColorWidget
 y	.\fuzz update\node\lib\metasm\metasm\gui\gtk.rb	/^	def y; position[1]; end$/;"	f	class:WindowPos
