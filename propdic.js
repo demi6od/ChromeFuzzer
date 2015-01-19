@@ -173,7 +173,7 @@ demicm.propDic = {
     selectedIndex: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: false},
     cellIndex: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: true},
     rowIndex: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: true},
-    sectionRowIndex: {type: 'number', dirtyVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: true},
+    sectionRowIndex: {type: 'number', normalVal: demicm.normalNum, dirtyVal: demicm.dirtyNum, readOnly: true},
     summary: {type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr, readOnly: false},
     axis: {type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr, readOnly: false},
     abbr: {type: 'string', normalVal: demicm.str, dirtyVal: demicm.dirtyStr, readOnly: false},

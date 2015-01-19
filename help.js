@@ -306,25 +306,29 @@ function updatePropfCache(obj) {
 
 // Get random prop or func name
 function randPropf(tag, obj, type) {
-    if (!demicm.propfCache[tag]) {
+    try {
+        if (!demicm.propfCache[tag]) {
+            return null;
+        } else if (type == 'prop') {
+            var propf = randItem(demicm.propfCache[tag].props);
+        } else if (type == 'func') {
+            var propf = randItem(demicm.propfCache[tag].funcs);
+        } else if (type == 'evt') {
+            var propf = randItem(demicm.propfCache[tag].evts);
+        } else {
+            console.log('// Warning: randPropf else');
+        }
+
+        // If no propf, try update cache
+        if (obj && (!propf || obj[propf] == undefined)) {
+            updatePropfCache(obj);
+            propf = randPropf(tag, null, type);
+        }
+
+        return propf;
+    } catch (e) {
         return null;
-    } else if (type == 'prop') {
-        var propf = randItem(demicm.propfCache[tag].props);
-    } else if (type == 'func') {
-        var propf = randItem(demicm.propfCache[tag].funcs);
-    } else if (type == 'evt') {
-        var propf = randItem(demicm.propfCache[tag].evts);
-    } else {
-        console.log('// Warning: randPropf else');
     }
-
-    // If no propf, try update cache
-    if (obj && (!propf || obj[propf] == undefined)) {
-        updatePropfCache(obj);
-        propf = randPropf(tag, null, type);
-    }
-
-    return propf;
 }
 
 // Dynamically get random prop or func name
@@ -529,6 +533,7 @@ function removeArrVal(arr, value) {
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] == value) {
             arr.splice(i,1);
+            break;
         }
     }
 }

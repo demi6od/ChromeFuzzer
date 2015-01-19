@@ -14,6 +14,51 @@ if (demicm.IS_FUZZ_GROUP) {
     demicm.evtBlackList.push('onselect');
 }
 
+demicm.eventDic = {
+    Event: {
+        func: 'initEvent',
+        param: ['bool', 'bool', 'view', 'long'],
+        type: ['abort', 'error', 'load', 'select', 'upload']
+    },
+    MouseEvent: {
+        func: 'initMouseEvent',
+        param: ['bool', 'bool', 'view', 'long', 'long', 'long', 'long', 'long', 'bool', 'bool', 'bool', 'bool', 'short', 'target'],
+        type: ['click', 'dblclick', 'mousedown', 'mouseenter', 'mouseleave', 'mouseout', 'mouseover', 'mouseup']
+    },
+    KeyboardEvent: {
+        func: 'initKeyboardEvent',
+        param: ['bool', 'bool', 'view', 'string', 'long', 'string', 'bool', 'string'],
+        type: ['keydown', 'keyup']
+    },
+    FocusEvent: {
+        func: 'initEvent',
+        param: ['bool', 'bool', 'view', 'long', 'target'],
+        type: ['blur', 'focus', 'focusin', 'focusout']
+    },
+    CompositionEvent: {
+        func: 'initCompositionEvent',
+        param: ['bool', 'bool', 'view', 'string', 'string'],
+        type: ['compositionstart', 'compositionupdate', 'compositionend']
+    },
+    UIEvent: {
+        func: 'initUIEvent',
+        param: ['bool', 'bool', 'view', 'long'],
+        type: ['resize', 'scroll', 'beforeinput', 'input']
+    },
+    WheelEvent: {
+        func: 'initEvent',
+        param: ['bool', 'bool', 'view', 'long', 'long', 'long', 'long', 'long', 'short', 'target', 'string', 'long', 'long', 'long', 'long'],
+        type: ['wheel']
+    },
+}
+
+// Get events
+demicm.events = [];
+for (var e in demicm.eventDic) {
+    demicm.events.push(e);
+}
+
+
 demicm.elemDic = {
     a            : 'HTMLAnchorElement',
     acronym      : 'HTMLElement',
@@ -428,12 +473,12 @@ demicm.bool = [true, false];
 demicm.str = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
 demicm.normalStr = ['demi6od'];
 demicm.dirtyStr = [
-    //"javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
-    //"javascript: try {document.write('');} catch(e) {}",
+    "javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
+    "javascript: try {document.write('');} catch(e) {}",
     "filesystem:http://demi6od:password@127.0.0.1:8000/temporary/path/to/file.png",
 ];
 demicm.dirtyHtml = [
-    //"<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
+    "<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
 ];
 
 demicm.alpha = [

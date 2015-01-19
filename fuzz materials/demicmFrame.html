@@ -59,8 +59,10 @@
                     }
                 }
 
-                parent.document.body.innerHTML = '';
-                parent.document.write('');
+                try {
+                    parent.document.body.innerHTML = '';
+                    parent.document.write('');
+                } catch (e) {}
             }
         </script>
 
