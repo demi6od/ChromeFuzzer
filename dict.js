@@ -473,12 +473,14 @@ demicm.bool = [true, false];
 demicm.str = [',', '...', '\t', ' ', '', '?', '/', '[]', '{}', '=+-_', '()', '`', 'demicm', ];
 demicm.normalStr = ['demi6od'];
 demicm.dirtyStr = [
-    "javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
-    "javascript: try {document.write('');} catch(e) {}",
-    "filesystem:http://demi6od:password@127.0.0.1:8000/temporary/path/to/file.png",
+    //"javascript: try {document.documentElement.innerHTML = '';} catch(e) {}",
+    //"javascript: try {document.write('');} catch(e) {}",
+    'javascript: window.top.callBackJs();',
+    //"filesystem:http://demi6od:password@127.0.0.1:8000/temporary/path/to/file.png",
 ];
 demicm.dirtyHtml = [
-    "<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
+    //"<iframe src='javascript: try {top.document.write(null);} catch(e) {}'></iframe>",
+    "<iframe src='javascript: window.top.callBackJs();'></iframe>",
 ];
 
 demicm.alpha = [
@@ -529,8 +531,8 @@ demicm.name = {
     'progid', 'rating', 'refresh', 'reply-to', 'resource-type', 'revisit-after', 'robots', 'Template'] 
 };
 demicm.src = {
-    frame:['demicmFuzz.html'], video:['demicmVideo.mp4'], audio:['demicmAudio.mp3'], image:['demicmImg.gif'],
-    source:['demicmVideo.mp4'], track:['demicmTrack.vtt'], embed:['demicmSvg.svg']
+    iframe:demicm.dirtyStr, frame:demicm.dirtyStr, video:['demicmVideo.mp4'], audio:['demicmAudio.mp3'], image:['demicmImg.gif'],
+    source:demicm.dirtyStr, track:['demicmTrack.vtt'], embed:['demicmSvg.svg']
 };
 demicm.rel = {
     link: ['alternate', 'stylesheet', 'start', 'next', 'prev', 'contents', 'index', 'glossary', 'copyright', 'prerender',

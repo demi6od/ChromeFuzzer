@@ -146,7 +146,8 @@ function getTagName(elem) {
     try {
         if (!elem) {
             return 'none';
-        } else if (String(elem) == '[object DocumentType]') {
+        } else if ((elem.toStringBack && elem.toStringBack() == '[object DocumentType]') 
+            || (!elem.toStringBack && elem.toString() == '[object DocumentType]')) {
             return 'DocumentType';
         // Special object
         } else if (!elem.nodeName) {
@@ -363,7 +364,7 @@ function randPropfVal(idIdx, idRIdx, type, randTable) {
     }
 
     // Special random stuff
-    var rStrId = String(rand(id.length));
+    var rStrId = rand(id.length).toString();
     var rStrColor = 'rgb(' + rand(256) + ',' + rand(256) + ',' + rand(256) + ')'; //rgb(255,0,0)
     var rStrPos = randItem(demicm.num) + ',' + randItem(demicm.num) + ',' + randItem(demicm.num);
     var rDOMPos = randItem(demicm.DOMPos);
@@ -437,7 +438,11 @@ function logRevise(idIdx, idRIdx, type, value, objType) {
         }
     } else if (typeof value == 'function') {
         if (value.name == '') {
-            return value.toString();
+            if (value.toStringBack) {
+                return value.toStringBack();
+            } else {
+                return value.toString();
+            }
         } else {
             return value.name;
         }
@@ -602,13 +607,14 @@ function extendObj(originObj, newObj, override) {
 
 // Determine whether is positive integer
 function isPosInt(str) {
-    if (str != null && str != undefined) {
+    if (str != null && str != undefined && typeof str != 'object') {
         var re = /\d+/i; 
-        str = String(str);
+        str = str.toString();
         var reStr = str.match(re);
         return (reStr == str);
+    } else {
+        return false;
     }
-    return false;
 }
 
 function elemInDOM(elem) {
