@@ -287,9 +287,9 @@ class XmlCrashLog
 				
 				#message += " - #{log['parent_idx']}" if log['parent_idx']
 				
+                # demi
 				if( opts['try_catch'] and not message.start_with?( '//' ) and not message.start_with?( '/-' ) )
 					html << "#{tabs}try { #{message} } catch(e){}\n"
-                # demi
 				elsif( message.start_with?( '/-' ) )
 					html << "#{tabs}#{message[2, message.length-2]}\n"
                 else

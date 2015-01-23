@@ -22,7 +22,7 @@ demicm.propBlackList = [
 
     'logger',
 ]; 
-if (demicm.IS_IE) {
+if (demicm.BROWSER == 'IE') {
     demicm.propBlackList.push('designMode');
 }
 

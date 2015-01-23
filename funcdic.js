@@ -30,9 +30,9 @@ demicm.funcBlackList = [
     'removeChildren', 'removeCache', 'clearThisId', 'clearChildrenId', 'removeArrVal', 'inArr', 
     'isArr', 'repeatArr', 'convoluteArr', 'cloneObj', 'extendObj', 'isPosInt', 
     'elemInDOM', 'writeFileCM', 'writeFileIE', 'getTags', 'getElemName', 'getPropAndFunc', 
-    'getDistPropAndFunc', 'tickle', 'LOGGER', 'initShaders', 'createProgram', 'loadShader', 
-    'getWebGLContext', 'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 
-    'testCase', 'testcase', 'testCase', 
+    'getDistPropAndFunc', 'rand', 'rand_bool', 'rand_item', 'tickle', 'LOGGER', 
+    'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 'testCase', 
+    'testcase', 'testCase', 
     // Auto func black list end
 
     // Grinder server special func result
@@ -40,6 +40,9 @@ demicm.funcBlackList = [
 
     // IE
     'showHelp',
+
+    // Firefox
+    'AddSearchProvider', 'addSearchEngine', 'mozRequestFullScreen',
 
     'parseFloat',
     'appendChild', 'insertBefore', 'removeChild', 'replaceChild', 'cloneNode',

@@ -57,10 +57,10 @@ demicm.tagRs = [];
 demicm.tagRBlackList = ['Window', 'document'];
 
 // Fuzzer type
-demicm.IS_IE = true;
+demicm.BROWSER = 'IE';
 
 demicm.IS_RAND_FUZZ = true;
-demicm.IS_DEBUG = false;
+demicm.IS_DEBUG = true;
 demicm.IS_LOG_DEBUG = false;
 demicm.IS_FUZZ_GROUP = false;
 demicm.IS_FUZZ_MULTI = false;
@@ -637,7 +637,7 @@ function preludeFirst() {
 }
 
 function preludeSecond() {
-    if (!demicm.IS_IE) {
+    if (demicm.BROWSER == 'CM' || demicm.BROWSER == 'FF') {
         if (percent(demicm.WORKER_PER)) {
             appendWorker();
         }
@@ -729,7 +729,7 @@ function setEnv() {
     writeFileIE("e://fuzzlog.txt",'var id_' + demicm.RET_OFFSET + ' = null;');
     idR[0] = null;
 
-    if (!demicm.IS_IE && percent(demicm.DES_PER)) {
+    if ((demicm.BROWSER == 'CM' || demicm.BROWSER == 'FF') && percent(demicm.DES_PER)) {
         writeFileIE("e://fuzzlog.txt",'document.designMode = "on";');
         document.designMode = 'on';
     }
@@ -740,8 +740,8 @@ function setEnv() {
 
 function eventHandler() {
     if (percent(demicm.EVENT_MAN_PER)) {
-        writeFileIE("e://fuzzlog.txt",'id_' + (demicm.evtId + demicm.SPEC_OFFSET) + ' = event;');
-        idS[demicm.evtId] = event;
+        writeFileIE("e://fuzzlog.txt",'id_' + (demicm.evtId + demicm.SPEC_OFFSET) + ' = arguments[0];');
+        idS[demicm.evtId] = arguments[0];
 
         propfMan([demicm.evtId], demicm.MAX_REC_DEPTH_EVT, demicm.MAX_RET_REC_DEPTH_EVT, 'prop', 'spec');
         propfMan([demicm.evtId], demicm.MAX_REC_DEPTH_EVT, demicm.MAX_RET_REC_DEPTH_EVT, 'func', 'spec');
@@ -840,7 +840,7 @@ function setCallBack() {
         id[i].toString = new Function('writeFileIE("e://fuzzlog.txt","//id_' + i 
             + '.toString = function()");writeFileIE("e://fuzzlog.txt","/-{");callBack();');
         id[i].toLocalString = new Function('writeFileIE("e://fuzzlog.txt","//id_' + i 
-            + '.toLocalString = function()");writeFileIE("e://fuzzlog.txt","/-{");eventHandler();');
+            + '.toLocalString = function()");writeFileIE("e://fuzzlog.txt","/-{");callBack();');
         id[i].valueOf = new Function('writeFileIE("e://fuzzlog.txt","//id_' + i 
             + '.valueOf = function()");writeFileIE("e://fuzzlog.txt","/-{");callBack();');
     }
@@ -1018,7 +1018,7 @@ function appendForm(rId, rTxt) {
     writeFileIE("e://fuzzlog.txt",'id_' + formId + '.appendChild(id_' + (id.length - 1) + ');');
     id[formId].appendChild(id[id.length - 1]);
 
-    if (!demicm.IS_IE) {
+    if (demicm.BROWSER == 'CM' || demicm.BROWSER == 'FF') {
         // Add input color
         writeFileIE("e://fuzzlog.txt",'id_' + id.length + ' = document.createElement("input");');
         id[id.length] = document.createElement('input');
@@ -1967,11 +1967,11 @@ function appendWorker() {
     var rClearId = randId();
     var rClearDOMId = randId(true, false, true);
     writeFileIE("e://fuzzlog.txt",'id_' + workerId + '.onmessage = function () {try {id_' + rClearDOMId 
-        + '.outerHTML = event.data;id_' + rClearId + '.outerText = event.data; } catch (e) {}};');
+        + '.outerHTML = arguments[0].data;id_' + rClearId + '.outerText = arguments[0].data; } catch (e) {}};');
     id[workerId].onmessage = function () { 
         try {
-            id[rClearDOMId].outerHTML = event.data; 
-            id[rClearId].outerText = event.data; 
+            id[rClearDOMId].outerHTML = arguments[0].data; 
+            id[rClearId].outerText = arguments[0].data; 
         } catch (e) {}
     };
 
@@ -1992,11 +1992,11 @@ function appendSharedWorker() {
     var rClearId = randId();
     var rClearDOMId = randId(true, false, true);
     writeFileIE("e://fuzzlog.txt",'id_' + workerId + '.port.onmessage = function () {try {id_' + rClearDOMId 
-        + '.outerHTML = event.data;id_' + rClearId + '.outerText = event.data; } catch (e) {}};');
+        + '.outerHTML = arguments[0].data;id_' + rClearId + '.outerText = arguments[0].data; } catch (e) {}};');
     id[workerId].port.onmessage = function () { 
         try {
-            id[rClearDOMId].outerHTML = event.data; 
-            id[rClearId].outerText = event.data; 
+            id[rClearDOMId].outerHTML = arguments[0].data; 
+            id[rClearId].outerText = arguments[0].data; 
         } catch (e) {}
     };
 
@@ -2901,7 +2901,7 @@ function clearAll() {
             }
         }
 
-        if (demicm.IS_IE) {
+        if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
             var per = percent(40);
         } else {
             var per = percent(60);
@@ -3535,7 +3535,7 @@ function groupMan() {
 }
 
 function appendWindow(rId) {
-    if (demicm.IS_IE) {
+    if (demicm.BROWSER == 'IE') {
         writeFileIE("e://fuzzlog.txt",'id_' + (demicm.openId + demicm.SPEC_OFFSET) + ' = window.open("demicmTargetIE.html");');
         idS[demicm.openId] = window.open('demicmTargetIE.html');
     } else {
@@ -3547,7 +3547,7 @@ function appendWindow(rId) {
 function appendIframe(rId) {
     writeFileIE("e://fuzzlog.txt",'id_' + (demicm.ifrId + demicm.SPEC_OFFSET) + ' = document.createElement("iframe");');
     idS[demicm.ifrId] = document.createElement('iframe');
-    if (demicm.IS_IE) {
+    if (demicm.BROWSER == 'IE') {
         writeFileIE("e://fuzzlog.txt",'id_' + (demicm.ifrId + demicm.SPEC_OFFSET) + '.src = "demicmFrameIE.html";');
         idS[demicm.ifrId].src = 'demicmFrameIE.html';
     } else {
@@ -3572,7 +3572,7 @@ function appendFrame(rId) {
     // Add frame
     writeFileIE("e://fuzzlog.txt",'id_' + (demicm.frId + demicm.SPEC_OFFSET) + ' = document.createElement("frame");');
     idS[demicm.frId] = document.createElement('frame');
-    if (demicm.IS_IE) {
+    if (demicm.BROWSER == 'IE') {
         writeFileIE("e://fuzzlog.txt",'id_' + (demicm.frId + demicm.SPEC_OFFSET) + '.src = "demicmFrameIE.html";');
         idS[demicm.frId].src = 'demicmFrameIE.html';
     } else {
@@ -3593,7 +3593,7 @@ function appendFrame(rId) {
 function constructMulti() {
     try {
         var rId = randId(true, false, true);
-        if (demicm.IS_IE) {
+        if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
             // Not fuzz open window
             demicm.multiType = rand(2) + 1;
         } else {
@@ -3680,9 +3680,9 @@ function demiStart() {
 
     writeFileIE("e://fuzzlog.txt",'// Fuzz start', true);
     
-    if (demicm.IS_IE) {
-        writeFileIE("e://fuzzlog.txt",' gc = function() { CollectGarbage(); arr = new Array(); for (var i = 0; i < 0x3f0; i++) { arr[i] = document.createElement("a"); }'
-            + ' for (var i = 0; i < 0x3f0; i++) { arr[i] = ""; } CollectGarbage(); } ');
+    if (demicm.BROWSER == 'IE') {
+        writeFileIE("e://fuzzlog.txt",'gc = function() { CollectGarbage(); arr = new Array(); for (var i = 0; i < 0x3f0; i++) { arr[i] = document.createElement("a"); }'
+            + ' for (var i = 0; i < 0x3f0; i++) { arr[i] = ""; } CollectGarbage(); }');
         gc = function() { 
             CollectGarbage();
 
@@ -3696,6 +3696,15 @@ function demiStart() {
             }
 
             CollectGarbage();
+        }
+    } else if (demicm.BROWSER == 'FF') {
+        writeFileIE("e://fuzzlog.txt",'gc = function() { var arrs = []; for (i = 0; i < 100000; i++) { arrs[i] = new Array(); } return arrs; }');
+        gc = function() { 
+            var arrs = [];
+            for(i = 0; i < 100000; i++) {
+                arrs[i] = new Array();
+            }
+            return arrs;
         }
     }
 
@@ -3740,7 +3749,7 @@ function demiFront() {
     writeFileIE("e://fuzzlog.txt",'// we are now begining to fuzz...');
     operate(demicm.FRONT_OP_CNT);
 
-    if (demicm.IS_IE) {
+    if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
         setTimeout('try {demiBack();} catch (e) {setTimeout(\'parseFloat(unescape("%uF00D%uDEAD" + "</fuzzer>" + "%u0000"));'
             + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder";\', 200);}', 100);
     } else {
@@ -3768,7 +3777,7 @@ function demiBack() {
         writeFileIE("e://fuzzlog.txt",'/-};');
     }
 
-    if (demicm.IS_IE) {
+    if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
         setTimeout('try {demiEnd();} catch (e) {setTimeout(\'parseFloat(unescape("%uF00D%uDEAD" + "</fuzzer>" + "%u0000"));'
             + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder";\', 200);}', 200);
     } else {

@@ -618,15 +618,19 @@ function isPosInt(str) {
 }
 
 function elemInDOM(elem) {
-    if (demicm.IS_IE) {
+    if (document.contains) {
+        try {
+            return document.contains(elem);
+        } catch (e) {
+            return false;
+        }
+    } else {
         while (elem = elem.parentNode) {
             if (elem == document) {
                 return true;
             }
         }
         return false;
-    } else {
-        return document.contains(elem);
     }
 }
 

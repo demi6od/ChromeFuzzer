@@ -57,7 +57,7 @@ demicm.tagRs = [];
 demicm.tagRBlackList = ['Window', 'document'];
 
 // Fuzzer type
-demicm.BROWSER = 'IE';
+demicm.BROWSER = 'FF';
 
 demicm.IS_RAND_FUZZ = true;
 demicm.IS_DEBUG = false;
@@ -207,7 +207,7 @@ function constructNodeIterator() {
             + ' = document.createNodeIterator(id_' + rId + ', NodeFilter.SHOW_ALL, null, false);', 'grind', 1);
         idS[demicm.niId] = document.createNodeIterator(id[rId], NodeFilter.SHOW_ALL, null, false);
     } catch (e) {
-        logger.log('// Error: constructNodeIterator: ' + "", 'grind', 1);
+        logger.log('// Error: constructNodeIterator: ' + e.message, 'grind', 1);
     }
 }
 
@@ -221,7 +221,7 @@ function constructTreeWalker() {
             + ' = document.createTreeWalker(id_' + rId + ', NodeFilter.SHOW_ALL, null, false);', 'grind', 1);
         idS[demicm.twId] = document.createTreeWalker(id[rId], NodeFilter.SHOW_ALL, null, false);
     } catch (e) {
-        logger.log('// Error: constructTreeWalker: ' + "", 'grind', 1);
+        logger.log('// Error: constructTreeWalker: ' + e.message, 'grind', 1);
     }
 }
 
@@ -232,7 +232,7 @@ function constructRange() {
 
         setRange();
     } catch (e) {
-        logger.log('// Error: constructRange: ' + "", 'grind', 1);
+        logger.log('// Error: constructRange: ' + e.message, 'grind', 1);
     }
 }
 
@@ -256,7 +256,7 @@ function setRange() {
         logger.log('id_' + (demicm.rangeId + demicm.SPEC_OFFSET) + '.setEnd(id_' + rId + ', 0);', 'grind', 1);
         idS[demicm.rangeId].setEnd(id[rId], 0);
     } catch (e) {
-        logger.log('// Error: setRange: ' + "", 'grind', 1);
+        logger.log('// Error: setRange: ' + e.message, 'grind', 1);
     }
 }
 
@@ -267,7 +267,7 @@ function constructSelection() {
 
         setSelection();
     } catch (e) {
-        logger.log('// Error: constructSelection: ' + "", 'grind', 1);
+        logger.log('// Error: constructSelection: ' + e.message, 'grind', 1);
     }
 }
 
@@ -291,7 +291,7 @@ function setSelection() {
             + '.addRange(id_' + (demicm.rangeId + demicm.SPEC_OFFSET) + ');', 'grind', 1);
         idS[demicm.selId].addRange(idS[demicm.rangeId]);
     } catch (e) {
-        logger.log('// Error: setSelection: ' + "", 'grind', 1);
+        logger.log('// Error: setSelection: ' + e.message, 'grind', 1);
     }
 }
 
@@ -325,7 +325,7 @@ function nodeIteration() {
             idS[demicm.curItrNodeId] = idS[demicm.niId].nextNode();
         }
     } catch (e) {
-        logger.log('// Error: nodeIteration: ' + "", 'grind', 1);
+        logger.log('// Error: nodeIteration: ' + e.message, 'grind', 1);
     }
 }
 
@@ -360,7 +360,7 @@ function treeIteration() {
             idS[demicm.curTreeNodeId] = idS[demicm.twId].nextNode();
         }
     } catch (e) {
-        logger.log('// Error: treeIteration: ' + "", 'grind', 1);
+        logger.log('// Error: treeIteration: ' + e.message, 'grind', 1);
     }
 }
 
@@ -396,7 +396,7 @@ function moveIterator() {
             propfMan([demicm.curItrNodeId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
         }
     } catch (e) {
-        logger.log('// Error: moveIterator: ' + "", 'grind', 1);
+        logger.log('// Error: moveIterator: ' + e.message, 'grind', 1);
     }
 }
 
@@ -457,7 +457,7 @@ function moveTreeWalker() {
             propfMan([demicm.curTreeNodeId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
         }
     } catch (e) {
-        logger.log('// Error: moveTreeWalker: ' + "", 'grind', 1);
+        logger.log('// Error: moveTreeWalker: ' + e.message, 'grind', 1);
     }
 }		
 
@@ -524,7 +524,7 @@ function alterRange() {
                 break;
         }		
     } catch (e) {
-        logger.log('// Error: alterRange: ' + "", 'grind', 1);
+        logger.log('// Error: alterRange: ' + e.message, 'grind', 1);
     }
 }
 
@@ -548,7 +548,7 @@ function alterSelection() {
             idS[demicm.selId].addRange(idS[demicm.rangeId]);
         }
     } catch (e) {
-        logger.log('// Error: alterSelection: ' + "", 'grind', 1);
+        logger.log('// Error: alterSelection: ' + e.message, 'grind', 1);
     }
 }
 
@@ -597,7 +597,7 @@ function reuseGroup() {
         logger.log('gc();', 'grind', 1);
         gc();
     } catch (e) {
-        logger.log('// Error: reuseGroup: ' + "", 'grind', 1);
+        logger.log('// Error: reuseGroup: ' + e.message, 'grind', 1);
     }
 }
 
@@ -670,7 +670,7 @@ function setPropSty() {
             }
         }
     } catch (e) {
-        logger.log('// Error: setPropStyle: ' + "", 'grind', 1);
+        logger.log('// Error: setPropStyle: ' + e.message, 'grind', 1);
     }
 }
 
@@ -785,7 +785,7 @@ function setEvtHandler() {
                 }
             }
         } catch (e) {
-            logger.log('// Error: setEvtHandler: ' + "", 'grind', 1);
+            logger.log('// Error: setEvtHandler: ' + e.message, 'grind', 1);
         }
     }
 }
@@ -867,7 +867,7 @@ function addTextNode() {
                 id[rId].appendChild(document.createTextNode(rStr));
             }
         } catch (e) {
-            logger.log('// Error: addTextNode: ' + "", 'grind', 1);
+            logger.log('// Error: addTextNode: ' + e.message, 'grind', 1);
         }
     }
 }
@@ -1592,7 +1592,7 @@ function drawWebgl() {
                 break;
         }
     } catch (e) {
-        logger.log('// Error: drawWebgl: ' + "", 'grind', 1);
+        logger.log('// Error: drawWebgl: ' + e.message, 'grind', 1);
     }
 }
 
@@ -1623,7 +1623,7 @@ function appendNetwork(rId, rTxt) {
         logger.log('id_' + (id.length - 1) + '.id = ' + (id.length - 1) + ';', 'grind', 1);
         id[id.length - 1].id = id.length - 1;
     } catch (e) {
-        logger.log('// Error: appendNetwork: ' + "", 'grind', 1);
+        logger.log('// Error: appendNetwork: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2103,7 +2103,7 @@ function appendSpecElem() {
         try {
             appendWebGL(rId, rTxt);
         } catch(e) {
-            logger.log('// WebGL Crash: ' + "", 'grind', 1);
+            logger.log('// WebGL Crash: ' + e.message, 'grind', 1);
             demicm.WEBGL_PER = 0;
         }
     } else {
@@ -2362,7 +2362,7 @@ function setAttr() {
         logger.log('id_' + (demicm.nodeMapId + demicm.SPEC_OFFSET) + ' = id_' + rId + '.attributes;', 'grind', 1);
         idS[demicm.nodeMapId] = id[rId].attributes;
     } catch (e) {
-        logger.log('// Error: setAttr: ' + "", 'grind', 1);
+        logger.log('// Error: setAttr: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2377,7 +2377,7 @@ function constructSpec() {
 
         setAttr();
     } catch (e) {
-        logger.log('// Error: constructSpec: ' + "", 'grind', 1);
+        logger.log('// Error: constructSpec: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2543,7 +2543,7 @@ function propfMan(propStack, recDepth, retValDepth, type, objType) {
             logger.log('// Warning: propfMan else', 'grind', 1);
         }
     } catch (e) {
-        logger.log('// Error: propfMan: ' + "", 'grind', 1);
+        logger.log('// Error: propfMan: ' + e.message, 'grind', 1);
     }
     finally {
         propStack.pop();
@@ -2633,7 +2633,7 @@ function propMan(fuzzObj, fuzzObjStr, logObjStr, prop, bNormalProp, rIds, rIdRs,
 
         logger.log('retVal = null;', 'grind', 1);
     } catch (e) {
-        logger.log('// Error: propMan: ' + "", 'grind', 1);
+        logger.log('// Error: propMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2742,7 +2742,7 @@ function funcMan(fuzzObj, fuzzObjStr, logObjStr, func, bNormalFunc, rIds, rIdRs,
 
         logger.log('retVal = null;', 'grind', 1);
     } catch (e) {
-        logger.log('// Error: funcMan: ' + "", 'grind', 1);
+        logger.log('// Error: funcMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2757,7 +2757,7 @@ function styleMan(rId) {
             id[rId].style[rStyle] = rStyleVal;
         }
     } catch (e) {
-        logger.log('// Error: styleMan: ' + "", 'grind', 1);
+        logger.log('// Error: styleMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2777,7 +2777,7 @@ function layout() {
             id[rId].offsetParent;
         }
     } catch (e) {
-        logger.log('// Error: layout: ' + "", 'grind', 1);
+        logger.log('// Error: layout: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2884,7 +2884,7 @@ function clearSub() {
         logger.log('gc();', 'grind', 1);
         gc();
     } catch (e) {
-        logger.log('// Error: clearSub: ' + "", 'grind', 1);
+        logger.log('// Error: clearSub: ' + e.message, 'grind', 1);
     }
 }
 
@@ -2929,7 +2929,7 @@ function clearAll() {
             document.documentElement.innerHTML = '';
         }
     } catch (e) {
-        logger.log('// Error: clearAll: ' + "", 'grind', 1);
+        logger.log('// Error: clearAll: ' + e.message, 'grind', 1);
     }
 
     logger.log('gc();', 'grind', 1);
@@ -3033,7 +3033,7 @@ function DOMMan() {
                 break;
         }
     } catch (e) {
-        logger.log('// Error: DOMMan: ' + "", 'grind', 1);
+        logger.log('// Error: DOMMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3046,7 +3046,7 @@ function winMan() {
         propfMan([demicm.winId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'prop', 'spec');
         propfMan([demicm.winId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
     } catch (e) {
-        logger.log('// Error: winMan: ' + "", 'grind', 1);
+        logger.log('// Error: winMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3074,7 +3074,7 @@ function attrMan() {
         propfMan([fId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'prop', 'spec');
         propfMan([fId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
     } catch (e) {
-        logger.log('// Error: attrMan: ' + "", 'grind', 1);
+        logger.log('// Error: attrMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3087,7 +3087,7 @@ function canvas2dMan() {
         propfMan([demicm.canvas2dId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'prop', 'spec');
         propfMan([demicm.canvas2dId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
     } catch (e) {
-        logger.log('// Error: canvas2dMan: ' + "", 'grind', 1);
+        logger.log('// Error: canvas2dMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3103,7 +3103,7 @@ function webglMan() {
 
         propfMan([demicm.webglId], 1, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
     } catch (e) {
-        logger.log('// Error: webglMan: ' + "", 'grind', 1);
+        logger.log('// Error: webglMan: ' + e.message, 'grind', 1);
     }
 
     if (percent(demicm.DRAW_WEBGL_PER)) {
@@ -3198,7 +3198,7 @@ function fireEvent() {
             id[rId].dispatchEvent(evt);
         }
     } catch (e) {
-        logger.log('// Error: fireEvent: ' + "", 'grind', 1);
+        logger.log('// Error: fireEvent: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3247,7 +3247,7 @@ function reuseElem() {
 
         clearAll();
     } catch (e) {
-        logger.log('// Error: reuseElem: ' + "", 'grind', 1);
+        logger.log('// Error: reuseElem: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3270,7 +3270,7 @@ function reuseRetElem() {
         logger.log('gc();', 'grind', 1);
         gc();
     } catch (e) {
-        logger.log('// Error: reuseRetElem: ' + "", 'grind', 1);
+        logger.log('// Error: reuseRetElem: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3295,7 +3295,7 @@ function reuseSpec() {
         logger.log('gc();', 'grind', 1);
         gc();
     } catch (e) {
-        logger.log('// Error: reuseSpec: ' + "", 'grind', 1);
+        logger.log('// Error: reuseSpec: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3320,7 +3320,7 @@ function relayout() {
         logger.log('id_' + (demicm.relayoutId + demicm.SPEC_OFFSET) + '.innerHTML = "";', 'grind', 1);
         idS[demicm.relayoutId].innerHTML = '';
     } catch (e) {
-        logger.log('// Error: relayout: ' + "", 'grind', 1);
+        logger.log('// Error: relayout: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3458,7 +3458,7 @@ function multiClear() {
         }
 
     } catch (e) {
-        logger.log('// Error: multiClear: ' + "", 'grind', 1);
+        logger.log('// Error: multiClear: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3494,7 +3494,7 @@ function multiMan() {
             propfMan([fId], demicm.MAX_REC_DEPTH, demicm.MAX_RET_REC_DEPTH, 'func', 'spec');
         }
     } catch (e) {
-        logger.log('// Error: multiMan: ' + "", 'grind', 1);
+        logger.log('// Error: multiMan: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3615,7 +3615,7 @@ function constructMulti() {
                 break;
         }
     } catch (e) {
-        logger.log('// Error: constructMulti: ' + "", 'grind', 1);
+        logger.log('// Error: constructMulti: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3669,7 +3669,7 @@ function getMultiElems(elemCnt) {
             }
         }
     } catch (e) {
-        logger.log('// Error: getMultiElems: ' + "", 'grind', 1);
+        logger.log('// Error: getMultiElems: ' + e.message, 'grind', 1);
     }
 }
 
@@ -3969,7 +3969,7 @@ function getTagName(elem) {
         }
     }
     catch (e) {
-        logger.log('// Error: getTagName: ' + "", 'grind', 1);
+        logger.log('// Error: getTagName: ' + e.message, 'grind', 1);
     }
 }
 
@@ -4076,7 +4076,7 @@ function getPropf(obj, type, propTypes) {
                 }
             }
         } catch (e) {
-            logger.log('// Error: getPropf: ' + "", 'grind', 1);
+            logger.log('// Error: getPropf: ' + e.message, 'grind', 1);
         }
     }
 

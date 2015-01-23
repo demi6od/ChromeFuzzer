@@ -70,11 +70,11 @@ module Grinder
 					@@logging_js = data
 				end
 				
+                # demi
 				def self.profile( data )
 					@@profile = data
 				end
 				
-                # demi
 				def self.worker_js( data )
 					@@worker_js = data
 				end

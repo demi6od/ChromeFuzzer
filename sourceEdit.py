@@ -21,8 +21,8 @@ def conToWriteIE(inFileName, outFileName):
 
     src = src.replace('console.log(', 'writeFileIE("e://fuzzlog.txt",')
     src = src.replace('Fuzz start\'', 'Fuzz start\', true')
-    src = src.replace('IS_IE = false', 'IS_IE = true')
-    src = src.replace('IS_IE = false', 'IS_DEBUG = true')
+    src = src.replace('BROWSER = \'CM\'', 'BROWSER = \'IE\'')
+    src = src.replace('IS_DEBUG = false', 'IS_DEBUG = true')
 
     outFile.write(src)
     inFile.close()
@@ -115,13 +115,23 @@ def genLog(logType, version):
 
         # IE
         print '[+] Generate logging_grinder_ie file, version ' + version
-        srcIE = src.replace('IS_IE = false', 'IS_IE = true')
+        srcIE = src.replace('BROWSER = \'CM\'', 'BROWSER = \'IE\'')
         srcIE = srcIE.replace('e.message', '""')
         srcIE = srcIE.replace('window.location.protocol + "//" + window.location.host + "/grinder"', '"http://127.0.0.1:8080/grinder"')
 
         outFileIE = open('logging_grinder_ie v' + version + '.js', 'wb+')
         outFileIE.write(srcIE)
         outFileIE.close()
+
+        # FF
+        print '[+] Generate logging_grinder_ff file, version ' + version
+        srcFF = src.replace('BROWSER = \'CM\'', 'BROWSER = \'FF\'')
+        #srcFF = srcFF.replace('e.message', '""')
+        srcFF = srcFF.replace('window.location.protocol + "//" + window.location.host + "/grinder"', '"http://127.0.0.1:8080/grinder"')
+
+        outFileFF = open('logging_grinder_ff v' + version + '.js', 'wb+')
+        outFileFF.write(srcFF)
+        outFileFF.close()
     elif logType == '3':
         print '[+] Generate logging_grinder_crash file, version ' + version
 

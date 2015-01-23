@@ -7,7 +7,7 @@
  */
 
 demicm.evtBlackList = [];
-if (demicm.IS_IE) {
+if (demicm.BROWSER == 'IE') {
     demicm.evtBlackList.push('onbeforeunload');
 }
 if (demicm.IS_FUZZ_GROUP) {
@@ -296,7 +296,7 @@ demicm.commands = [
     '"strikeThrough" , true, ""',
 ];
 
-if (!demicm.IS_IE) {
+if (demicm.BROWSER == 'CM' || demicm.BROWSER == 'FF') {
     demicm.commands.push('"insertImage" , true, "demicmImg.gif"'); 
     demicm.commands.push('"insertImage" , false, "demicmImg.gif"'); 
     demicm.commands.push('"createLink" , true, "http://www.w3c.org"'); 
@@ -365,7 +365,9 @@ function getPropAndFunc() {
             var elem = document.createTreeWalker(document, NodeFilter.SHOW_ALL, null, false);
         }
         else {
-            var elem = document.createElement(demicm.tags[i]);
+            if (demicm.tags[i]) {
+                var elem = document.createElement(demicm.tags[i]);
+            }
         }
 
         updatePropfCache(elem);
