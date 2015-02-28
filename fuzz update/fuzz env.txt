@@ -12,3 +12,11 @@ global var put into blacklist
 #############
 internet选项 -> 安全 -> 自定义级别 -> 1.提示->启用。2.加载程序和文件->禁用。3.IRRAME中加载程序和文件->禁用。4.下载->禁用。
 internet选项 -> 高级 -> 关闭自动崩溃恢复。
+
+#############
+#firefox
+#############
+options -> advanced -> data choices -> x enable *crash* reporter
+options -> privacy -> history firefox will: never remember history
+options -> tabs -> x open new windows in a new tab instead
+about:config -> max_script_run_time: 0 &  toolkit.startup.max_resumed_crashes: -1

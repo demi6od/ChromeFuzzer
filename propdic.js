@@ -21,6 +21,9 @@ demicm.propBlackList = [
     'style', 'attributes', 'sheet', 'styleSheets', 'classList', // TODO
 
     'logger',
+
+    // Auto prop black list begin
+    // Auto prop black list end
 ]; 
 if (demicm.BROWSER == 'IE') {
     demicm.propBlackList.push('designMode');

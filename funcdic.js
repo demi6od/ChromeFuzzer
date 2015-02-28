@@ -31,12 +31,14 @@ demicm.funcBlackList = [
     'isArr', 'repeatArr', 'convoluteArr', 'cloneObj', 'extendObj', 'isPosInt', 
     'elemInDOM', 'writeFileCM', 'writeFileIE', 'getTags', 'getElemName', 'getPropAndFunc', 
     'getDistPropAndFunc', 'rand', 'rand_bool', 'rand_item', 'tickle', 'LOGGER', 
-    'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 'testCase', 
-    'testcase', 'testCase', 
+    'LOGGER', 'testId', 'testRand', 'testArr', 'printArr', 'testPropf', 
+    'testCase', 'testcase', 'testCase', 
     // Auto func black list end
 
     // Grinder server special func result
     //'getEntries', 'getEntriesByType', 'getEntriesByName', 'webkitGetEntries', 'webkitGetEntriesByType', 'webkitGetEntriesByName',
+
+    'demiBegin',
 
     // IE
     'showHelp',

@@ -75,26 +75,26 @@ demicm.DES_PER = 60; // 60
 
 // HTML initial
 demicm.INI_TAG_NUM = 20; // Initial ref tag number
-demicm.REF_TAG_PER = 40; // Ref elem percent
+demicm.REF_TAG_PER = 35; // 40 Ref elem percent
 demicm.TAG_PROP_NUM = 10; // 10
 demicm.TAG_ORDER_PER = 50; // 50
 
 // DOM Tree initial
 demicm.INI_ELEM_NUM = 12; // Initial all elem number
-demicm.REF_ELEM_PER = 40; // Ref elem percent
+demicm.REF_ELEM_PER = 35; // 40 Ref elem percent
 demicm.BODY_RATIO = 5; 
 demicm.HEAD_RATIO = 3; 
 demicm.HTML_RATIO = 2; 
 demicm.DANGLE_RATIO = 1; 
 
 demicm.TEXT_NUM = 15; // TextNode number
-demicm.REF_TEXT_PER = 15; // no ref elem percent
+demicm.REF_TEXT_PER = 10; // 15 ref elem percent
 
 demicm.EVENT_NUM = 20; // 30 Event num for per elem
 demicm.EVENT_ELEM_PER = 30; // 50 Elems percent to set event
-demicm.FIRE_EVENT_PER = 10; // 10
+demicm.FIRE_EVENT_PER = 5; // 5 | 10 
 
-demicm.CALL_BACK_ELEM_PER = 30; // 30 Elems percent to set callback
+demicm.CALL_BACK_ELEM_PER = 20; // 20 | 30 Elems percent to set callback
 
 demicm.CSS_DIVERSE_NUM = 3; // 3
 
@@ -103,10 +103,10 @@ demicm.PROP_STY_INI_NUM = 3; // 3
 demicm.MULTI_ELEM_NUM = 5; // 5
 
 // Operate number
-demicm.FRONT_OP_CNT = 40; // 30 | 60
-demicm.BACK_OP_CNT = 25; // 20 | 40
+demicm.FRONT_OP_CNT = 35; // 30 | 60
+demicm.BACK_OP_CNT = 20; // 20 | 40
 demicm.EVENT_OP_CNT = 10; // 10 | 20
-demicm.CALL_BACK_OP_CNT = 10; // 10 | 20
+demicm.CALL_BACK_OP_CNT = 8; // 8 | 20
 demicm.CALL_BACK_JS_OP_CNT = 20; // 20
 
 // Operate rate: n%(n = 0~100) probability to run
@@ -161,17 +161,17 @@ demicm.SET_SELECTION_PER = 20; // 20
 demicm.ALTER_SELECTION_PER = 80; // 80
 
 // Event
-demicm.EVENT_MAN_PER = 80; // 80
-demicm.EVENT_OP_PER = 60; // 50 | 60
+demicm.EVENT_MAN_PER = 60; // 60 | 80
+demicm.EVENT_OP_PER = 50; // 50 | 60
 demicm.EVENT_CLEAR_PER = 60; // 60 | 80
 demicm.EVENT_CLEAR_ALL_PER = 20; // 20 | 30
 
 // Callback
-demicm.CALL_BACK_OP_PER = 60; // 50 | 60
+demicm.CALL_BACK_OP_PER = 50; // 50 | 60
 demicm.CALL_BACK_CLEAR_PER = 60; // 60 | 80
 demicm.CALL_BACK_CLEAR_ALL_PER = 20; // 20 | 30
 
-demicm.CALL_BACK_JS_OP_PER = 100; // 100
+demicm.CALL_BACK_JS_OP_PER = 80; // 80 | 100
 demicm.CALL_BACK_JS_CLEAR_PER = 80; // 80
 demicm.CALL_BACK_JS_CLEAR_ALL_PER = 50; // 50
 
@@ -2331,7 +2331,11 @@ function constructDOMTree() {
 
     constructBaseTree();
 
-    appendSpecElem();
+    try {
+        appendSpecElem();
+    } catch(e) {
+        logger.log('// Error: appendSpecElem: ' + e.message, 'grind', 1);
+    }
 }
 
 function setAttr() {
@@ -2345,7 +2349,7 @@ function setAttr() {
         } else {
             var rStr = 'attrName';
         }
-        logger.log('id_' + (demicm.attrId + demicm.SPEC_OFFSET) + ' = document.createAttribute("'+ rStr + '");', 'grind', 1);
+        logger.log('id_' + (demicm.attrId + demicm.SPEC_OFFSET) + ' = document.createAttribute("' + rStr + '");', 'grind', 1);
         idS[demicm.attrId] = document.createAttribute(rStr);
 
         var rStr = randAlpha(10);
@@ -3678,6 +3682,9 @@ function demiStart() {
     logger = new LOGGER('01');
     logger.starting();
 
+}
+
+function demiBegin() {
     logger.log('// Fuzz start', 'grind', 1);
     
     if (demicm.BROWSER == 'IE') {
@@ -3751,7 +3758,7 @@ function demiFront() {
 
     if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
         setTimeout('try {demiBack();} catch (e) {setTimeout(\'parseFloat(unescape("%uF00D%uDEAD" + "</fuzzer>" + "%u0000"));'
-            + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder";\', 200);}', 100);
+            + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder/cppfuzzer01.html";\', 200);}', 100);
     } else {
         setTimeout('demiBack()', 100);
     }
@@ -3779,7 +3786,7 @@ function demiBack() {
 
     if (demicm.BROWSER == 'IE' || demicm.BROWSER == 'FF') {
         setTimeout('try {demiEnd();} catch (e) {setTimeout(\'parseFloat(unescape("%uF00D%uDEAD" + "</fuzzer>" + "%u0000"));'
-            + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder";\', 200);}', 200);
+            + 'window.location.href = window.location.protocol + "//" + window.location.host + "/grinder/cppfuzzer01.html";\', 200);}', 200);
     } else {
         setTimeout('demiEnd()', 200);
     }
@@ -3794,7 +3801,7 @@ function demiEnd() {
 
     /* END FUZZING CODE */
     logger.finished();
-    window.location.href = window.location.protocol + "//" + window.location.host + "/grinder";
+    window.location.href = window.location.protocol + "//" + window.location.host + "/grinder/cppfuzzer01.html";
 }
 
 /*
@@ -5105,312 +5112,82 @@ demicm.opacityVal = [];
 for(var i=0; i<demicm.normalNum.length; i++) {
     demicm.opacityVal.push(demicm.normalNum[i]/100);
 }
-/*
- * Copyright (c) 2014, Stephen Fewer of Harmony Security (www.harmonysecurity.com)
- * Licensed under a 3 clause BSD license (Please see LICENSE.txt)
- * Source code located at https://github.com/stephenfewer/grinder
- * 
- */
+function LOGGER(name) {
+    this.name = name;
+    this.server = "ws://192.168.153.145:8882/fuzz";
+    this.logData = "";
 
-// Pick a random number between 0 and X
-function rand( x )
-{
-	return Math.floor( Math.random() * x );
-}
+    var logCnt = 0;
+    var logIdx = 0;
 
-// Pick either true or false
-function rand_bool()
-{
-	return ( rand( 2 ) == 1 ? true : false );
-}
+    this.log = function(data) {
+        if (logCnt > 100) {
+            logIdx++;
+            logCnt = 0;
+        }
 
-// Pick an item from an array
-function rand_item( arr )
-{
-	return arr[ rand( arr.length ) ];
-}
+        if (data.substr(0, 2) == "//") {
+            data = data + "\n";
+        } else if (data.substr(0, 2) == "/-") {
+            data = data.substr(2) + "\n";
+        } else {
+            data = "try { " + data + " } catch(e){}\n";
+        }
 
-// Iterate over an object to simulate 'tickling' the object. This is useful during
-// testcase creating/reduction in order to trigger the original crash. If you comment
-// your fuzzer with log code comments of "/* tickle( OBJ ); */" then these comments
-// can be removed to tickle the object. Use where you iterate over an object looking
-// for a property/function/...
-function tickle( obj )
-{
-	try
-	{
-		for( var p in obj )
-		{
-			try { var tmp = typeof obj[p]; } catch( e2 ){}
-		}
-	}
-	catch( e1 ){}
-}
+        if (!localStorage[logIdx]) {
+            localStorage[logIdx] = "";
+        }
 
-// The logger class used to perform in-memory logging from a fuzzer.
-// This is linked with the back end via the injected grinder_logger.dll which
-// will hook the JavaScript parseFloat function and intercept any messages
-// passed in by the logger class and write them to disk.
-function LOGGER( name )
-{
-	this.name        = name;
-	this.browser     = '';
-	
-	var idx          = 0;
-	var unique_types = [];
-	var log_xml      = null;
-	var log_xml_idx  = null;
-	
-	this.gc = function()
-	{
-		if( this.browser == 'IE' )
-		{
-			CollectGarbage();
-		}
-		else if( this.browser == 'CM' )
-		{
-			if( typeof window.gc != 'undefined' )
-			{
-				window.gc();
-			}
-			else
-			{
-				for( f=[], i=0 ; i<30000 ; i++ )
-					f.push( new String( "ABCD" ) );
-			}
-		}
-		/*else
-		{
-		    for( i=0; i < 10000; i++ )
-				var s = new String( unescape( '%u7F7F%u7F7F' ) );
-		}*/
-	};
-	
-	this.get_browser = function()
-	{
-		if( /Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent) )
-			return "FF";
-		else if( /MSIE (\d+\.\d+);/.test(navigator.userAgent) )
-			return "IE";
-		else if( /Trident\//.test(navigator.userAgent) )
-			return "IE";
-		else if( /Chrome/.test(navigator.userAgent) )
-			return "CM";
-		else if( /Safari/.test(navigator.userAgent) )
-			return "SF";
-		else if( /Opera/.test(navigator.userAgent) )
-			return "OP";
-		else
-			return "??";
-	};
-	
-	// Access this instance variable to get the browser...
-	this.browser = this.get_browser();
+        localStorage[logIdx] += data;
+        logCnt++;
+    };
 
-	if( this.browser == 'CM' || this.browser == 'FF' || this.browser == 'SF' )
-	{
-		log_xml = function( xml )
-		{
-			parseFloat( unescape( '%uC0DE%uDEAD' + xml + '%u0000' ) );
-		};
+    this.finished = function() {
+    };
 
-		log_xml_idx = function( xml, _idx )
-		{
-			parseFloat( unescape( '%uCAFE%uDEAD' + dword2data( _idx ) + xml + '%u0000' ) );
-		};
-		
-		// You call this to indicate logging is starting...
-		this.starting = function()
-		{
-			parseFloat( unescape( '%uBEEF%uDEAD' + '<fuzzer name="' + xml_escape( this.name ) + '" browser="' + xml_escape( this.browser ) + '">' + '%u0000' ) );
-		};
-		
-		// You call this to indicate logging is finished...
-		this.finished = function()
-		{
-			parseFloat( unescape( '%uF00D%uDEAD' + '</fuzzer>' + '%u0000' ) );
-		};
-		
-		// You call this to trigger an access violation (attempted write to a bad address)...
-		this.debugbreak = function()
-		{
-			parseFloat( unescape( '%uDEAD%uDEAD' + '%u0000' ) );
-		};
-	}
-	else
-	{
-		log_xml = function( xml )
-		{
-			parseFloat( unescape( '%uC0DE%uDEAD') + xml );
-		};
-		
-		log_xml_idx = function( xml, _idx )
-		{
-			parseFloat( unescape( '%uCAFE%uDEAD') + dword2data( _idx ) + xml );
-		};
-		
-		this.starting = function()
-		{
-			parseFloat( unescape( '%uBEEF%uDEAD') + '<fuzzer name="' + xml_escape( name ) + '" browser="' + xml_escape( this.browser ) + '">' );
-		};
-		
-		this.finished = function()
-		{
-			parseFloat( unescape( '%uF00D%uDEAD') + '</fuzzer>' );
-		};
-		
-		this.debugbreak = function()
-		{
-			parseFloat( unescape( '%uDEAD%uDEAD' ) );
-		};
-	}
-	
-	// Call this instance method to generate a unique name for a type, e.g.
-	//     The first call to unique_id( 'id' ) will first produce 'id_0'
-	//     A second call to unique_id( 'id' ) will then produce 'id_1'
-	//     A subsequent call to unique_id( 'param' ) will produce 'param_0'
-	//     ...and so on...
-	this.unique_id = function( type )
-	{
-		if( typeof unique_types[type] == 'undefined' )
-			unique_types[type] = 0;
-			
-		var result = type + '_' + unique_types[type];
+    this.fuzzing = function() {
+        localStorage.clear();
+        demiBegin();
+    };
 
-		unique_types[type] += 1;
+    this.starting = function() {
+        for (var i = 0; ; i++) {
+            if (localStorage[i]) {
+                this.logData += localStorage[i].toString();
+            } else {
+                break;
+            }
+        }
 
-		return result;
-	};
-	
-	// Call this instance method to retrieve a random id of a previous type.
-	this.rand_id = function( type )
-	{
-		if( typeof unique_types[type] == 'undefined' )
-			unique_types[type] = 0;
-		
-		return type + '_' + rand( unique_types[type] );
-	};
-	
-	// Call this instance method to retrieve the number of ID's of this type
-	this.count_id = function( type )
-	{
-		if( typeof unique_types[type] == 'undefined' )
-			return 0;
-		
-		return unique_types[type];
-	};
-	
-	// Used to log a message from the fuzzer to the log file on disk. This is how we recreate testcases at a later stage.
-	// You must log the JavaScript lines of code you wish to record. The message parameter is a string containing a line
-	// of JavaScript. The location string parameter is optional, and can describe where in your fuzzer this log message came from.
-	// The count number parameter is optional and defines how many times to execute the log message when recreating the testcase.
-	// Note: Currently only logging string messages is supported, but future support for logging nested messages via an array
-	// of string messages will be supported at a later stage.
-	//
-	// You can log a line of JavaScript as follows: logger.log( "id_0.src = 'AAAAAAAA';", "tweak_params", 8 );
-	// When recreating a testcase this will produce the following (optionally surrounded by a try/catch statement):
-	//     for( i=0 ; i<8 ; i++ ) {
-	//         id_0.src = 'AAAAAAAA';
-	//     }
-	//
-	// The for() loop is never emitted if you log a count value of 1.
-	//
-	// You can log code comments as follows: logger.log( "/* tickle( id_0 ); */", "tweak_params" );
-	// When recreating a testcase the code comment will be written as a code comment by default, but also may be uncommented 
-	// in order to execute the javascript inside the comment as this may help recreate the crash.
-	//
-	// You can log regular comments a follows: logger.log( "// This is a message to myself :)" );
-	// These will simply be printed as a comment in the testcase and will never be uncommented.
-	//
-	this.log = function( message, location, count )
-	{
-		var last_idx = -1;
-		
-		if( typeof location != 'string' )
-			location = '';
-		
-		if( typeof count != 'number' )
-			count = 1;
-			
-		if( typeof message == 'string' )
-		{
-			last_idx = log_message( message, location, count );
-		}
-		else
-		{
-			if( typeof message.length != 'undefined' && message.length > 0 )
-			{
-				idx += 1;
-				
-				xml  = '<log>';
-				xml += '<idx>' + idx + '</idx>';
-				xml += '<location>' + xml_escape( location ) + '</location>';
-				xml += '<count>' + count + '</count>';
+        demicm.websocket = new WebSocket(this.server);
 
-				log_xml_idx( xml, idx );
-			
-				for( var m in message )
-					last_idx = this.log( message[m], location, 1 );
+        demicm.websocket.onmessage = function(evt) {
+            console.log("[+] Receive data: " + evt.data);
 
-				log_xml( '</log>' );
-			}
-		}
-		
-		return last_idx;
-	};
-	
-	var xml_escape = function( message )
-	{
-		message = message.replace( /</g, "&lt;" );
-		message = message.replace( />/g, "&gt;" );
-		message = message.replace( /&/g, "&amp;" );
-		message = message.replace( /\"/g, "&quot;" );
-		message = message.replace( /\'/g, "&apos;" );
-		
-		return message;
-	};
-	
-	var log_message = function( message, location, count )
-	{
-		idx += 1;
-		
-		xml  = '<log>';
-		xml += '<idx>' + idx + '</idx>';
-		xml += '<location>' + xml_escape( location ) + '</location>';
-		xml += '<message>' + xml_escape( message ) + '</message>';
-		xml += '<count>' + count + '</count>';
-		xml += '</log>';
+            if (evt.data == "yes" || evt.data == "continue") {
+                console.log("send log");
+                if (logger.logData.length > 0) {
+                    var packetLen = 5000;
+                    demicm.websocket.send("logData:" + logger.logData.substr(0, packetLen));
+                    logger.logData = logger.logData.substr(packetLen);
+                } else {
+                    demicm.websocket.send("logData:" + "end");
+                }
+            } else if (evt.data == "no" || evt.data == "finish") {
+                console.log("start fuzzing");
+                logger.fuzzing();
+            } else if (evt.data == "shake") {
+                demicm.websocket.send("crash?");
+            } else {
+                console.log("[*] Warning: websocket onmessage else");
+            }
+        };
 
-		log_xml_idx( xml, idx );
-		
-		return idx - 1;
-	};
-	
-	var dword2data = function( dword )
-	{
-		var d = Number( dword ).toString( 16 );
-		while( d.length < 8 )
-			d = '0' + d;
-		return unescape( '%u' + d.substr( 4, 8 ) + '%u' + d.substr( 0, 4 ) );
-	};
-	
-	this.type = function( name, obj, obj_hint )
-	{
-		if( typeof obj_hint == 'undefined' )
-		{
-			var id = "?";
-
-			try
-			{
-				if( typeof obj.id != 'undefined' )
-					return obj.id;
-			} catch(e){}
-	
-			obj_hint = "%" + name + "%";
-		}
-
-		return obj_hint;
-	};
+        demicm.websocket.onopen = function(evt) { 
+            console.log("fuzzer name: " + logger.name);
+            demicm.websocket.send(logger.name);
+        };
+    };
 }
 /*
  * Author: demi6od <demi6d@gmail.com>
@@ -5435,6 +5212,10 @@ demicm.propBlackList = [
     'style', 'attributes', 'sheet', 'styleSheets', 'classList', // TODO
 
     'logger',
+
+    // Auto prop black list begin
+"localStorage",
+    // Auto prop black list end
 ]; 
 if (demicm.BROWSER == 'IE') {
     demicm.propBlackList.push('designMode');
@@ -5993,6 +5774,8 @@ demicm.funcBlackList = [
     // Grinder server special func result
     //'getEntries', 'getEntriesByType', 'getEntriesByName', 'webkitGetEntries', 'webkitGetEntriesByType', 'webkitGetEntriesByName',
 
+    'demiBegin',
+
     // IE
     'showHelp',
 
@@ -6115,7 +5898,7 @@ demicm.funcDic = {
     ],
     lookupPrefix: [
 		{type: 'string'},
-		{type: 'string', normalVal: ['http://127.0.0.1:8080/grinder/'], dirtyVal: demicm.dirtyStr},
+		{type: 'string', normalVal: ['http://127.0.0.1:8080/grinder/cppfuzzer01.html/'], dirtyVal: demicm.dirtyStr},
     ],
     lookupNamespaceURI: [
 		{type: 'string'},

@@ -210,7 +210,7 @@ class EchoHandler(object):
 
 class WebSocketServer(asyncore.dispatcher):
 
-    def __init__(self, port=80, handlers=None):
+    def __init__(self, port = 80, handlers = None):
         asyncore.dispatcher.__init__(self)
         self.handlers = handlers
         self.sessions = []
@@ -226,5 +226,5 @@ class WebSocketServer(asyncore.dispatcher):
 
 if __name__ == "__main__":
     print "Starting WebSocket Server"
-    WebSocketServer(port=8082, handlers={"/echo": EchoHandler})
+    WebSocketServer(port = 8082, handlers = {"/echo": EchoHandler})
     asyncore.loop()

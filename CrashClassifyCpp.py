@@ -75,7 +75,7 @@ def main():
         if modifiedTime > lastClaTime:
             match = re.search(r'\\(\w{8}\.\w{8})\..*$', fname)
             fileName = match.group(0)[1:]
-            logFileName = fileName.replace('.crash', '.log')
+            htmlFileName = fileName.replace('.crash', '.html')
             fileFullHash = match.group(1) 
             fileFirstHash = fileFullHash.split('.')[0] 
 
@@ -106,9 +106,9 @@ def main():
             if fileFirstHash + '\n' not in cacheFile.readlines():
                 cacheFile.write(fileFirstHash + '\n')
                 shutil.copyfile(fileName, crashType + '\\' + fileName) 
-                if os.path.exists(logFileName):
-                    shutil.copyfile(logFileName, crashType + '\\' + logFileName) 
-                genPoc(gCurDir + '\\' +crashType + '\\' + logFileName)
+                if os.path.exists(htmlFileName):
+                    shutil.copyfile(htmlFileName, crashType + '\\' + htmlFileName) 
+                #genPoc(gCurDir + '\\' +crashType + '\\' + htmlFileName)
             cacheFile.close()
 
             # Copy distinct full hash files
@@ -119,9 +119,9 @@ def main():
             if fileFullHash + '\n' not in cacheFile.readlines():
                 cacheFile.write(fileFullHash + '\n')
                 shutil.copyfile(fileName, crashType + '\\' + fileFirstHash + '\\' + fileName) 
-                if os.path.exists(logFileName):
-                    shutil.copyfile(logFileName, crashType + '\\' + fileFirstHash + '\\' + logFileName) 
-                genPoc(gCurDir + '\\' + crashType + '\\' + fileFirstHash + '\\' + logFileName)
+                if os.path.exists(htmlFileName):
+                    shutil.copyfile(htmlFileName, crashType + '\\' + fileFirstHash + '\\' + htmlFileName) 
+                #genPoc(gCurDir + '\\' + crashType + '\\' + fileFirstHash + '\\' + htmlFileName)
             cacheFile.close()
 
 if __name__ == "__main__":

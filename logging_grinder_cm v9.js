@@ -75,26 +75,26 @@ demicm.DES_PER = 60; // 60
 
 // HTML initial
 demicm.INI_TAG_NUM = 20; // Initial ref tag number
-demicm.REF_TAG_PER = 40; // Ref elem percent
+demicm.REF_TAG_PER = 35; // 40 Ref elem percent
 demicm.TAG_PROP_NUM = 10; // 10
 demicm.TAG_ORDER_PER = 50; // 50
 
 // DOM Tree initial
 demicm.INI_ELEM_NUM = 12; // Initial all elem number
-demicm.REF_ELEM_PER = 40; // Ref elem percent
+demicm.REF_ELEM_PER = 35; // 40 Ref elem percent
 demicm.BODY_RATIO = 5; 
 demicm.HEAD_RATIO = 3; 
 demicm.HTML_RATIO = 2; 
 demicm.DANGLE_RATIO = 1; 
 
 demicm.TEXT_NUM = 15; // TextNode number
-demicm.REF_TEXT_PER = 15; // no ref elem percent
+demicm.REF_TEXT_PER = 10; // 15 ref elem percent
 
 demicm.EVENT_NUM = 20; // 30 Event num for per elem
 demicm.EVENT_ELEM_PER = 30; // 50 Elems percent to set event
-demicm.FIRE_EVENT_PER = 10; // 10
+demicm.FIRE_EVENT_PER = 5; // 5 | 10 
 
-demicm.CALL_BACK_ELEM_PER = 30; // 30 Elems percent to set callback
+demicm.CALL_BACK_ELEM_PER = 20; // 20 | 30 Elems percent to set callback
 
 demicm.CSS_DIVERSE_NUM = 3; // 3
 
@@ -103,10 +103,10 @@ demicm.PROP_STY_INI_NUM = 3; // 3
 demicm.MULTI_ELEM_NUM = 5; // 5
 
 // Operate number
-demicm.FRONT_OP_CNT = 40; // 30 | 60
-demicm.BACK_OP_CNT = 25; // 20 | 40
+demicm.FRONT_OP_CNT = 35; // 30 | 60
+demicm.BACK_OP_CNT = 20; // 20 | 40
 demicm.EVENT_OP_CNT = 10; // 10 | 20
-demicm.CALL_BACK_OP_CNT = 10; // 10 | 20
+demicm.CALL_BACK_OP_CNT = 8; // 8 | 20
 demicm.CALL_BACK_JS_OP_CNT = 20; // 20
 
 // Operate rate: n%(n = 0~100) probability to run
@@ -161,17 +161,17 @@ demicm.SET_SELECTION_PER = 20; // 20
 demicm.ALTER_SELECTION_PER = 80; // 80
 
 // Event
-demicm.EVENT_MAN_PER = 80; // 80
-demicm.EVENT_OP_PER = 60; // 50 | 60
+demicm.EVENT_MAN_PER = 60; // 60 | 80
+demicm.EVENT_OP_PER = 50; // 50 | 60
 demicm.EVENT_CLEAR_PER = 60; // 60 | 80
 demicm.EVENT_CLEAR_ALL_PER = 20; // 20 | 30
 
 // Callback
-demicm.CALL_BACK_OP_PER = 60; // 50 | 60
+demicm.CALL_BACK_OP_PER = 50; // 50 | 60
 demicm.CALL_BACK_CLEAR_PER = 60; // 60 | 80
 demicm.CALL_BACK_CLEAR_ALL_PER = 20; // 20 | 30
 
-demicm.CALL_BACK_JS_OP_PER = 100; // 100
+demicm.CALL_BACK_JS_OP_PER = 80; // 80 | 100
 demicm.CALL_BACK_JS_CLEAR_PER = 80; // 80
 demicm.CALL_BACK_JS_CLEAR_ALL_PER = 50; // 50
 
@@ -2331,7 +2331,11 @@ function constructDOMTree() {
 
     constructBaseTree();
 
-    appendSpecElem();
+    try {
+        appendSpecElem();
+    } catch(e) {
+        logger.log('// Error: appendSpecElem: ' + e.message, 'grind', 1);
+    }
 }
 
 function setAttr() {
@@ -2345,7 +2349,7 @@ function setAttr() {
         } else {
             var rStr = 'attrName';
         }
-        logger.log('id_' + (demicm.attrId + demicm.SPEC_OFFSET) + ' = document.createAttribute("'+ rStr + '");', 'grind', 1);
+        logger.log('id_' + (demicm.attrId + demicm.SPEC_OFFSET) + ' = document.createAttribute("' + rStr + '");', 'grind', 1);
         idS[demicm.attrId] = document.createAttribute(rStr);
 
         var rStr = randAlpha(10);
@@ -5435,6 +5439,9 @@ demicm.propBlackList = [
     'style', 'attributes', 'sheet', 'styleSheets', 'classList', // TODO
 
     'logger',
+
+    // Auto prop black list begin
+    // Auto prop black list end
 ]; 
 if (demicm.BROWSER == 'IE') {
     demicm.propBlackList.push('designMode');
@@ -5992,6 +5999,8 @@ demicm.funcBlackList = [
 
     // Grinder server special func result
     //'getEntries', 'getEntriesByType', 'getEntriesByName', 'webkitGetEntries', 'webkitGetEntriesByType', 'webkitGetEntriesByName',
+
+    'demiBegin',
 
     // IE
     'showHelp',

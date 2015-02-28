@@ -21,7 +21,7 @@
                     for (var p in document.all[i]) {
                         try {
                             if (typeof document.all[i][p] == 'function') {
-                                if (p != 'submit') {
+                                if (p != 'submit' && p != 'mozRequestFullScreen') {
                                     document.all[i][p]();
                                 }
                             } else {

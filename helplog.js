@@ -58,7 +58,7 @@ function randAlpha(len) {
 function randAscii(len) {
     var letters = '\t /`_+=-][(),.?0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
     var ascii = '';
-    for (var i = 0;i< len;i++) {
+    for (var i = 0; i < len;i++) {
         ascii += randItem(letters);
     }
     return ascii;
@@ -436,17 +436,26 @@ function logRevise(idIdx, idRIdx, type, value, objType) {
         } else {
             return ('"' + value + '"');
         }
-    } else if (typeof value == 'function') {
+    } 
+
+    if (typeof value == 'function') {
         if (value.name == '') {
             if (value.toStringBack) {
-                return value.toStringBack();
+                var funcStr = value.toStringBack();
             } else {
-                return value.toString();
+                var funcStr = value.toString();
+            }
+
+            // For firefox bug
+            if (funcStr.indexOf('function') != -1) {
+                return funcStr;
             }
         } else {
             return value.name;
         }
-    } else if (typeof value == 'object') {
+    }
+    
+    if (typeof value == 'object' || typeof value == 'function') {
         if (type == 'prop' || type == 'func') {
             if (objType == 'ret') {
                 return ('id_' + (idRIdx + demicm.RET_OFFSET));
@@ -460,9 +469,9 @@ function logRevise(idIdx, idRIdx, type, value, objType) {
                 return ('id[' + idIdx + ']');
             }
         }
-    } else {
-        return value;
     }
+
+    return value;
 }
 
 /************************************** DOM Node Control **************************************/

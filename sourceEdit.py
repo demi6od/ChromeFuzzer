@@ -86,7 +86,7 @@ def logToCon(inFileName, outFileName):
     inFile.close()
     outFile.close()
 
-def genLog(logType, version):
+def genLog(logType, version, fuzzerId = '01'):
     inFile = open('demichromelog' + version + '.js', 'r')
     src = inFile.read()
     inFile.close()
@@ -96,9 +96,14 @@ def genLog(logType, version):
     inFile = open('dict.js', 'r')
     src += inFile.read()
     inFile.close()
-    inFile = open('logging.js', 'r')
+
+    if logType == '4':
+        inFile = open('cpplogging.js', 'r')
+    else:
+        inFile = open('logging.js', 'r')
     src += inFile.read()
     inFile.close()
+
     inFile = open('propdic.js', 'r')
     src += inFile.read()
     inFile.close()
@@ -107,11 +112,40 @@ def genLog(logType, version):
     inFile.close()
     inFile = open('styledic.js', 'r')
     src += inFile.read()
+    inFile.close()
+
+    # Cpp fuzz
+    if logType == '4':
+        print '[+] Generate logging_cpp file, id ' + fuzzerId + ', version ' + version
+
+        srcCpp = src.replace("LOGGER('01')", "LOGGER('" + fuzzerId + "')")
+        srcCpp = srcCpp.replace("grinder", "grinder/cppfuzzer" + fuzzerId + ".html")
+        srcCpp = srcCpp.replace("    logger.log('// Fuzz start", "}\n\nfunction demiBegin() {\n    logger.log('// Fuzz start")
+        srcCpp = re.sub(r'(// Auto prop black list begin).*(// Auto prop black list end)', \
+            lambda m: m.group(1) + '\n"localStorage",\n    ' + m.group(2), srcCpp, 0 ,re.S)
+
+        # Get fuzz server address
+        config = open('cppFuzzer\\config.xml', 'r')
+        src = config.read()
+        config.close()
+
+        m = re.search(r'<ip>(.+)</ip>', src)
+        ip = m.group(1);
+        m = re.search(r'<port>(.+)</port>', src)
+        port = m.group(1);
+        srcCpp = re.sub(r'(this.server = "ws://).+(/fuzz)', lambda m: m.group(1) + ip + ':' + port + m.group(2), srcCpp)
+
+        outFileCpp = open('logging_cpp_' + fuzzerId + ' v' + version + '.js', 'wb+')
+        outFileCpp.write(srcCpp)
+        outFileCpp.close()
 
     if logType == '2':
-        print '[+] Generate logging_grinder file, version ' + version
+        print '[+] Generate logging_grinder_cm file, version ' + version
 
-        outFile = open('logging_grinder v' + version + '.js', 'wb+')
+        # CM
+        outFile = open('logging_grinder_cm v' + version + '.js', 'wb+')
+        outFile.write(src)
+        outFile.close()
 
         # IE
         print '[+] Generate logging_grinder_ie file, version ' + version
@@ -132,16 +166,16 @@ def genLog(logType, version):
         outFileFF = open('logging_grinder_ff v' + version + '.js', 'wb+')
         outFileFF.write(srcFF)
         outFileFF.close()
+
+    # Crash file
     elif logType == '3':
         print '[+] Generate logging_grinder_crash file, version ' + version
 
         src = src.replace('window.location.href', 'testcase();//')
         src = src.replace('function clearAll() {', 'function clearAll() {return;')
         outFile = open('logging_grinder_crash v' + version + '.js', 'wb+')
-
-    outFile.write(src)
-    inFile.close()
-    outFile.close()
+        outFile.write(src)
+        outFile.close()
 
 def genBlackList(version):
     print '[+] Generate func black list'
@@ -156,6 +190,9 @@ def genBlackList(version):
     src += inFile.read()
     inFile.close()
     inFile = open('logging.js', 'r')
+    src += inFile.read()
+    inFile.close()
+    inFile = open('cpplogging.js', 'r')
     src += inFile.read()
     inFile.close()
     inFile = open('propdic.js', 'r')
@@ -192,11 +229,29 @@ def genBlackList(version):
     inFile.close()
     outFile.close()
 
+def genHtml(fuzzerId):
+    outFile = open('cppfuzzer' + fuzzerId + '.html', 'wb+')
+
+    htmlCode = ("<!DOCTYPE HTML>\n"
+                "<html>\n"
+                "    <head>\n"
+                "        <title>...AND THE MACHINE GRINDS ON!</title>\n"
+                "        <meta http-equiv='Cache-Control' content='no-cache'/>\n"
+                "        <script type='text/javascript' src='logging_cpp_" + fuzzerId + ".js'></script>	\n"
+                "    </head>\n"
+                "    <body onload='demiStart();'>\n"
+                "    </body>\n"
+                "</html>")
+
+    outFile.write(htmlCode)
+    outFile.close()
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', help = 'inputFile')
     parser.add_argument('-o', help = 'outputFile')
     parser.add_argument('-v', help = 'demichrome version')
+    parser.add_argument('-n', help = 'cppfuzzer number')
     parser.add_argument('-t', help = 'type: 0 - console to log, 1 - log to console, 2 - generate logging_grinder, '
         '3 - generate logging_grinder_crash, 4 - generate func black list, 5 - auto generate all')
     args = parser.parse_args()
@@ -219,10 +274,15 @@ def main():
         conToLog('help.js', 'helplog.js')
         genLog('2', args.v)
         genLog('3', args.v)
+        for i in range(0, int(args.n)):
+            fuzzerId = str(i + 1).zfill(2)
+            genLog('4', args.v, fuzzerId)
+            genHtml(fuzzerId)
 
     print "[+] Finish"
 
 if __name__ == "__main__":
+    
     main()
 
 #id[setEvtId][rEvt] = new Function('logger.log("//id_' + setEvtId + '[\'' + rEvt + '\'] = function()", "grind", 1);logger.log("/-{", "grind", 1);eventHandler();');
