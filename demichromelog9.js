@@ -2451,7 +2451,7 @@ function propfMan(propStack, recDepth, retValDepth, type, objType) {
         var recWideCnt = 0;
         var arrCnt = 0;
 
-        logger.log('// for (var p in ' + logObjStr + ') { ' + logObjStr + '[p]; }', 'grind', 1);
+        logger.log('for (var p in ' + logObjStr + ') { ' + logObjStr + '[p]; }', 'grind', 1);
         for (var p in fuzzObj) {
             if (fuzzObj[p] 
                 && typeof fuzzObj[p] == 'object' 

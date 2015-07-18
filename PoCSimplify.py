@@ -194,6 +194,7 @@ class PocManager:
         self.urlPath = urlPath
         self.checkUrl = ""
         self.testFile = ""
+        self.cacheFile = ""
         self.mainFileName = ""
         self.verifier = CrashVerifier() 
 
@@ -207,6 +208,7 @@ class PocManager:
             self.mainFileName = outFile
             self.checkUrl = self.urlPath + "testPoc.html" 
             self.testFile = self.fileDirPath + "testPoc.html" 
+            self.cacheFile = self.fileDirPath + "cachePoc.html" 
 
             # Set javascript timeout to ensure attach renderer before crash
             self.poc.replace("<body onload='testcase();'>", "<body onload='setTimeout(\"testcase();\",500)'>") 
@@ -397,6 +399,10 @@ class PocManager:
     def verify(self, poc):
         poc.write(self.testFile)
         isVul = self.verifier.verify(self.checkUrl)
+
+        # Save last crash poc
+        if isVul:
+            poc.write(self.cacheFile)
         return isVul
 
 
@@ -482,7 +488,10 @@ class CrashVerifier:
         self.getPid("iexplore.exe")
         for pid in self.pids:
             print ("[+] Kill all ie processes: pid %d" % (pid))
-            os.kill(pid, signal.SIGTERM)
+            try:
+                os.kill(pid, signal.SIGTERM)
+            except:
+                print ("[-] Fail to kill!")
 
         # Wait monitor thread exit
         while self.isMon:
@@ -534,6 +543,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', help = '1 - Simplify with initial demiFrame.html'
         + '  2 - Common simplify  3 - Final simplify  4 - Only frame')
+    parser.add_argument('-f', help = '1 - Copy testcase to demiPoc.html'
+        + '  2 - Delete all demiPoc0123....html')
     args = parser.parse_args()
 
     isFinal = False
